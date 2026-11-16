@@ -1,0 +1,57 @@
+[
+  {
+    "id": "list-not-procedure",
+    "case": "top result can be related without containing the list",
+    "question": "What are the restricted substances under RoHS?",
+    "expect_status": "approved",
+    "expect_regulation": "RoHS",
+    "require_annex": "II",
+    "forbid_article_only": ["6"]
+  },
+  {
+    "id": "named-annex-list",
+    "case": "question asks for a specific annex",
+    "question": "What concentration limits does RoHS Annex II set?",
+    "expect_status": "approved",
+    "expect_regulation": "RoHS",
+    "require_annex": "II"
+  },
+  {
+    "id": "named-annex-exemptions",
+    "case": "question asks for a specific annex",
+    "question": "What are the exemptions under RoHS Annex III?",
+    "expect_status": "approved",
+    "expect_regulation": "RoHS",
+    "require_annex": "III"
+  },
+  {
+    "id": "missing-article",
+    "case": "explicit article that is not in the document",
+    "question": "What does RoHS Article 112 require?",
+    "expect_status": "insufficient_evidence",
+    "expect_regulation": "RoHS"
+  },
+  {
+    "id": "named-procedure",
+    "case": "the same article is sufficient when the question names it",
+    "question": "What does RoHS Article 6 require?",
+    "expect_status": "approved",
+    "expect_regulation": "RoHS",
+    "require_article": "6"
+  },
+  {
+    "id": "reach-article",
+    "case": "regulation filter keeps REACH evidence on a REACH question",
+    "question": "What does REACH Article 6 require?",
+    "expect_status": "approved",
+    "expect_regulation": "REACH",
+    "require_article": "6"
+  },
+  {
+    "id": "missing-reach-article",
+    "case": "explicit article that is not in the document",
+    "question": "What does REACH Article 200 require?",
+    "expect_status": "insufficient_evidence",
+    "expect_regulation": "REACH"
+  }
+]

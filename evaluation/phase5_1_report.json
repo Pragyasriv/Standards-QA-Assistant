@@ -1,0 +1,3515 @@
+{
+  "top_k": 5,
+  "baseline_recall_at_k": 0.4,
+  "baseline_precision_at_k": 0.18,
+  "baseline_mean_reciprocal_rank": 0.2533,
+  "baseline_off_topic_rejection_rate": 0.5,
+  "dense_matches_recorded_baseline": true,
+  "methods": [
+    {
+      "method": "dense",
+      "recall_at_k": 0.4,
+      "precision_at_k": 0.18,
+      "mean_reciprocal_rank": 0.2533,
+      "ranking_failures": [
+        "rohs-concentration-list",
+        "rohs-market-prevention",
+        "reach-health-purpose",
+        "reach-unregistered-sale",
+        "reach-prior-approval",
+        "rohs-article-4-wording"
+      ],
+      "off_topic_questions": 6,
+      "off_topic_rejected": 3,
+      "off_topic_rejection_rate": 0.5,
+      "off_topic_rule": "cosine_cutoff",
+      "questions": [
+        {
+          "id": "rohs-concentration-list",
+          "category": "rohs-annex",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:01220",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": 0.5870621210323428,
+              "dense_score": 0.5870621210323428,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "2. Articles shall not be placed on the market if they, or flame-retardant parts thereof, contain this substance in concentrations greater than 0,1 % by weight. 3. By way of derogat"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:01386",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": 0.5198511185358722,
+              "dense_score": 0.5198511185358722,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "4. By way of derogation from paragraph 1, the concentration of PFAS in fluorine-free firefighting foams originating from the equipment which has undergone cleaning in accordance wi"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:01296",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": 0.505832005661047,
+              "dense_score": 0.505832005661047,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "4. Paragraph 2 shall apply from 4 July 2023 to: (i) textiles for oil- and water-repellency for the ______________________________ | protection of workers from dangerous liquids tha"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02011L0065-20260701:00158",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": 0.5013766185835058,
+              "dense_score": 0.5013766185835058,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": ") lamps Expires on 24 February 2023 for general lighting purposes not exceeding (per burner) in lamps with improved colour rendering index Ra > 60: P ≤ 155 W: 30 mg may be used per"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:01370",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": 0.49703345486854733,
+              "dense_score": 0.49703345486854733,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "3. Paragraphs 1 and 2 shall not apply to the following: (a) personal protective equipment intended to protect users against risks within the scope of risk category III, points (a),"
+            }
+          ]
+        },
+        {
+          "id": "rohs-market-prevention",
+          "category": "rohs-article",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00017",
+              "regulation": "REACH",
+              "article": "2",
+              "annex": null,
+              "similarity_score": 0.6463643716061613,
+              "dense_score": 0.6463643716061613,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "3. Member States may allow for exemptions from this Regulation in specific cases for certain substances, on their own, in a ►M3 mixture ◄ or in an article, where necessary in the i"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00905",
+              "regulation": "REACH",
+              "article": "128",
+              "annex": null,
+              "similarity_score": 0.6290372121041619,
+              "dense_score": 0.6290372121041619,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "Article 128 Free movement 1. Subject to paragraph 2, Member States shall not prohibit, restrict or impede the manufacturing, import, placing on the market or use of a substance, on"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00040",
+              "regulation": "REACH",
+              "article": "2",
+              "annex": null,
+              "similarity_score": 0.6137165955506646,
+              "dense_score": 0.6137165955506646,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(b) substances covered by Annex V, as registration is deemed inappropriate or unnecessary for these substances and their exemption from these Titles does not prejudice the objectiv"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00649",
+              "regulation": "REACH",
+              "article": "67",
+              "annex": null,
+              "similarity_score": 0.609793498743729,
+              "dense_score": 0.609793498743729,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "2. Paragraph 1 shall not apply to the use of substances in cosmetic products, as defined by Directive 76/768/EEC, with regard to restrictions addressing the risks to human health w"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00518",
+              "regulation": "REACH",
+              "article": "56",
+              "annex": null,
+              "similarity_score": 0.5973264760675052,
+              "dense_score": 0.5973264760675052,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "Article 56 General provisions 1. A manufacturer, importer or downstream user shall not place a substance on the market for a use or use it himself if that substance is included in "
+            }
+          ]
+        },
+        {
+          "id": "rohs-product-groups",
+          "category": "rohs-annex",
+          "first_relevant_rank": 1,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "precision": 0.4,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02011L0065-20260701:00132",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "I",
+              "similarity_score": 0.6192878508206389,
+              "dense_score": 0.6192878508206389,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "2. Small household appliances. 3. IT and telecommunications equipment."
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02011L0065-20260701:00005",
+              "regulation": "RoHS",
+              "article": "1",
+              "annex": null,
+              "similarity_score": 0.6190193593587587,
+              "dense_score": 0.6190193593587587,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "Article 1 Subject matter This Directive lays down rules on the restriction of the use of hazardous substances in electrical and electronic equipment (EEE) with a view to contributi"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02011L0065-20260701:00133",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "I",
+              "similarity_score": 0.564473295239105,
+              "dense_score": 0.564473295239105,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "3. IT and telecommunications equipment. 4. Consumer equipment."
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:01034",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "VI",
+              "similarity_score": 0.5422325653574877,
+              "dense_score": 0.5422325653574877,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "-fighting measures (Safety Data Sheet heading 5) 5.3. Accidental release measures (Safety Data Sheet heading 6) 5.4. Handling and storage (Safety Data Sheet heading 7) 5.5. Transpo"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:01248",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": 0.538098363624564,
+              "dense_score": 0.538098363624564,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": ") measuring devices for laboratory use, or parts thereof; (f) materials and articles intended to come into contact with food within the scope of Regulation (EC) No 1935/2004 or Com"
+            }
+          ]
+        },
+        {
+          "id": "rohs-lamp-exceptions",
+          "category": "rohs-annex",
+          "first_relevant_rank": 1,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02011L0065-20260701:00161",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": 0.7166637130974911,
+              "dense_score": 0.7166637130974911,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "4(e) | Mercury in metal halide lamps (MH) | Expires on 24 February 2027 4(f) -I | Mercury in other discharge lamps for special Expires on 24 February 2025 purposes not specifically"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02011L0065-20260701:00159",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": 0.686443532413342,
+              "dense_score": 0.686443532413342,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "4(c) | Mercury in other High Pressure Sodium (vapour) lamps for general lighting purposes not exceeding (per burner): Exemption | Scope and dates of applicability 4(c)-I | P ≤ 155 "
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02011L0065-20260701:00156",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": 0.6675012401999421,
+              "dense_score": 0.6675012401999421,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "3(c) | Long length (> 1 500 mm): 13 mg | Expires on 24 February 2025 4(a) | Mercury in other low pressure discharge lamps (per Expires on 24 February 2023 lamp): 15 mg 4(a)-I | Mer"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02011L0065-20260701:00162",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": 0.6645017455088718,
+              "dense_score": 0.6645017455088718,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "4(f) -I | Mercury in other discharge lamps for special Expires on 24 February 2025 purposes not specifically mentioned in this Annex 4(f) -II Mercury in high pressure mercury vapou"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00160",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": 0.6643718873363706,
+              "dense_score": 0.6643718873363706,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "4(d) | Mercury in High Pressure Mercury (vapour) Expires on 13 April 2015 lamps (HPMV) 4(e) | Mercury in metal halide lamps (MH) | Expires on 24 February 2027"
+            }
+          ]
+        },
+        {
+          "id": "reach-health-purpose",
+          "category": "reach-article",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02011L0065-20260701:00059",
+              "regulation": "RoHS",
+              "article": "6",
+              "annex": null,
+              "similarity_score": 0.48343608055958165,
+              "dense_score": 0.48343608055958165,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(b) could give rise, given its uses, to uncontrolled or diffuse release into the environment of the substance, or could give rise to hazardous residues, or transformation or degrad"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00585",
+              "regulation": "REACH",
+              "article": "60",
+              "annex": null,
+              "similarity_score": 0.46374429443777926,
+              "dense_score": 0.46374429443777926,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "5. When assessing whether suitable alternative substances or technologies are available, all relevant aspects shall be taken into account by the Commission, including: (a) whether "
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00586",
+              "regulation": "REACH",
+              "article": "60",
+              "annex": null,
+              "similarity_score": 0.428048402362354,
+              "dense_score": 0.428048402362354,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(a) whether the transfer to alternatives would result in reduced overall risks to human health and the environment, taking into account the appropriateness and effectiveness of ris"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00877",
+              "regulation": "REACH",
+              "article": "119",
+              "annex": null,
+              "similarity_score": 0.425777180148033,
+              "dense_score": 0.425777180148033,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(e) the result of each toxicological and ecotoxicological study; (f) any derived no-effect level (DNEL) or predicted no-effect concentration (PNEC) established in accordance with A"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00709",
+              "regulation": "REACH",
+              "article": "77",
+              "annex": null,
+              "similarity_score": 0.4252195308360804,
+              "dense_score": 0.4252195308360804,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(b) at the Executive Director's request, providing technical and scientific support for steps to improve cooperation between the Community, its Member States, international organis"
+            }
+          ]
+        },
+        {
+          "id": "reach-unregistered-sale",
+          "category": "reach-article",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00297",
+              "regulation": "REACH",
+              "article": "25",
+              "annex": null,
+              "similarity_score": 0.6761525087049716,
+              "dense_score": 0.6761525087049716,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "2. The sharing and joint submission of information in accordance with this Regulation shall concern technical data and in particular information related to the intrinsic properties"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00290",
+              "regulation": "REACH",
+              "article": "23",
+              "annex": null,
+              "similarity_score": 0.6615164796583664,
+              "dense_score": 0.6615164796583664,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "4. Without prejudice to paragraphs 1 to 3, a registration can be submitted at any time before the relevant deadline. 5. This Article shall also apply to substances registered under"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00230",
+              "regulation": "REACH",
+              "article": "17",
+              "annex": null,
+              "similarity_score": 0.6412894060713024,
+              "dense_score": 0.6412894060713024,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(f) details of the risk management measures applied. Except in cases covered under Article 25(3), Article 27(6) or Article 30 (3), the registrant shall be in legitimate possession "
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00168",
+              "regulation": "REACH",
+              "article": "10",
+              "annex": null,
+              "similarity_score": 0.6302583670178604,
+              "dense_score": 0.6302583670178604,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(e) , including a justification as to why publication could be harmful for his or any other concerned party's commercial interests. Except in cases covered under Article 25(3), Art"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00114",
+              "regulation": "REACH",
+              "article": "7",
+              "annex": null,
+              "similarity_score": 0.6228409511675784,
+              "dense_score": 0.6228409511675784,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(b) the substance is intended to be released under normal or reasonably foreseeable conditions of use. A submission for registration shall be accompanied by the fee required in acc"
+            }
+          ]
+        },
+        {
+          "id": "reach-who-registers",
+          "category": "reach-article",
+          "first_relevant_rank": 3,
+          "reciprocal_rank": 0.3333333333333333,
+          "recall": 1.0,
+          "precision": 0.2,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00701",
+              "regulation": "REACH",
+              "article": "77",
+              "annex": null,
+              "similarity_score": 0.6425457429692656,
+              "dense_score": 0.6425457429692656,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(j) providing advice and assistance to manufacturers and importers registering a substance in accordance with Article 12(1); (k) preparing explanatory information on this Regulatio"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00608",
+              "regulation": "REACH",
+              "article": "62",
+              "annex": null,
+              "similarity_score": 0.6077242654747272,
+              "dense_score": 0.6077242654747272,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "2. Applications for authorisation may be made by the manufacturer (s) , importer(s) and/or downstream user(s) of the substance. Applications may be made by one or several persons."
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00104",
+              "regulation": "REACH",
+              "article": "6",
+              "annex": null,
+              "similarity_score": 0.6026215859475915,
+              "dense_score": 0.6026215859475915,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "Article 6 General obligation to register substances on their own or in ►M3 mixtures ◄ 1. Save where this Regulation provides otherwise, any manufacturer or importer of a substance,"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00040",
+              "regulation": "REACH",
+              "article": "2",
+              "annex": null,
+              "similarity_score": 0.5976757446363192,
+              "dense_score": 0.5976757446363192,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(b) substances covered by Annex V, as registration is deemed inappropriate or unnecessary for these substances and their exemption from these Titles does not prejudice the objectiv"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00114",
+              "regulation": "REACH",
+              "article": "7",
+              "annex": null,
+              "similarity_score": 0.5858119554451839,
+              "dense_score": 0.5858119554451839,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(b) the substance is intended to be released under normal or reasonably foreseeable conditions of use. A submission for registration shall be accompanied by the fee required in acc"
+            }
+          ]
+        },
+        {
+          "id": "reach-prior-approval",
+          "category": "reach-annex",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00532",
+              "regulation": "REACH",
+              "article": "56",
+              "annex": null,
+              "similarity_score": 0.649672422418375,
+              "dense_score": 0.649672422418375,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "5. In the case of substances that are subject to authorisation only because they meet the criteria in Article 57(a), (b) or (c) or because they are identified in accordance with Ar"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00579",
+              "regulation": "REACH",
+              "article": "60",
+              "annex": null,
+              "similarity_score": 0.6212722221835203,
+              "dense_score": 0.6212722221835203,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(c) substances identified under Article 57(f) having persistent, bioaccumulative and toxic properties or very persistent and very bioaccumulative properties. 4. If an authorisation"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00552",
+              "regulation": "REACH",
+              "article": "58",
+              "annex": null,
+              "similarity_score": 0.617900053093405,
+              "dense_score": 0.617900053093405,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(e) uses or categories of uses exempted from the authorisation requirement, if any, and conditions for such exemptions, if any. 2. Uses or categories of uses may be exempted from t"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00574",
+              "regulation": "REACH",
+              "article": "60",
+              "annex": null,
+              "similarity_score": 0.6177830279982944,
+              "dense_score": 0.6177830279982944,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "Article 60 Granting of authorisations 1. The Commission shall be responsible for taking decisions on applications for authorisations in accordance with this Title. 2. Without preju"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00605",
+              "regulation": "REACH",
+              "article": "61",
+              "annex": null,
+              "similarity_score": 0.6012106125590899,
+              "dense_score": 0.6012106125590899,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "5. If the environmental objectives as referred to in Article 4(1) of Directive 2000/60/EC are not met, the authorisations granted for the use of the substance concerned in the rele"
+            }
+          ]
+        },
+        {
+          "id": "reach-supply-conditions",
+          "category": "reach-annex",
+          "first_relevant_rank": 5,
+          "reciprocal_rank": 0.2,
+          "recall": 1.0,
+          "precision": 0.2,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00645",
+              "regulation": "REACH",
+              "article": null,
+              "annex": null,
+              "similarity_score": 0.6622253692525439,
+              "dense_score": 0.6622253692525439,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "TITLE VIII RESTRICTIONS ON THE MANUFACTURING, PLACING ON THE MARKET AND USE OF CERTAIN DANGEROUS SUBSTANCES, ►M3 MIXTURES ◄ AND ARTICLES"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00697",
+              "regulation": "REACH",
+              "article": "77",
+              "annex": null,
+              "similarity_score": 0.6332017879861946,
+              "dense_score": 0.6332017879861946,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(f) making publicly available information as to which substances are being, and have been evaluated within 90 days of receipt of the information at the Agency, in accordance with A"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00698",
+              "regulation": "REACH",
+              "article": "77",
+              "annex": null,
+              "similarity_score": 0.6290022083010778,
+              "dense_score": 0.6290022083010778,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(g) providing technical and scientific guidance and tools where appropriate for the operation of this Regulation in particular to assist the development of chemical safety reports "
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00353",
+              "regulation": "REACH",
+              "article": "31",
+              "annex": null,
+              "similarity_score": 0.6288311195979397,
+              "dense_score": 0.6288311195979397,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(c) a substance for which there are Community workplace exposure limits. 4. The safety data sheet need not be supplied where hazardous substances or mixtures offered or sold to the"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:01375",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": 0.6182881058737317,
+              "dense_score": 0.6182881058737317,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "8. By way of derogation from paragraph 2, that paragraph shall not apply to articles which were placed on the market before 10 October 2027. 9. For the purposes of this entry, PFHx"
+            }
+          ]
+        },
+        {
+          "id": "rohs-article-4-wording",
+          "category": "rohs-article",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02011L0065-20260701:00083",
+              "regulation": "RoHS",
+              "article": "9",
+              "annex": null,
+              "similarity_score": 0.7093266122662586,
+              "dense_score": 0.7093266122662586,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "Article 9 Obligations of importers Member States shall ensure that: (a) importers place only EEE that complies with this Directive on the Union market; (b) importers, before placin"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02011L0065-20260701:00082",
+              "regulation": "RoHS",
+              "article": "9",
+              "annex": null,
+              "similarity_score": 0.6967312860219116,
+              "dense_score": 0.6967312860219116,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "Article 9 Obligations of importers Member States shall ensure that: (a) importers place only EEE that complies with this Directive on the Union market;"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02011L0065-20260701:00070",
+              "regulation": "RoHS",
+              "article": "7",
+              "annex": null,
+              "similarity_score": 0.6789763048647127,
+              "dense_score": 0.6789763048647127,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "Article 7 Obligations of manufacturers Member States shall ensure that: (a) when placing EEE on the market, manufacturers ensure that it has been designed and manufactured in accor"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02011L0065-20260701:00007",
+              "regulation": "RoHS",
+              "article": "2",
+              "annex": null,
+              "similarity_score": 0.6658979464284557,
+              "dense_score": 0.6658979464284557,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "Article 2 Scope 1. This Directive shall, subject to paragraph 2, apply to EEE falling within the categories set out in Annex I. __________ 3. This Directive shall apply without pre"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00084",
+              "regulation": "RoHS",
+              "article": "9",
+              "annex": null,
+              "similarity_score": 0.6590817213123735,
+              "dense_score": 0.6590817213123735,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(b) importers, before placing an EEE on the market, ensure that the appropriate conformity assessment procedure has been carried out by the manufacturer, and that they further ensu"
+            }
+          ]
+        },
+        {
+          "id": "unrelated-weather",
+          "category": "unrelated",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00753",
+              "regulation": "REACH",
+              "article": "83",
+              "annex": null,
+              "similarity_score": 0.27612409174771657,
+              "dense_score": 0.27612409174771657,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(d) the draft forecast budget for the coming year; (e) a draft multiannual work programme. The Executive Director shall, following approval by the Management Board, forward the wor"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00004",
+              "regulation": "REACH",
+              "article": null,
+              "annex": null,
+              "similarity_score": 0.26092572173412093,
+              "dense_score": 0.26092572173412093,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "Regulation (EU) 2025/660 of 1 April 2025 | L 660 | 1 | 2.4.2025 ►M81 Commission Regulation (EU) 2025/1090 of 2 June 2025 | L 1090 | 1 | 3.6.2025 ►M82 Commission Regulation (EU) 202"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:01727",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": 0.2515057050244527,
+              "dense_score": 0.2515057050244527,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "16. | 101-80-4 | 202-977-0 4,4'-oxydianiline 17. | 139-65-1 | 205-370-9 4,4'-thiodianiline"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00003",
+              "regulation": "REACH",
+              "article": null,
+              "annex": null,
+              "similarity_score": 0.2192934023383581,
+              "dense_score": 0.2192934023383581,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "35 | 6 | 10.2.2017 ►M42 Commission Regulation (EU) 2017/706 of 19 April 2017 | L 104 | 8 | 20.4.2017 ►M43 Commission Regulation (EU) 2017/999 of 13 June 2017 | L 150 | 7 | 14.6.201"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:01601",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": 0.21831837591899841,
+              "dense_score": 0.21831837591899841,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "1 | 6 predominantly C through C .) 1 | 4 _______ Gases (petroleum), C olefinic- 649-067-00-3 270-765-5 | 68477-83-8 | ►M21 | ◄ K 3-5 paraffinic alkylation feed; Petroleum gas (A co"
+            }
+          ]
+        },
+        {
+          "id": "unrelated-sport",
+          "category": "unrelated",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00261",
+              "regulation": "REACH",
+              "article": "20",
+              "annex": null,
+              "similarity_score": 0.15300365107312183,
+              "dense_score": 0.15300365107312183,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(b) the submission or registration date; (c) the result of the completeness check; and"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00855",
+              "regulation": "REACH",
+              "article": null,
+              "annex": null,
+              "similarity_score": 0.14545862755197986,
+              "dense_score": 0.14545862755197986,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "TITLE XII INFORMATION"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:01122",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XIV",
+              "similarity_score": 0.13741538269360004,
+              "dense_score": 0.13741538269360004,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "51. 2-(2H-benzotriazol-2-yl)-4,6-ditertpentylphenol (UV-328) EC No: 247-384-8 CAS No: 25973-55-1 PBT, vPvB 27 May 2022 27 November 2023 — — 52. 2,4-di-tert-butyl-6-(5-chlorobenzotr"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00676",
+              "regulation": "REACH",
+              "article": null,
+              "annex": null,
+              "similarity_score": 0.13292851034585826,
+              "dense_score": 0.13292851034585826,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "TITLE X AGENCY"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00263",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "IV",
+              "similarity_score": 0.13248621468233857,
+              "dense_score": 0.13248621468233857,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "48. Lead in bismuth strontium calcium copper oxide (BSCCO) superconductor cables and wires and lead in electrical connections to these wires Expires on 30 June 2027. 49. Mercury in"
+            }
+          ]
+        },
+        {
+          "id": "unrelated-baking",
+          "category": "unrelated",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00485",
+              "regulation": "REACH",
+              "article": "46",
+              "annex": null,
+              "similarity_score": 0.23813428336213455,
+              "dense_score": 0.23813428336213455,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "3. The competent authority shall examine any information submitted, and shall draft any appropriate decisions in accordance with this Article, if necessary, within 12 months of the"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00908",
+              "regulation": "REACH",
+              "article": "129",
+              "annex": null,
+              "similarity_score": 0.23332153924694243,
+              "dense_score": 0.23332153924694243,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "2. The Commission shall take a decision in accordance with the procedure referred to in Article 133(3) within 60 days of receipt of the information from the Member State. This deci"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00550",
+              "regulation": "REACH",
+              "article": "58",
+              "annex": null,
+              "similarity_score": 0.22070556421197995,
+              "dense_score": 0.22070556421197995,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(ii) a date or dates at least 18 months before the sunset date(s) by which applications must be received if the applicant wishes to continue to use the substance or place it on the"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00549",
+              "regulation": "REACH",
+              "article": "58",
+              "annex": null,
+              "similarity_score": 0.2111517439935711,
+              "dense_score": 0.2111517439935711,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(i) the date(s) from which the placing on the market and the use of the substance shall be prohibited unless an authorisation is granted (hereinafter referred to as the sunset date"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:01290",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": 0.20980534614843113,
+              "dense_score": 0.20980534614843113,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "3. In the case of a Member State that, on 14 July 2016, has national provisional measures in place that have been authorised by the Commission pursuant to Article 129(2)(a), the pr"
+            }
+          ]
+        },
+        {
+          "id": "outside-weee",
+          "category": "insufficient",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00369",
+              "regulation": "REACH",
+              "article": "31",
+              "annex": null,
+              "similarity_score": 0.568453957839548,
+              "dense_score": 0.568453957839548,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "13. disposal considerations; 14. transport information;"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02011L0065-20260701:00005",
+              "regulation": "RoHS",
+              "article": "1",
+              "annex": null,
+              "similarity_score": 0.5578475419115554,
+              "dense_score": 0.5578475419115554,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "Article 1 Subject matter This Directive lays down rules on the restriction of the use of hazardous substances in electrical and electronic equipment (EEE) with a view to contributi"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00016",
+              "regulation": "REACH",
+              "article": "2",
+              "annex": null,
+              "similarity_score": 0.5416317646461465,
+              "dense_score": 0.5416317646461465,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "2. Waste as defined in Directive 2006/12/EC of the European Parliament and of the Council ( 2 ) is not a substance, ►M3 mixture ◄ or article within the meaning of Article 3 of this"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02011L0065-20260701:00008",
+              "regulation": "RoHS",
+              "article": "2",
+              "annex": null,
+              "similarity_score": 0.5325948402821971,
+              "dense_score": 0.5325948402821971,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "3. This Directive shall apply without prejudice to the requirements of Union legislation on safety and health, and on chemicals, in particular Regulation (EC) No 1907/2006, as well"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00060",
+              "regulation": "RoHS",
+              "article": "6",
+              "annex": null,
+              "similarity_score": 0.5297420847917446,
+              "dense_score": 0.5297420847917446,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "(c) could lead to unacceptable exposure of workers involved in the waste EEE collection or treatment processes; (d) could be replaced by substitutes or alternative technologies whi"
+            }
+          ]
+        },
+        {
+          "id": "outside-lvd",
+          "category": "insufficient",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02011L0065-20260701:00104",
+              "regulation": "RoHS",
+              "article": "15",
+              "annex": null,
+              "similarity_score": 0.5960638829742284,
+              "dense_score": 0.5960638829742284,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "2. The CE marking shall be affixed before the EEE is placed on the market. 3. Member States shall build upon existing mechanisms to ensure the correct application of the regime gov"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02011L0065-20260701:00103",
+              "regulation": "RoHS",
+              "article": "15",
+              "annex": null,
+              "similarity_score": 0.5784039432478663,
+              "dense_score": 0.5784039432478663,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "Article 15 Rules and conditions for affixing the CE marking 1. The CE marking shall be affixed visibly, legibly and indelibly to the finished EEE or to its data plate. Where that i"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02011L0065-20260701:00102",
+              "regulation": "RoHS",
+              "article": "15",
+              "annex": null,
+              "similarity_score": 0.5622761948237586,
+              "dense_score": 0.5622761948237586,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "Article 15 Rules and conditions for affixing the CE marking 1. The CE marking shall be affixed visibly, legibly and indelibly to the finished EEE or to its data plate. Where that i"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02011L0065-20260701:00101",
+              "regulation": "RoHS",
+              "article": "14",
+              "annex": null,
+              "similarity_score": 0.5584929535081754,
+              "dense_score": 0.5584929535081754,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "Article 14 General principles of the CE marking The CE marking shall be subject to the general principles set out in Article 30 of Regulation (EC) No 765/2008."
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00106",
+              "regulation": "RoHS",
+              "article": "16",
+              "annex": null,
+              "similarity_score": 0.5578878970163097,
+              "dense_score": 0.5578878970163097,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "Article 16 Presumption of conformity 1. In the absence of evidence to the contrary, Member States shall presume EEE bearing the CE marking to comply with this Directive. 2. Materia"
+            }
+          ]
+        },
+        {
+          "id": "outside-gdpr",
+          "category": "insufficient",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00395",
+              "regulation": "REACH",
+              "article": "36",
+              "annex": null,
+              "similarity_score": 0.4557062295110935,
+              "dense_score": 0.4557062295110935,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "Article 36 Obligation to keep information 1. Each manufacturer, importer, downstream user and distributor shall assemble and keep available all the information he requires to carry"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00307",
+              "regulation": "REACH",
+              "article": "27",
+              "annex": null,
+              "similarity_score": 0.4133106432937943,
+              "dense_score": 0.4133106432937943,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "Article 27 Sharing of existing data in the case of registered substances 1. Where a substance has previously been registered less than 12 years earlier as referred to in Article 26"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00484",
+              "regulation": "REACH",
+              "article": "46",
+              "annex": null,
+              "similarity_score": 0.40567327105766204,
+              "dense_score": 0.40567327105766204,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "2. The registrant shall submit the information required to the Agency by the deadline set. 3. The competent authority shall examine any information submitted, and shall draft any a"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00325",
+              "regulation": "REACH",
+              "article": "28",
+              "annex": null,
+              "similarity_score": 0.40427270479859345,
+              "dense_score": 0.40427270479859345,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "2. The information referred to in paragraph 1 shall be submitted within a time period starting on 1 June 2008 and ending on 1 December 2008. 3. Registrants who do not submit the in"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00259",
+              "regulation": "REACH",
+              "article": "20",
+              "annex": null,
+              "similarity_score": 0.38319446693658404,
+              "dense_score": 0.38319446693658404,
+              "bm25_score": null,
+              "rrf_score": null,
+              "text_preview": "4. The Agency shall notify the competent authority of the relevant Member State within 30 days of the submission date, that the following information is available in the Agency dat"
+            }
+          ]
+        }
+      ],
+      "top_k": 5
+    },
+    {
+      "method": "bm25",
+      "recall_at_k": 0.4,
+      "precision_at_k": 0.2,
+      "mean_reciprocal_rank": 0.3333,
+      "ranking_failures": [
+        "rohs-concentration-list",
+        "rohs-market-prevention",
+        "reach-health-purpose",
+        "reach-unregistered-sale",
+        "reach-prior-approval",
+        "reach-supply-conditions"
+      ],
+      "off_topic_questions": 6,
+      "off_topic_rejected": 0,
+      "off_topic_rejection_rate": 0.0,
+      "off_topic_rule": "no_positive_bm25",
+      "questions": [
+        {
+          "id": "rohs-concentration-list",
+          "category": "rohs-annex",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:01220",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 14.288348285057104,
+              "rrf_score": null,
+              "text_preview": "2. Articles shall not be placed on the market if they, or flame-retardant parts thereof, contain this substance in concentrations greater than 0,1 % by weight. 3. By way of derogat"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:01219",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 8.804588332514584,
+              "rrf_score": null,
+              "text_preview": "45. Diphenylether, octabromo derivative | 1. Shall not be placed on the market, or used: C H Br O | — as a substance, 12 2 8 — as a constituent of other substances, or in mixtures,"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02011L0065-20260701:00214",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 8.273190323400485,
+              "rrf_score": null,
+              "text_preview": "45 | Lead diazide, lead styphnate, lead dipicramate, Applies to category 11 and expires on 20 April orange lead (lead tetroxide), lead dioxide in 2026 electric and electronic initi"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:01188",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 7.86068882205046,
+              "rrf_score": null,
+              "text_preview": "whose applications require high safety standards and in safety devices in road and agricultural vehicles, rolling stock and vessels, — electrical contacts in any sector of use, whe"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00590",
+              "regulation": "REACH",
+              "article": "60",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 7.332420660619988,
+              "rrf_score": null,
+              "text_preview": "8. Authorisations shall be subject to a time-limited review without prejudice to any decision on a future review period and shall normally be subject to conditions, including monit"
+            }
+          ]
+        },
+        {
+          "id": "rohs-market-prevention",
+          "category": "rohs-article",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00905",
+              "regulation": "REACH",
+              "article": "128",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 14.124545930543196,
+              "rrf_score": null,
+              "text_preview": "Article 128 Free movement 1. Subject to paragraph 2, Member States shall not prohibit, restrict or impede the manufacturing, import, placing on the market or use of a substance, on"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00480",
+              "regulation": "REACH",
+              "article": "45",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 13.31612728734316,
+              "rrf_score": null,
+              "text_preview": "State Committee, in order to agree which authority shall be the competent authority, taking into account the Member State in which the manufacturer(s) or importer(s) is located, th"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00479",
+              "regulation": "REACH",
+              "article": "45",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 12.520146763049777,
+              "rrf_score": null,
+              "text_preview": "2. A Member State may choose (a) substance(s) from the draft Community rolling action plan, with the aim of becoming a competent authority for the purposes of Articles 46, 47 and 4"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:01359",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 12.300048456883061,
+              "rrf_score": null,
+              "text_preview": "8. From 17 October 2026 suppliers of products containing synthetic polymer microparticles referred to in paragraph 4, point (e), and from 17 October 2025 suppliers of products cont"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00354",
+              "regulation": "REACH",
+              "article": "31",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 12.106258246049208,
+              "rrf_score": null,
+              "text_preview": "4. The safety data sheet need not be supplied where hazardous substances or mixtures offered or sold to the general public are provided with sufficient information to enable users "
+            }
+          ]
+        },
+        {
+          "id": "rohs-product-groups",
+          "category": "rohs-annex",
+          "first_relevant_rank": 3,
+          "reciprocal_rank": 0.3333333333333333,
+          "recall": 1.0,
+          "precision": 0.4,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02011L0065-20260701:00005",
+              "regulation": "RoHS",
+              "article": "1",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 15.567219569347138,
+              "rrf_score": null,
+              "text_preview": "Article 1 Subject matter This Directive lays down rules on the restriction of the use of hazardous substances in electrical and electronic equipment (EEE) with a view to contributi"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02011L0065-20260701:00011",
+              "regulation": "RoHS",
+              "article": "2",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 15.159422622135462,
+              "rrf_score": null,
+              "text_preview": "(b) equipment designed to be sent into space; (c) equipment which is specifically designed, and is to be installed, as part of another type of equipment that is excluded or does no"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02011L0065-20260701:00132",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "I",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 14.97891783431615,
+              "rrf_score": null,
+              "text_preview": "2. Small household appliances. 3. IT and telecommunications equipment."
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02011L0065-20260701:00012",
+              "regulation": "RoHS",
+              "article": "2",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 14.893989814627744,
+              "rrf_score": null,
+              "text_preview": "(c) equipment which is specifically designed, and is to be installed, as part of another type of equipment that is excluded or does not fall within the scope of this Directive, whi"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00133",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "I",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 13.802497585875145,
+              "rrf_score": null,
+              "text_preview": "3. IT and telecommunications equipment. 4. Consumer equipment."
+            }
+          ]
+        },
+        {
+          "id": "rohs-lamp-exceptions",
+          "category": "rohs-annex",
+          "first_relevant_rank": 1,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02011L0065-20260701:00162",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 18.554373973871947,
+              "rrf_score": null,
+              "text_preview": "4(f) -I | Mercury in other discharge lamps for special Expires on 24 February 2025 purposes not specifically mentioned in this Annex 4(f) -II Mercury in high pressure mercury vapou"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02011L0065-20260701:00161",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 16.36107761635198,
+              "rrf_score": null,
+              "text_preview": "4(e) | Mercury in metal halide lamps (MH) | Expires on 24 February 2027 4(f) -I | Mercury in other discharge lamps for special Expires on 24 February 2025 purposes not specifically"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02011L0065-20260701:00160",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 15.750139373427738,
+              "rrf_score": null,
+              "text_preview": "4(d) | Mercury in High Pressure Mercury (vapour) Expires on 13 April 2015 lamps (HPMV) 4(e) | Mercury in metal halide lamps (MH) | Expires on 24 February 2027"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02011L0065-20260701:00157",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 15.65563399246085,
+              "rrf_score": null,
+              "text_preview": "4(a) | Mercury in other low pressure discharge lamps (per Expires on 24 February 2023 lamp): 15 mg 4(a)-I | Mercury in low pressure non-phosphor coated Expires on 24 February 2027 "
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00156",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 14.06483909781684,
+              "rrf_score": null,
+              "text_preview": "3(c) | Long length (> 1 500 mm): 13 mg | Expires on 24 February 2025 4(a) | Mercury in other low pressure discharge lamps (per Expires on 24 February 2023 lamp): 15 mg 4(a)-I | Mer"
+            }
+          ]
+        },
+        {
+          "id": "reach-health-purpose",
+          "category": "reach-article",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00001",
+              "regulation": "REACH",
+              "article": null,
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 16.67895956063833,
+              "rrf_score": null,
+              "text_preview": "This text is meant purely as a documentation tool and has no legal effect. The Union's institutions do not assume any liability for its contents. The authentic versions of the rele"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00905",
+              "regulation": "REACH",
+              "article": "128",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 10.868345448961648,
+              "rrf_score": null,
+              "text_preview": "Article 128 Free movement 1. Subject to paragraph 2, Member States shall not prohibit, restrict or impede the manufacturing, import, placing on the market or use of a substance, on"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02011L0065-20260701:00039",
+              "regulation": "RoHS",
+              "article": "5",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 8.700913102932727,
+              "rrf_score": null,
+              "text_preview": "Article 5 Adaptation of the Annexes to scientific and technical progress 1. For the purposes of adapting Annexes III and IV to scientific and technical progress, and in order to ac"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00904",
+              "regulation": "REACH",
+              "article": "128",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 8.662991493436458,
+              "rrf_score": null,
+              "text_preview": "Article 128 Free movement 1. Subject to paragraph 2, Member States shall not prohibit, restrict or impede the manufacturing, import, placing on the market or use of a substance, on"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00001",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 7.62367529474805,
+              "rrf_score": null,
+              "text_preview": "This text is meant purely as a documentation tool and has no legal effect. The Union's institutions do not assume any liability for its contents. The authentic versions of the rele"
+            }
+          ]
+        },
+        {
+          "id": "reach-unregistered-sale",
+          "category": "reach-article",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00292",
+              "regulation": "REACH",
+              "article": "24",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 16.524800388991746,
+              "rrf_score": null,
+              "text_preview": "Article 24 Notified substances 1. A notification in accordance with Directive 67/548/EEC shall be regarded as a registration for the purposes of this Title and the Agency shall ass"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00154",
+              "regulation": "REACH",
+              "article": "10",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 15.830053923292299,
+              "rrf_score": null,
+              "text_preview": "Article 10 Information to be submitted for general registration purposes A registration required by Article 6 or by Article 7(1) or (5) shall include all the following information:"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00155",
+              "regulation": "REACH",
+              "article": "10",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 15.1730383211121,
+              "rrf_score": null,
+              "text_preview": "Article 10 Information to be submitted for general registration purposes A registration required by Article 6 or by Article 7(1) or (5) shall include all the following information:"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00299",
+              "regulation": "REACH",
+              "article": "26",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 14.586052354001732,
+              "rrf_score": null,
+              "text_preview": "Article 26 Duty to inquire prior to registration 1. Every potential registrant of a non-phase-in substance, or potential registrant of a phase-in substance who has not pre-register"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00256",
+              "regulation": "REACH",
+              "article": "20",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 14.305341116572547,
+              "rrf_score": null,
+              "text_preview": "Article 20 Duties of the Agency 1. The Agency shall assign a submission number to each registration, which is to be used for all correspondence regarding the registration until the"
+            }
+          ]
+        },
+        {
+          "id": "reach-who-registers",
+          "category": "reach-article",
+          "first_relevant_rank": 1,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "precision": 0.4,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00104",
+              "regulation": "REACH",
+              "article": "6",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 12.62961407253977,
+              "rrf_score": null,
+              "text_preview": "Article 6 General obligation to register substances on their own or in ►M3 mixtures ◄ 1. Save where this Regulation provides otherwise, any manufacturer or importer of a substance,"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00267",
+              "regulation": "REACH",
+              "article": "21",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 12.394853453553875,
+              "rrf_score": null,
+              "text_preview": "2. If the Agency has informed the registrant that he is to submit further information in accordance with the third subparagraph of Article 20(2), the registrant may start the manuf"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00105",
+              "regulation": "REACH",
+              "article": "6",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 11.76872571810688,
+              "rrf_score": null,
+              "text_preview": "Article 6 General obligation to register substances on their own or in ►M3 mixtures ◄ 1. Save where this Regulation provides otherwise, any manufacturer or importer of a substance,"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00148",
+              "regulation": "REACH",
+              "article": "9",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 11.721574346811561,
+              "rrf_score": null,
+              "text_preview": "4. The Agency may decide to impose conditions with the aim of ensuring that the substance or the ►M3 mixture ◄ or article in which the substance is incorporated will be handled onl"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00904",
+              "regulation": "REACH",
+              "article": "128",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 11.511138292753571,
+              "rrf_score": null,
+              "text_preview": "Article 128 Free movement 1. Subject to paragraph 2, Member States shall not prohibit, restrict or impede the manufacturing, import, placing on the market or use of a substance, on"
+            }
+          ]
+        },
+        {
+          "id": "reach-prior-approval",
+          "category": "reach-annex",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00580",
+              "regulation": "REACH",
+              "article": "60",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 16.731196943467822,
+              "rrf_score": null,
+              "text_preview": "4. If an authorisation cannot be granted under paragraph 2 or for substances listed in paragraph 3, an authorisation may only be granted if it is shown that socio-economic benefits"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00579",
+              "regulation": "REACH",
+              "article": "60",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 16.530781539263565,
+              "rrf_score": null,
+              "text_preview": "(c) substances identified under Article 57(f) having persistent, bioaccumulative and toxic properties or very persistent and very bioaccumulative properties. 4. If an authorisation"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00524",
+              "regulation": "REACH",
+              "article": "56",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 16.251455895063778,
+              "rrf_score": null,
+              "text_preview": "(e) in cases where the substance is placed on the market, authorisation for that use has been granted to his immediate downstream user. 2. A downstream user may use a substance mee"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00523",
+              "regulation": "REACH",
+              "article": "56",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 16.214723244831195,
+              "rrf_score": null,
+              "text_preview": "(d) the date referred to in Article 58(1)(c)(i) has been reached and he made an application 18 months before that date but a decision on the application for authorisation has not y"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00627",
+              "regulation": "REACH",
+              "article": "63",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 15.729508922702891,
+              "rrf_score": null,
+              "text_preview": "(e) and (f) and (5)(a), provided that the subsequent applicant has permission from the previous applicant to refer to these parts of the application. 2. If an authorisation has bee"
+            }
+          ]
+        },
+        {
+          "id": "reach-supply-conditions",
+          "category": "reach-annex",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00891",
+              "regulation": "REACH",
+              "article": "120",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 12.782448727654451,
+              "rrf_score": null,
+              "text_preview": "Article 120 Cooperation with third countries and international organisations Notwithstanding Articles 118 and 119, information received by the Agency under this Regulation may be d"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00892",
+              "regulation": "REACH",
+              "article": "120",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 12.772055872075363,
+              "rrf_score": null,
+              "text_preview": "Article 120 Cooperation with third countries and international organisations Notwithstanding Articles 118 and 119, information received by the Agency under this Regulation may be d"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00001",
+              "regulation": "REACH",
+              "article": null,
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 10.332175349272504,
+              "rrf_score": null,
+              "text_preview": "This text is meant purely as a documentation tool and has no legal effect. The Union's institutions do not assume any liability for its contents. The authentic versions of the rele"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00031",
+              "regulation": "REACH",
+              "article": "2",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 9.945565550314212,
+              "rrf_score": null,
+              "text_preview": "(b) cosmetic products as defined in Directive 76/768/EEC; (c) medical devices which are invasive or used in direct physical contact with the human body in so far as Community measu"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00032",
+              "regulation": "REACH",
+              "article": "2",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 9.827059736090796,
+              "rrf_score": null,
+              "text_preview": "(c) medical devices which are invasive or used in direct physical contact with the human body in so far as Community measures lay down provisions for the classification and labelli"
+            }
+          ]
+        },
+        {
+          "id": "rohs-article-4-wording",
+          "category": "rohs-article",
+          "first_relevant_rank": 1,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "precision": 0.2,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02011L0065-20260701:00022",
+              "regulation": "RoHS",
+              "article": "4",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 33.23859126572022,
+              "rrf_score": null,
+              "text_preview": "Article 4 Prevention 1. Member States shall ensure that EEE placed on the market, including cables and spare parts for its repair, its reuse, updating of its functionalities or upg"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02011L0065-20260701:00023",
+              "regulation": "RoHS",
+              "article": "4",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 26.417033284512662,
+              "rrf_score": null,
+              "text_preview": "Article 4 Prevention 1. Member States shall ensure that EEE placed on the market, including cables and spare parts for its repair, its reuse, updating of its functionalities or upg"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02011L0065-20260701:00094",
+              "regulation": "RoHS",
+              "article": "11",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 22.72836185184378,
+              "rrf_score": null,
+              "text_preview": "Article 11 Cases in which obligations of manufacturers apply to importers and distributors Member States shall ensure that an importer or distributor is considered a manufacturer f"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02011L0065-20260701:00104",
+              "regulation": "RoHS",
+              "article": "15",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 21.68081171940255,
+              "rrf_score": null,
+              "text_preview": "2. The CE marking shall be affixed before the EEE is placed on the market. 3. Member States shall build upon existing mechanisms to ensure the correct application of the regime gov"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00070",
+              "regulation": "RoHS",
+              "article": "7",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 21.3639364716562,
+              "rrf_score": null,
+              "text_preview": "Article 7 Obligations of manufacturers Member States shall ensure that: (a) when placing EEE on the market, manufacturers ensure that it has been designed and manufactured in accor"
+            }
+          ]
+        },
+        {
+          "id": "unrelated-weather",
+          "category": "unrelated",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00148",
+              "regulation": "REACH",
+              "article": "9",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 6.948761165928764,
+              "rrf_score": null,
+              "text_preview": "4. The Agency may decide to impose conditions with the aim of ensuring that the substance or the ►M3 mixture ◄ or article in which the substance is incorporated will be handled onl"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00147",
+              "regulation": "REACH",
+              "article": "9",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 6.534959391784743,
+              "rrf_score": null,
+              "text_preview": "3. The Agency shall check the completeness of the information supplied by the notifier and Article 20(2) shall apply adapted as necessary. The Agency shall assign a number to the n"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00675",
+              "regulation": "REACH",
+              "article": "74",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 6.0223164519945405,
+              "rrf_score": null,
+              "text_preview": "4. The Regulation referred to in paragraph 1 shall specify the circumstances under which a proportion of the fees will be transferred to the relevant Member State competent authori"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00601",
+              "regulation": "REACH",
+              "article": "61",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 5.547397473100246,
+              "rrf_score": null,
+              "text_preview": "(a) the circumstances of the original authorisation have changed so as to affect the risk to human health or the environment, or the socioeconomic impact; or (b) new information on"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00446",
+              "regulation": "REACH",
+              "article": "40",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 5.056611469714388,
+              "rrf_score": null,
+              "text_preview": "(d) a decision rejecting the testing proposal; (e) a decision in accordance with points (a), (b) or (c), if several registrants or downstream users of the same substance have submi"
+            }
+          ]
+        },
+        {
+          "id": "unrelated-sport",
+          "category": "unrelated",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00003",
+              "regulation": "REACH",
+              "article": null,
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 8.109205688508004,
+              "rrf_score": null,
+              "text_preview": "35 | 6 | 10.2.2017 ►M42 Commission Regulation (EU) 2017/706 of 19 April 2017 | L 104 | 8 | 20.4.2017 ►M43 Commission Regulation (EU) 2017/999 of 13 June 2017 | L 150 | 7 | 14.6.201"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02011L0065-20260701:00002",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 8.097513325439143,
+              "rrf_score": null,
+              "text_preview": "Official Journal No page | date ►M1 Commission Delegated Directive 2012/50/EU of 10 October 2012 | L 348 | 16 | 18.12.2012 ►M2 Commission Delegated Directive 2012/51/EU of 10 Octob"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02011L0065-20260701:00003",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 7.5497054375111015,
+              "rrf_score": null,
+              "text_preview": "2018 | L 123 106 | 18.5.2018 ►M43 Commission Delegated Directive (EU) 2018/741 of 1 March 2018 | L 123 109 | 18.5.2018 ►M44 Commission Delegated Directive (EU) 2018/742 of 1 March "
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00470",
+              "regulation": "REACH",
+              "article": "43",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 6.633350661866548,
+              "rrf_score": null,
+              "text_preview": "(c) by 1 June 2022 for any registrations containing testing proposals received by 1 June 2018. 3. The list of registration dossiers being evaluated under Article 40 shall be made a"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00469",
+              "regulation": "REACH",
+              "article": "43",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 6.341039507658855,
+              "rrf_score": null,
+              "text_preview": "(b) by 1 June 2016 for all registrations received by 1 June 2013 containing proposals for testing in order to fulfil the information requirements in Annex IX only; (c) by 1 June 20"
+            }
+          ]
+        },
+        {
+          "id": "unrelated-baking",
+          "category": "unrelated",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:01329",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 9.970537184193734,
+              "rrf_score": null,
+              "text_preview": "2. Shall not be placed on the market as substances on their own, as a constituent in other substances or in mixtures for industrial and professional use(s) after 24 February 2022, "
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:01328",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 8.843448350244449,
+              "rrf_score": null,
+              "text_preview": "74. Diisocyanates, O = C=N-R-N = C=O, with R an 1. Shall not be used as substances on their own, as a aliphatic or aromatic hydrocarbon unit of unspecified | constituent in other s"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:01059",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "X",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 6.874402893261665,
+              "rrf_score": null,
+              "text_preview": "9.5.1. Long-term toxicity to ►M70 9.5.1. Long-term toxicity testing shall be proposed by the sediment organisms | registrant or may be required by the Agency if the results of the "
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:01058",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "X",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 6.386977234873163,
+              "rrf_score": null,
+              "text_preview": "requirement. 8.9.1. Carcinogenicity study | 8.9.1. A carcinogenicity study may be proposed by the registrant or may be required by the Agency in accordance with Articles 40 or 41 i"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00155",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 6.148517348798496,
+              "rrf_score": null,
+              "text_preview": "3(b) | Medium length (> 500 mm and ≤ 1 500 mm): Expires on 24 February 2025 5 mg 3(c) | Long length (> 1 500 mm): 13 mg | Expires on 24 February 2025"
+            }
+          ]
+        },
+        {
+          "id": "outside-weee",
+          "category": "insufficient",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02011L0065-20260701:00059",
+              "regulation": "RoHS",
+              "article": "6",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 15.298635777809292,
+              "rrf_score": null,
+              "text_preview": "(b) could give rise, given its uses, to uncontrolled or diffuse release into the environment of the substance, or could give rise to hazardous residues, or transformation or degrad"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:01388",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 14.233394658323391,
+              "rrf_score": null,
+              "text_preview": "than 1 mg/L for the sum of all PFAS: (a) until 23 April 2027 for: (i) training and testing, except functional testing of the firefighting systems provided that all releases are con"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02011L0065-20260701:00060",
+              "regulation": "RoHS",
+              "article": "6",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 13.924084351900586,
+              "rrf_score": null,
+              "text_preview": "(c) could lead to unacceptable exposure of workers involved in the waste EEE collection or treatment processes; (d) could be replaced by substitutes or alternative technologies whi"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02011L0065-20260701:00005",
+              "regulation": "RoHS",
+              "article": "1",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 13.757757563381869,
+              "rrf_score": null,
+              "text_preview": "Article 1 Subject matter This Directive lays down rules on the restriction of the use of hazardous substances in electrical and electronic equipment (EEE) with a view to contributi"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00007",
+              "regulation": "RoHS",
+              "article": "2",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 13.091872272106867,
+              "rrf_score": null,
+              "text_preview": "Article 2 Scope 1. This Directive shall, subject to paragraph 2, apply to EEE falling within the categories set out in Annex I. __________ 3. This Directive shall apply without pre"
+            }
+          ]
+        },
+        {
+          "id": "outside-lvd",
+          "category": "insufficient",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02011L0065-20260701:00103",
+              "regulation": "RoHS",
+              "article": "15",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 19.578509403940572,
+              "rrf_score": null,
+              "text_preview": "Article 15 Rules and conditions for affixing the CE marking 1. The CE marking shall be affixed visibly, legibly and indelibly to the finished EEE or to its data plate. Where that i"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02011L0065-20260701:00105",
+              "regulation": "RoHS",
+              "article": "16",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 19.376103711721676,
+              "rrf_score": null,
+              "text_preview": "Article 16 Presumption of conformity 1. In the absence of evidence to the contrary, Member States shall presume EEE bearing the CE marking to comply with this Directive."
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02011L0065-20260701:00101",
+              "regulation": "RoHS",
+              "article": "14",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 19.067213051889624,
+              "rrf_score": null,
+              "text_preview": "Article 14 General principles of the CE marking The CE marking shall be subject to the general principles set out in Article 30 of Regulation (EC) No 765/2008."
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02011L0065-20260701:00104",
+              "regulation": "RoHS",
+              "article": "15",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 18.676059136210498,
+              "rrf_score": null,
+              "text_preview": "2. The CE marking shall be affixed before the EEE is placed on the market. 3. Member States shall build upon existing mechanisms to ensure the correct application of the regime gov"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00102",
+              "regulation": "RoHS",
+              "article": "15",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 18.380328500130275,
+              "rrf_score": null,
+              "text_preview": "Article 15 Rules and conditions for affixing the CE marking 1. The CE marking shall be affixed visibly, legibly and indelibly to the finished EEE or to its data plate. Where that i"
+            }
+          ]
+        },
+        {
+          "id": "outside-gdpr",
+          "category": "insufficient",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:01376",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 9.405680868239775,
+              "rrf_score": null,
+              "text_preview": "to PFHxA. (*) Directive 2012/18/EU of the European Parliament and of the Council of 4 July 2012 on the control of major-accident hazards involving dangerous substances, amending an"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00995",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "II",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 8.550255856052832,
+              "rrf_score": null,
+              "text_preview": "substance or mixture (e.g. avoid high pressure media which could cause the formation of a potentially explosible dust-air mixture). 5.2. | Special hazards arising from the substanc"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:01033",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "VI",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 8.446579891331492,
+              "rrf_score": null,
+              "text_preview": "CLASSIFICATION AND LABELLING 4.1 The hazard classification of the substance(s), resulting from the application of Title I and II of Regulation (EC) No 1272/2008 for all hazard clas"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:01379",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 8.423179280845975,
+              "rrf_score": null,
+              "text_preview": "3. By way of derogation from paragraphs 1 and 2, the obligations laid down therein shall apply from 23 June 2029 in relation to placing on the market for use, or use, as a solvent "
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:01377",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 8.394463724982657,
+              "rrf_score": null,
+              "text_preview": "80. N,N-dimethylacetamide (DMAC) | 1. Shall not be placed on the market as a substance on its own, as a constituent of other substances, or in CAS No 127-19-5 | mixtures in a conce"
+            }
+          ]
+        }
+      ],
+      "top_k": 5
+    },
+    {
+      "method": "hybrid",
+      "recall_at_k": 0.4,
+      "precision_at_k": 0.22,
+      "mean_reciprocal_rank": 0.275,
+      "ranking_failures": [
+        "rohs-concentration-list",
+        "rohs-market-prevention",
+        "reach-health-purpose",
+        "reach-unregistered-sale",
+        "reach-prior-approval",
+        "reach-supply-conditions"
+      ],
+      "off_topic_questions": 6,
+      "off_topic_rejected": null,
+      "off_topic_rejection_rate": null,
+      "off_topic_rule": "not_gated",
+      "questions": [
+        {
+          "id": "rohs-concentration-list",
+          "category": "rohs-annex",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:01220",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": 0.5870621210323428,
+              "dense_score": 0.5870621210323428,
+              "bm25_score": 14.288348285057104,
+              "rrf_score": 0.03278688524590164,
+              "text_preview": "2. Articles shall not be placed on the market if they, or flame-retardant parts thereof, contain this substance in concentrations greater than 0,1 % by weight. 3. By way of derogat"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:01219",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 8.804588332514584,
+              "rrf_score": 0.016129032258064516,
+              "text_preview": "45. Diphenylether, octabromo derivative | 1. Shall not be placed on the market, or used: C H Br O | — as a substance, 12 2 8 — as a constituent of other substances, or in mixtures,"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:01386",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": 0.5198511185358722,
+              "dense_score": 0.5198511185358722,
+              "bm25_score": null,
+              "rrf_score": 0.016129032258064516,
+              "text_preview": "4. By way of derogation from paragraph 1, the concentration of PFAS in fluorine-free firefighting foams originating from the equipment which has undergone cleaning in accordance wi"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:01296",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": 0.505832005661047,
+              "dense_score": 0.505832005661047,
+              "bm25_score": null,
+              "rrf_score": 0.015873015873015872,
+              "text_preview": "4. Paragraph 2 shall apply from 4 July 2023 to: (i) textiles for oil- and water-repellency for the ______________________________ | protection of workers from dangerous liquids tha"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00214",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 8.273190323400485,
+              "rrf_score": 0.015873015873015872,
+              "text_preview": "45 | Lead diazide, lead styphnate, lead dipicramate, Applies to category 11 and expires on 20 April orange lead (lead tetroxide), lead dioxide in 2026 electric and electronic initi"
+            }
+          ]
+        },
+        {
+          "id": "rohs-market-prevention",
+          "category": "rohs-article",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00905",
+              "regulation": "REACH",
+              "article": "128",
+              "annex": null,
+              "similarity_score": 0.6290372121041619,
+              "dense_score": 0.6290372121041619,
+              "bm25_score": 14.124545930543196,
+              "rrf_score": 0.03252247488101534,
+              "text_preview": "Article 128 Free movement 1. Subject to paragraph 2, Member States shall not prohibit, restrict or impede the manufacturing, import, placing on the market or use of a substance, on"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00017",
+              "regulation": "REACH",
+              "article": "2",
+              "annex": null,
+              "similarity_score": 0.6463643716061613,
+              "dense_score": 0.6463643716061613,
+              "bm25_score": 8.844444216679038,
+              "rrf_score": 0.02889344262295082,
+              "text_preview": "3. Member States may allow for exemptions from this Regulation in specific cases for certain substances, on their own, in a ►M3 mixture ◄ or in an article, where necessary in the i"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00480",
+              "regulation": "REACH",
+              "article": "45",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 13.31612728734316,
+              "rrf_score": 0.016129032258064516,
+              "text_preview": "State Committee, in order to agree which authority shall be the competent authority, taking into account the Member State in which the manufacturer(s) or importer(s) is located, th"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00040",
+              "regulation": "REACH",
+              "article": "2",
+              "annex": null,
+              "similarity_score": 0.6137165955506646,
+              "dense_score": 0.6137165955506646,
+              "bm25_score": null,
+              "rrf_score": 0.015873015873015872,
+              "text_preview": "(b) substances covered by Annex V, as registration is deemed inappropriate or unnecessary for these substances and their exemption from these Titles does not prejudice the objectiv"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00479",
+              "regulation": "REACH",
+              "article": "45",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 12.520146763049777,
+              "rrf_score": 0.015873015873015872,
+              "text_preview": "2. A Member State may choose (a) substance(s) from the draft Community rolling action plan, with the aim of becoming a competent authority for the purposes of Articles 46, 47 and 4"
+            }
+          ]
+        },
+        {
+          "id": "rohs-product-groups",
+          "category": "rohs-annex",
+          "first_relevant_rank": 2,
+          "reciprocal_rank": 0.5,
+          "recall": 1.0,
+          "precision": 0.6,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02011L0065-20260701:00005",
+              "regulation": "RoHS",
+              "article": "1",
+              "annex": null,
+              "similarity_score": 0.6190193593587587,
+              "dense_score": 0.6190193593587587,
+              "bm25_score": 15.567219569347138,
+              "rrf_score": 0.03252247488101534,
+              "text_preview": "Article 1 Subject matter This Directive lays down rules on the restriction of the use of hazardous substances in electrical and electronic equipment (EEE) with a view to contributi"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02011L0065-20260701:00132",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "I",
+              "similarity_score": 0.6192878508206389,
+              "dense_score": 0.6192878508206389,
+              "bm25_score": 14.97891783431615,
+              "rrf_score": 0.032266458495966696,
+              "text_preview": "2. Small household appliances. 3. IT and telecommunications equipment."
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02011L0065-20260701:00133",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "I",
+              "similarity_score": 0.564473295239105,
+              "dense_score": 0.564473295239105,
+              "bm25_score": 13.802497585875145,
+              "rrf_score": 0.03125763125763126,
+              "text_preview": "3. IT and telecommunications equipment. 4. Consumer equipment."
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02011L0065-20260701:00134",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "I",
+              "similarity_score": 0.528302091437546,
+              "dense_score": 0.528302091437546,
+              "bm25_score": 13.802497585875145,
+              "rrf_score": 0.03007688828584351,
+              "text_preview": "4. Consumer equipment. 5. Lighting equipment."
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00270",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "VI",
+              "similarity_score": 0.525513572598556,
+              "dense_score": 0.525513572598556,
+              "bm25_score": 10.10110468017696,
+              "rrf_score": 0.02877846790890269,
+              "text_preview": "5. The object of the declaration described above is in conformity with Directive 2011/65/EU of the European Parliament and of the Council of 8 June 2011 on the restriction of the u"
+            }
+          ]
+        },
+        {
+          "id": "rohs-lamp-exceptions",
+          "category": "rohs-annex",
+          "first_relevant_rank": 1,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02011L0065-20260701:00161",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": 0.7166637130974911,
+              "dense_score": 0.7166637130974911,
+              "bm25_score": 16.36107761635198,
+              "rrf_score": 0.03252247488101534,
+              "text_preview": "4(e) | Mercury in metal halide lamps (MH) | Expires on 24 February 2027 4(f) -I | Mercury in other discharge lamps for special Expires on 24 February 2025 purposes not specifically"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02011L0065-20260701:00162",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": 0.6645017455088718,
+              "dense_score": 0.6645017455088718,
+              "bm25_score": 18.554373973871947,
+              "rrf_score": 0.032018442622950824,
+              "text_preview": "4(f) -I | Mercury in other discharge lamps for special Expires on 24 February 2025 purposes not specifically mentioned in this Annex 4(f) -II Mercury in high pressure mercury vapou"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02011L0065-20260701:00156",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": 0.6675012401999421,
+              "dense_score": 0.6675012401999421,
+              "bm25_score": 14.06483909781684,
+              "rrf_score": 0.03125763125763126,
+              "text_preview": "3(c) | Long length (> 1 500 mm): 13 mg | Expires on 24 February 2025 4(a) | Mercury in other low pressure discharge lamps (per Expires on 24 February 2023 lamp): 15 mg 4(a)-I | Mer"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02011L0065-20260701:00160",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": 0.6643718873363706,
+              "dense_score": 0.6643718873363706,
+              "bm25_score": 15.750139373427738,
+              "rrf_score": 0.03125763125763126,
+              "text_preview": "4(d) | Mercury in High Pressure Mercury (vapour) Expires on 13 April 2015 lamps (HPMV) 4(e) | Mercury in metal halide lamps (MH) | Expires on 24 February 2027"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00159",
+              "regulation": "RoHS",
+              "article": null,
+              "annex": "III",
+              "similarity_score": 0.686443532413342,
+              "dense_score": 0.686443532413342,
+              "bm25_score": 14.020826706160316,
+              "rrf_score": 0.031054405392392875,
+              "text_preview": "4(c) | Mercury in other High Pressure Sodium (vapour) lamps for general lighting purposes not exceeding (per burner): Exemption | Scope and dates of applicability 4(c)-I | P ≤ 155 "
+            }
+          ]
+        },
+        {
+          "id": "reach-health-purpose",
+          "category": "reach-article",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00001",
+              "regulation": "REACH",
+              "article": null,
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 16.67895956063833,
+              "rrf_score": 0.01639344262295082,
+              "text_preview": "This text is meant purely as a documentation tool and has no legal effect. The Union's institutions do not assume any liability for its contents. The authentic versions of the rele"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02011L0065-20260701:00059",
+              "regulation": "RoHS",
+              "article": "6",
+              "annex": null,
+              "similarity_score": 0.48343608055958165,
+              "dense_score": 0.48343608055958165,
+              "bm25_score": null,
+              "rrf_score": 0.01639344262295082,
+              "text_preview": "(b) could give rise, given its uses, to uncontrolled or diffuse release into the environment of the substance, or could give rise to hazardous residues, or transformation or degrad"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00585",
+              "regulation": "REACH",
+              "article": "60",
+              "annex": null,
+              "similarity_score": 0.46374429443777926,
+              "dense_score": 0.46374429443777926,
+              "bm25_score": null,
+              "rrf_score": 0.016129032258064516,
+              "text_preview": "5. When assessing whether suitable alternative substances or technologies are available, all relevant aspects shall be taken into account by the Commission, including: (a) whether "
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00905",
+              "regulation": "REACH",
+              "article": "128",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 10.868345448961648,
+              "rrf_score": 0.016129032258064516,
+              "text_preview": "Article 128 Free movement 1. Subject to paragraph 2, Member States shall not prohibit, restrict or impede the manufacturing, import, placing on the market or use of a substance, on"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00586",
+              "regulation": "REACH",
+              "article": "60",
+              "annex": null,
+              "similarity_score": 0.428048402362354,
+              "dense_score": 0.428048402362354,
+              "bm25_score": null,
+              "rrf_score": 0.015873015873015872,
+              "text_preview": "(a) whether the transfer to alternatives would result in reduced overall risks to human health and the environment, taking into account the appropriateness and effectiveness of ris"
+            }
+          ]
+        },
+        {
+          "id": "reach-unregistered-sale",
+          "category": "reach-article",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00297",
+              "regulation": "REACH",
+              "article": "25",
+              "annex": null,
+              "similarity_score": 0.6761525087049716,
+              "dense_score": 0.6761525087049716,
+              "bm25_score": 13.438727476381295,
+              "rrf_score": 0.03009207275993712,
+              "text_preview": "2. The sharing and joint submission of information in accordance with this Regulation shall concern technical data and in particular information related to the intrinsic properties"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00292",
+              "regulation": "REACH",
+              "article": "24",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 16.524800388991746,
+              "rrf_score": 0.01639344262295082,
+              "text_preview": "Article 24 Notified substances 1. A notification in accordance with Directive 67/548/EEC shall be regarded as a registration for the purposes of this Title and the Agency shall ass"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00154",
+              "regulation": "REACH",
+              "article": "10",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 15.830053923292299,
+              "rrf_score": 0.016129032258064516,
+              "text_preview": "Article 10 Information to be submitted for general registration purposes A registration required by Article 6 or by Article 7(1) or (5) shall include all the following information:"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00290",
+              "regulation": "REACH",
+              "article": "23",
+              "annex": null,
+              "similarity_score": 0.6615164796583664,
+              "dense_score": 0.6615164796583664,
+              "bm25_score": null,
+              "rrf_score": 0.016129032258064516,
+              "text_preview": "4. Without prejudice to paragraphs 1 to 3, a registration can be submitted at any time before the relevant deadline. 5. This Article shall also apply to substances registered under"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00155",
+              "regulation": "REACH",
+              "article": "10",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 15.1730383211121,
+              "rrf_score": 0.015873015873015872,
+              "text_preview": "Article 10 Information to be submitted for general registration purposes A registration required by Article 6 or by Article 7(1) or (5) shall include all the following information:"
+            }
+          ]
+        },
+        {
+          "id": "reach-who-registers",
+          "category": "reach-article",
+          "first_relevant_rank": 1,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "precision": 0.4,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00104",
+              "regulation": "REACH",
+              "article": "6",
+              "annex": null,
+              "similarity_score": 0.6026215859475915,
+              "dense_score": 0.6026215859475915,
+              "bm25_score": 12.62961407253977,
+              "rrf_score": 0.032266458495966696,
+              "text_preview": "Article 6 General obligation to register substances on their own or in ►M3 mixtures ◄ 1. Save where this Regulation provides otherwise, any manufacturer or importer of a substance,"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00105",
+              "regulation": "REACH",
+              "article": "6",
+              "annex": null,
+              "similarity_score": 0.5708239943261595,
+              "dense_score": 0.5708239943261595,
+              "bm25_score": 11.76872571810688,
+              "rrf_score": 0.03057889822595705,
+              "text_preview": "Article 6 General obligation to register substances on their own or in ►M3 mixtures ◄ 1. Save where this Regulation provides otherwise, any manufacturer or importer of a substance,"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00328",
+              "regulation": "REACH",
+              "article": "28",
+              "annex": null,
+              "similarity_score": 0.5437156084923067,
+              "dense_score": 0.5437156084923067,
+              "bm25_score": 10.886946857724244,
+              "rrf_score": 0.027692895339954164,
+              "text_preview": "5. After the publication of the list a downstream user of a substance not appearing on the list may notify the Agency of his interest in the substance, his contact details and the "
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00329",
+              "regulation": "REACH",
+              "article": "28",
+              "annex": null,
+              "similarity_score": 0.5392039929970727,
+              "dense_score": 0.5392039929970727,
+              "bm25_score": 10.290100376207484,
+              "rrf_score": 0.026742734890354787,
+              "text_preview": "6. Potential registrants who manufacture or import for the first time a phase-in substance in quantities of one tonne or more per year or use for the first time a phase-in substanc"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00701",
+              "regulation": "REACH",
+              "article": "77",
+              "annex": null,
+              "similarity_score": 0.6425457429692656,
+              "dense_score": 0.6425457429692656,
+              "bm25_score": null,
+              "rrf_score": 0.01639344262295082,
+              "text_preview": "(j) providing advice and assistance to manufacturers and importers registering a substance in accordance with Article 12(1); (k) preparing explanatory information on this Regulatio"
+            }
+          ]
+        },
+        {
+          "id": "reach-prior-approval",
+          "category": "reach-annex",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00579",
+              "regulation": "REACH",
+              "article": "60",
+              "annex": null,
+              "similarity_score": 0.6212722221835203,
+              "dense_score": 0.6212722221835203,
+              "bm25_score": 16.530781539263565,
+              "rrf_score": 0.03225806451612903,
+              "text_preview": "(c) substances identified under Article 57(f) having persistent, bioaccumulative and toxic properties or very persistent and very bioaccumulative properties. 4. If an authorisation"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00580",
+              "regulation": "REACH",
+              "article": "60",
+              "annex": null,
+              "similarity_score": 0.5757499268994248,
+              "dense_score": 0.5757499268994248,
+              "bm25_score": 16.731196943467822,
+              "rrf_score": 0.030679156908665108,
+              "text_preview": "4. If an authorisation cannot be granted under paragraph 2 or for substances listed in paragraph 3, an authorisation may only be granted if it is shown that socio-economic benefits"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00532",
+              "regulation": "REACH",
+              "article": "56",
+              "annex": null,
+              "similarity_score": 0.649672422418375,
+              "dense_score": 0.649672422418375,
+              "bm25_score": null,
+              "rrf_score": 0.01639344262295082,
+              "text_preview": "5. In the case of substances that are subject to authorisation only because they meet the criteria in Article 57(a), (b) or (c) or because they are identified in accordance with Ar"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00524",
+              "regulation": "REACH",
+              "article": "56",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 16.251455895063778,
+              "rrf_score": 0.015873015873015872,
+              "text_preview": "(e) in cases where the substance is placed on the market, authorisation for that use has been granted to his immediate downstream user. 2. A downstream user may use a substance mee"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00552",
+              "regulation": "REACH",
+              "article": "58",
+              "annex": null,
+              "similarity_score": 0.617900053093405,
+              "dense_score": 0.617900053093405,
+              "bm25_score": null,
+              "rrf_score": 0.015873015873015872,
+              "text_preview": "(e) uses or categories of uses exempted from the authorisation requirement, if any, and conditions for such exemptions, if any. 2. Uses or categories of uses may be exempted from t"
+            }
+          ]
+        },
+        {
+          "id": "reach-supply-conditions",
+          "category": "reach-annex",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00001",
+              "regulation": "REACH",
+              "article": null,
+              "annex": null,
+              "similarity_score": 0.6132978754743893,
+              "dense_score": 0.6132978754743893,
+              "bm25_score": 10.332175349272504,
+              "rrf_score": 0.03036576949620428,
+              "text_preview": "This text is meant purely as a documentation tool and has no legal effect. The Union's institutions do not assume any liability for its contents. The authentic versions of the rele"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00645",
+              "regulation": "REACH",
+              "article": null,
+              "annex": null,
+              "similarity_score": 0.6622253692525439,
+              "dense_score": 0.6622253692525439,
+              "bm25_score": null,
+              "rrf_score": 0.01639344262295082,
+              "text_preview": "TITLE VIII RESTRICTIONS ON THE MANUFACTURING, PLACING ON THE MARKET AND USE OF CERTAIN DANGEROUS SUBSTANCES, ►M3 MIXTURES ◄ AND ARTICLES"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00891",
+              "regulation": "REACH",
+              "article": "120",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 12.782448727654451,
+              "rrf_score": 0.01639344262295082,
+              "text_preview": "Article 120 Cooperation with third countries and international organisations Notwithstanding Articles 118 and 119, information received by the Agency under this Regulation may be d"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00697",
+              "regulation": "REACH",
+              "article": "77",
+              "annex": null,
+              "similarity_score": 0.6332017879861946,
+              "dense_score": 0.6332017879861946,
+              "bm25_score": null,
+              "rrf_score": 0.016129032258064516,
+              "text_preview": "(f) making publicly available information as to which substances are being, and have been evaluated within 90 days of receipt of the information at the Agency, in accordance with A"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00892",
+              "regulation": "REACH",
+              "article": "120",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 12.772055872075363,
+              "rrf_score": 0.016129032258064516,
+              "text_preview": "Article 120 Cooperation with third countries and international organisations Notwithstanding Articles 118 and 119, information received by the Agency under this Regulation may be d"
+            }
+          ]
+        },
+        {
+          "id": "rohs-article-4-wording",
+          "category": "rohs-article",
+          "first_relevant_rank": 4,
+          "reciprocal_rank": 0.25,
+          "recall": 1.0,
+          "precision": 0.2,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02011L0065-20260701:00082",
+              "regulation": "RoHS",
+              "article": "9",
+              "annex": null,
+              "similarity_score": 0.6967312860219116,
+              "dense_score": 0.6967312860219116,
+              "bm25_score": 21.17879128234135,
+              "rrf_score": 0.03128054740957967,
+              "text_preview": "Article 9 Obligations of importers Member States shall ensure that: (a) importers place only EEE that complies with this Directive on the Union market;"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02011L0065-20260701:00070",
+              "regulation": "RoHS",
+              "article": "7",
+              "annex": null,
+              "similarity_score": 0.6789763048647127,
+              "dense_score": 0.6789763048647127,
+              "bm25_score": 21.3639364716562,
+              "rrf_score": 0.03125763125763126,
+              "text_preview": "Article 7 Obligations of manufacturers Member States shall ensure that: (a) when placing EEE on the market, manufacturers ensure that it has been designed and manufactured in accor"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02011L0065-20260701:00083",
+              "regulation": "RoHS",
+              "article": "9",
+              "annex": null,
+              "similarity_score": 0.7093266122662586,
+              "dense_score": 0.7093266122662586,
+              "bm25_score": 20.982441820765622,
+              "rrf_score": 0.031099324975891997,
+              "text_preview": "Article 9 Obligations of importers Member States shall ensure that: (a) importers place only EEE that complies with this Directive on the Union market; (b) importers, before placin"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02011L0065-20260701:00022",
+              "regulation": "RoHS",
+              "article": "4",
+              "annex": null,
+              "similarity_score": 0.648185212946538,
+              "dense_score": 0.648185212946538,
+              "bm25_score": 33.23859126572022,
+              "rrf_score": 0.030679156908665108,
+              "text_preview": "Article 4 Prevention 1. Member States shall ensure that EEE placed on the market, including cables and spare parts for its repair, its reuse, updating of its functionalities or upg"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00023",
+              "regulation": "RoHS",
+              "article": "4",
+              "annex": null,
+              "similarity_score": 0.6419190691624361,
+              "dense_score": 0.6419190691624361,
+              "bm25_score": 26.417033284512662,
+              "rrf_score": 0.030017921146953404,
+              "text_preview": "Article 4 Prevention 1. Member States shall ensure that EEE placed on the market, including cables and spare parts for its repair, its reuse, updating of its functionalities or upg"
+            }
+          ]
+        },
+        {
+          "id": "unrelated-weather",
+          "category": "unrelated",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00148",
+              "regulation": "REACH",
+              "article": "9",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 6.948761165928764,
+              "rrf_score": 0.01639344262295082,
+              "text_preview": "4. The Agency may decide to impose conditions with the aim of ensuring that the substance or the ►M3 mixture ◄ or article in which the substance is incorporated will be handled onl"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00753",
+              "regulation": "REACH",
+              "article": "83",
+              "annex": null,
+              "similarity_score": 0.27612409174771657,
+              "dense_score": 0.27612409174771657,
+              "bm25_score": null,
+              "rrf_score": 0.01639344262295082,
+              "text_preview": "(d) the draft forecast budget for the coming year; (e) a draft multiannual work programme. The Executive Director shall, following approval by the Management Board, forward the wor"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00004",
+              "regulation": "REACH",
+              "article": null,
+              "annex": null,
+              "similarity_score": 0.26092572173412093,
+              "dense_score": 0.26092572173412093,
+              "bm25_score": null,
+              "rrf_score": 0.016129032258064516,
+              "text_preview": "Regulation (EU) 2025/660 of 1 April 2025 | L 660 | 1 | 2.4.2025 ►M81 Commission Regulation (EU) 2025/1090 of 2 June 2025 | L 1090 | 1 | 3.6.2025 ►M82 Commission Regulation (EU) 202"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00147",
+              "regulation": "REACH",
+              "article": "9",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 6.534959391784743,
+              "rrf_score": 0.016129032258064516,
+              "text_preview": "3. The Agency shall check the completeness of the information supplied by the notifier and Article 20(2) shall apply adapted as necessary. The Agency shall assign a number to the n"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00675",
+              "regulation": "REACH",
+              "article": "74",
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 6.0223164519945405,
+              "rrf_score": 0.015873015873015872,
+              "text_preview": "4. The Regulation referred to in paragraph 1 shall specify the circumstances under which a proportion of the fees will be transferred to the relevant Member State competent authori"
+            }
+          ]
+        },
+        {
+          "id": "unrelated-sport",
+          "category": "unrelated",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00469",
+              "regulation": "REACH",
+              "article": "43",
+              "annex": null,
+              "similarity_score": 0.13082160950612595,
+              "dense_score": 0.13082160950612595,
+              "bm25_score": 6.341039507658855,
+              "rrf_score": 0.030536130536130537,
+              "text_preview": "(b) by 1 June 2016 for all registrations received by 1 June 2013 containing proposals for testing in order to fulfil the information requirements in Annex IX only; (c) by 1 June 20"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:00004",
+              "regulation": "REACH",
+              "article": null,
+              "annex": null,
+              "similarity_score": 0.12228478119767866,
+              "dense_score": 0.12228478119767866,
+              "bm25_score": 3.4036603722182943,
+              "rrf_score": 0.027364110201042444,
+              "text_preview": "Regulation (EU) 2025/660 of 1 April 2025 | L 660 | 1 | 2.4.2025 ►M81 Commission Regulation (EU) 2025/1090 of 2 June 2025 | L 1090 | 1 | 3.6.2025 ►M82 Commission Regulation (EU) 202"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00003",
+              "regulation": "REACH",
+              "article": null,
+              "annex": null,
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 8.109205688508004,
+              "rrf_score": 0.01639344262295082,
+              "text_preview": "35 | 6 | 10.2.2017 ►M42 Commission Regulation (EU) 2017/706 of 19 April 2017 | L 104 | 8 | 20.4.2017 ►M43 Commission Regulation (EU) 2017/999 of 13 June 2017 | L 150 | 7 | 14.6.201"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00261",
+              "regulation": "REACH",
+              "article": "20",
+              "annex": null,
+              "similarity_score": 0.15300365107312183,
+              "dense_score": 0.15300365107312183,
+              "bm25_score": null,
+              "rrf_score": 0.01639344262295082,
+              "text_preview": "(b) the submission or registration date; (c) the result of the completeness check; and"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00855",
+              "regulation": "REACH",
+              "article": null,
+              "annex": null,
+              "similarity_score": 0.14545862755197986,
+              "dense_score": 0.14545862755197986,
+              "bm25_score": null,
+              "rrf_score": 0.016129032258064516,
+              "text_preview": "TITLE XII INFORMATION"
+            }
+          ]
+        },
+        {
+          "id": "unrelated-baking",
+          "category": "unrelated",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00485",
+              "regulation": "REACH",
+              "article": "46",
+              "annex": null,
+              "similarity_score": 0.23813428336213455,
+              "dense_score": 0.23813428336213455,
+              "bm25_score": null,
+              "rrf_score": 0.01639344262295082,
+              "text_preview": "3. The competent authority shall examine any information submitted, and shall draft any appropriate decisions in accordance with this Article, if necessary, within 12 months of the"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:01329",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 9.970537184193734,
+              "rrf_score": 0.01639344262295082,
+              "text_preview": "2. Shall not be placed on the market as substances on their own, as a constituent in other substances or in mixtures for industrial and professional use(s) after 24 February 2022, "
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00908",
+              "regulation": "REACH",
+              "article": "129",
+              "annex": null,
+              "similarity_score": 0.23332153924694243,
+              "dense_score": 0.23332153924694243,
+              "bm25_score": null,
+              "rrf_score": 0.016129032258064516,
+              "text_preview": "2. The Commission shall take a decision in accordance with the procedure referred to in Article 133(3) within 60 days of receipt of the information from the Member State. This deci"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:01328",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 8.843448350244449,
+              "rrf_score": 0.016129032258064516,
+              "text_preview": "74. Diisocyanates, O = C=N-R-N = C=O, with R an 1. Shall not be used as substances on their own, as a aliphatic or aromatic hydrocarbon unit of unspecified | constituent in other s"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00550",
+              "regulation": "REACH",
+              "article": "58",
+              "annex": null,
+              "similarity_score": 0.22070556421197995,
+              "dense_score": 0.22070556421197995,
+              "bm25_score": null,
+              "rrf_score": 0.015873015873015872,
+              "text_preview": "(ii) a date or dates at least 18 months before the sunset date(s) by which applications must be received if the applicant wishes to continue to use the substance or place it on the"
+            }
+          ]
+        },
+        {
+          "id": "outside-weee",
+          "category": "insufficient",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02011L0065-20260701:00005",
+              "regulation": "RoHS",
+              "article": "1",
+              "annex": null,
+              "similarity_score": 0.5578475419115554,
+              "dense_score": 0.5578475419115554,
+              "bm25_score": 13.757757563381869,
+              "rrf_score": 0.031754032258064516,
+              "text_preview": "Article 1 Subject matter This Directive lays down rules on the restriction of the use of hazardous substances in electrical and electronic equipment (EEE) with a view to contributi"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02011L0065-20260701:00060",
+              "regulation": "RoHS",
+              "article": "6",
+              "annex": null,
+              "similarity_score": 0.5297420847917446,
+              "dense_score": 0.5297420847917446,
+              "bm25_score": 13.924084351900586,
+              "rrf_score": 0.03125763125763126,
+              "text_preview": "(c) could lead to unacceptable exposure of workers involved in the waste EEE collection or treatment processes; (d) could be replaced by substitutes or alternative technologies whi"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02011L0065-20260701:00059",
+              "regulation": "RoHS",
+              "article": "6",
+              "annex": null,
+              "similarity_score": 0.48497248132738346,
+              "dense_score": 0.48497248132738346,
+              "bm25_score": 15.298635777809292,
+              "rrf_score": 0.03047794966520434,
+              "text_preview": "(b) could give rise, given its uses, to uncontrolled or diffuse release into the environment of the substance, or could give rise to hazardous residues, or transformation or degrad"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02011L0065-20260701:00007",
+              "regulation": "RoHS",
+              "article": "2",
+              "annex": null,
+              "similarity_score": 0.5250658751613438,
+              "dense_score": 0.5250658751613438,
+              "bm25_score": 13.091872272106867,
+              "rrf_score": 0.030309988518943745,
+              "text_preview": "Article 2 Scope 1. This Directive shall, subject to paragraph 2, apply to EEE falling within the categories set out in Annex I. __________ 3. This Directive shall apply without pre"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00008",
+              "regulation": "RoHS",
+              "article": "2",
+              "annex": null,
+              "similarity_score": 0.5325948402821971,
+              "dense_score": 0.5325948402821971,
+              "bm25_score": 10.200751376236468,
+              "rrf_score": 0.029709507042253523,
+              "text_preview": "3. This Directive shall apply without prejudice to the requirements of Union legislation on safety and health, and on chemicals, in particular Regulation (EC) No 1907/2006, as well"
+            }
+          ]
+        },
+        {
+          "id": "outside-lvd",
+          "category": "insufficient",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02011L0065-20260701:00103",
+              "regulation": "RoHS",
+              "article": "15",
+              "annex": null,
+              "similarity_score": 0.5784039432478663,
+              "dense_score": 0.5784039432478663,
+              "bm25_score": 19.578509403940572,
+              "rrf_score": 0.03252247488101534,
+              "text_preview": "Article 15 Rules and conditions for affixing the CE marking 1. The CE marking shall be affixed visibly, legibly and indelibly to the finished EEE or to its data plate. Where that i"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02011L0065-20260701:00104",
+              "regulation": "RoHS",
+              "article": "15",
+              "annex": null,
+              "similarity_score": 0.5960638829742284,
+              "dense_score": 0.5960638829742284,
+              "bm25_score": 18.676059136210498,
+              "rrf_score": 0.032018442622950824,
+              "text_preview": "2. The CE marking shall be affixed before the EEE is placed on the market. 3. Member States shall build upon existing mechanisms to ensure the correct application of the regime gov"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02011L0065-20260701:00101",
+              "regulation": "RoHS",
+              "article": "14",
+              "annex": null,
+              "similarity_score": 0.5584929535081754,
+              "dense_score": 0.5584929535081754,
+              "bm25_score": 19.067213051889624,
+              "rrf_score": 0.03149801587301587,
+              "text_preview": "Article 14 General principles of the CE marking The CE marking shall be subject to the general principles set out in Article 30 of Regulation (EC) No 765/2008."
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02011L0065-20260701:00105",
+              "regulation": "RoHS",
+              "article": "16",
+              "annex": null,
+              "similarity_score": 0.542627476881187,
+              "dense_score": 0.542627476881187,
+              "bm25_score": 19.376103711721676,
+              "rrf_score": 0.03128054740957967,
+              "text_preview": "Article 16 Presumption of conformity 1. In the absence of evidence to the contrary, Member States shall presume EEE bearing the CE marking to comply with this Directive."
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02011L0065-20260701:00102",
+              "regulation": "RoHS",
+              "article": "15",
+              "annex": null,
+              "similarity_score": 0.5622761948237586,
+              "dense_score": 0.5622761948237586,
+              "bm25_score": 18.380328500130275,
+              "rrf_score": 0.03125763125763126,
+              "text_preview": "Article 15 Rules and conditions for affixing the CE marking 1. The CE marking shall be affixed visibly, legibly and indelibly to the finished EEE or to its data plate. Where that i"
+            }
+          ]
+        },
+        {
+          "id": "outside-gdpr",
+          "category": "insufficient",
+          "first_relevant_rank": null,
+          "reciprocal_rank": 0.0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "hits": [
+            {
+              "rank": 1,
+              "chunk_id": "02006R1907-20260622:00395",
+              "regulation": "REACH",
+              "article": "36",
+              "annex": null,
+              "similarity_score": 0.4557062295110935,
+              "dense_score": 0.4557062295110935,
+              "bm25_score": null,
+              "rrf_score": 0.01639344262295082,
+              "text_preview": "Article 36 Obligation to keep information 1. Each manufacturer, importer, downstream user and distributor shall assemble and keep available all the information he requires to carry"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "02006R1907-20260622:01376",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "XVII",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 9.405680868239775,
+              "rrf_score": 0.01639344262295082,
+              "text_preview": "to PFHxA. (*) Directive 2012/18/EU of the European Parliament and of the Council of 4 July 2012 on the control of major-accident hazards involving dangerous substances, amending an"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "02006R1907-20260622:00307",
+              "regulation": "REACH",
+              "article": "27",
+              "annex": null,
+              "similarity_score": 0.4133106432937943,
+              "dense_score": 0.4133106432937943,
+              "bm25_score": null,
+              "rrf_score": 0.016129032258064516,
+              "text_preview": "Article 27 Sharing of existing data in the case of registered substances 1. Where a substance has previously been registered less than 12 years earlier as referred to in Article 26"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "02006R1907-20260622:00995",
+              "regulation": "REACH",
+              "article": null,
+              "annex": "II",
+              "similarity_score": null,
+              "dense_score": null,
+              "bm25_score": 8.550255856052832,
+              "rrf_score": 0.016129032258064516,
+              "text_preview": "substance or mixture (e.g. avoid high pressure media which could cause the formation of a potentially explosible dust-air mixture). 5.2. | Special hazards arising from the substanc"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "02006R1907-20260622:00484",
+              "regulation": "REACH",
+              "article": "46",
+              "annex": null,
+              "similarity_score": 0.40567327105766204,
+              "dense_score": 0.40567327105766204,
+              "bm25_score": null,
+              "rrf_score": 0.015873015873015872,
+              "text_preview": "2. The registrant shall submit the information required to the Agency by the deadline set. 3. The competent authority shall examine any information submitted, and shall draft any a"
+            }
+          ]
+        }
+      ],
+      "top_k": 5
+    }
+  ],
+  "changes": [
+    {
+      "id": "rohs-concentration-list",
+      "dense_rank": null,
+      "bm25_rank": null,
+      "hybrid_rank": null,
+      "bm25_versus_dense": "unchanged",
+      "hybrid_versus_dense": "unchanged"
+    },
+    {
+      "id": "rohs-market-prevention",
+      "dense_rank": null,
+      "bm25_rank": null,
+      "hybrid_rank": null,
+      "bm25_versus_dense": "unchanged",
+      "hybrid_versus_dense": "unchanged"
+    },
+    {
+      "id": "rohs-product-groups",
+      "dense_rank": 1,
+      "bm25_rank": 3,
+      "hybrid_rank": 2,
+      "bm25_versus_dense": "worsened",
+      "hybrid_versus_dense": "worsened"
+    },
+    {
+      "id": "rohs-lamp-exceptions",
+      "dense_rank": 1,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "bm25_versus_dense": "unchanged",
+      "hybrid_versus_dense": "unchanged"
+    },
+    {
+      "id": "reach-health-purpose",
+      "dense_rank": null,
+      "bm25_rank": null,
+      "hybrid_rank": null,
+      "bm25_versus_dense": "unchanged",
+      "hybrid_versus_dense": "unchanged"
+    },
+    {
+      "id": "reach-unregistered-sale",
+      "dense_rank": null,
+      "bm25_rank": null,
+      "hybrid_rank": null,
+      "bm25_versus_dense": "unchanged",
+      "hybrid_versus_dense": "unchanged"
+    },
+    {
+      "id": "reach-who-registers",
+      "dense_rank": 3,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "bm25_versus_dense": "improved",
+      "hybrid_versus_dense": "improved"
+    },
+    {
+      "id": "reach-prior-approval",
+      "dense_rank": null,
+      "bm25_rank": null,
+      "hybrid_rank": null,
+      "bm25_versus_dense": "unchanged",
+      "hybrid_versus_dense": "unchanged"
+    },
+    {
+      "id": "reach-supply-conditions",
+      "dense_rank": 5,
+      "bm25_rank": null,
+      "hybrid_rank": null,
+      "bm25_versus_dense": "worsened",
+      "hybrid_versus_dense": "worsened"
+    },
+    {
+      "id": "rohs-article-4-wording",
+      "dense_rank": null,
+      "bm25_rank": 1,
+      "hybrid_rank": 4,
+      "bm25_versus_dense": "improved",
+      "hybrid_versus_dense": "improved"
+    }
+  ]
+}

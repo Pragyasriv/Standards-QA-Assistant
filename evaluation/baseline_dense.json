@@ -1,0 +1,13 @@
+{
+  "phase": "5",
+  "method": "dense",
+  "top_k": 5,
+  "minimum_similarity": 0.35,
+  "recall_at_k": 0.4,
+  "precision_at_k": 0.18,
+  "mean_reciprocal_rank": 0.2533,
+  "off_topic_questions": 6,
+  "off_topic_rejected": 3,
+  "off_topic_rejection_rate": 0.5,
+  "note": "Recorded Phase 5 dense metrics. Expected references in retrieval_questions.json were not changed for Phase 5.1."
+}

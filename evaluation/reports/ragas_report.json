@@ -1,0 +1,2606 @@
+{
+  "questions": 50,
+  "rohs_questions": 25,
+  "reach_questions": 25,
+  "successfully_answered": 35,
+  "scored_all_four_metrics": 35,
+  "unexpected_abstentions": 15,
+  "provider_failures": 0,
+  "pipeline_errors": 0,
+  "evaluation_failures": 0,
+  "metrics": {
+    "faithfulness": {
+      "count": 35,
+      "excluded": 15,
+      "mean": 0.8785714285714286,
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "p25": 1.0,
+      "p50": 1.0,
+      "p75": 1.0,
+      "buckets": {
+        "[0,0.25)": 4,
+        "[0.25,0.5)": 0,
+        "[0.5,0.75)": 0,
+        "[0.75,1]": 31
+      }
+    },
+    "answer_relevancy": {
+      "count": 35,
+      "excluded": 15,
+      "mean": 0.5389287635951844,
+      "minimum": 0.0,
+      "maximum": 0.9740544121193404,
+      "p25": 0.38839635783968296,
+      "p50": 0.5764361172413669,
+      "p75": 0.7076335816021011,
+      "buckets": {
+        "[0,0.25)": 4,
+        "[0.25,0.5)": 12,
+        "[0.5,0.75)": 12,
+        "[0.75,1]": 7
+      }
+    },
+    "context_precision": {
+      "count": 35,
+      "excluded": 15,
+      "mean": 0.9536190475612153,
+      "minimum": 0.4166666666458333,
+      "maximum": 0.99999999995,
+      "p25": 0.9999999999,
+      "p50": 0.99999999995,
+      "p75": 0.99999999995,
+      "buckets": {
+        "[0,0.25)": 0,
+        "[0.25,0.5)": 1,
+        "[0.5,0.75)": 1,
+        "[0.75,1]": 33
+      }
+    },
+    "context_recall": {
+      "count": 35,
+      "excluded": 15,
+      "mean": 1.0,
+      "minimum": 1.0,
+      "maximum": 1.0,
+      "p25": 1.0,
+      "p50": 1.0,
+      "p75": 1.0,
+      "buckets": {
+        "[0,0.25)": 0,
+        "[0.25,0.5)": 0,
+        "[0.5,0.75)": 0,
+        "[0.75,1]": 35
+      }
+    }
+  },
+  "per_question": [
+    {
+      "id": "rohs-article-1-subject",
+      "question": "What is the subject matter of Article 1 of the RoHS Directive?",
+      "regulation": "RoHS",
+      "reference_answer": "Article 1 of the RoHS Directive lays down rules on the restriction of the use of hazardous substances in electrical and electronic equipment (EEE) with a view to contributing to the protection of human health and the environment, including the environmentally sound recovery and disposal of waste EEE.",
+      "actual_answer": "This Directive lays down rules on the restriction of the use of hazardous substances in electrical and electronic equipment (EEE) with a view to contributing to the protection of human health and the environment, including the environmentally sound recovery and disposal of waste EEE.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00005"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00005"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00005",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "1",
+          "paragraph": null,
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 5,
+          "page_end": 5,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4106850147799488,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-article-2-scope",
+      "question": "Under RoHS Article 2(1), to which equipment does the Directive apply?",
+      "regulation": "RoHS",
+      "reference_answer": "Subject to paragraph 2, RoHS Article 2(1) says this Directive shall apply to EEE falling within the categories set out in Annex I.",
+      "actual_answer": "The Directive applies to electrical and electronic equipment (EEE) that falls within the categories set out in Annex I, subject to paragraph 2.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00006"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00009",
+        "02011L0065-20260701:00007",
+        "02011L0065-20260701:00012",
+        "02011L0065-20260701:00011",
+        "02011L0065-20260701:00010",
+        "02011L0065-20260701:00006"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00007",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "2",
+          "paragraph": "3",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 5,
+          "page_end": 5,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00006",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": null,
+          "article": "2",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 5,
+          "page_end": 5,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7179567196994311,
+      "context_precision": 0.4166666666458333,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-eee-definition",
+      "question": "How does RoHS Article 3 define electrical and electronic equipment, including the voltage rating?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 3 defines electrical and electronic equipment or EEE as equipment which is dependent on electric currents or electromagnetic fields in order to work properly and equipment for the generation, transfer and measurement of such currents and fields and designed for use with a voltage rating not exceeding 1 000 volts for alternating current and 1 500 volts for direct current.",
+      "actual_answer": null,
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00020"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00020"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [],
+      "guardrail_status": "approved",
+      "final_status": "abstained",
+      "failure_reason": "The answer omits an application condition or exception present in the cited evidence: shall apply.",
+      "abstention_reason": "The generated answer could not be validated against the supplied evidence.",
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "metric_error": null,
+      "scored": false
+    },
+    {
+      "id": "rohs-homogeneous-material",
+      "question": "What does RoHS Article 3 mean by a homogeneous material?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 3 defines a homogeneous material as one material of uniform composition throughout or a material, consisting of a combination of materials, that cannot be disjointed or separated into different materials by mechanical actions such as unscrewing, cutting, crushing, grinding and abrasive processes.",
+      "actual_answer": "A homogeneous material is one material of uniform composition throughout or a material consisting of a combination of materials that cannot be disjointed or separated into different materials by mechanical actions such as unscrewing, cutting, crushing, grinding and abrasive processes.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00020"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00020"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00020",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "3",
+          "paragraph": null,
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 6,
+          "page_end": 8,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7083493000035378,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-article-4-prevention",
+      "question": "What does RoHS Article 4(1) require Member States to ensure about EEE placed on the market?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 4(1) requires Member States to ensure that EEE placed on the market, including cables and spare parts for its repair, its reuse, updating of its functionalities or upgrading of its capacity, does not contain the substances listed in Annex II.",
+      "actual_answer": "Member States shall ensure that EEE placed on the market, including cables and spare parts for its repair, its reuse, updating of its functionalities or upgrading of its capacity, does not contain the substances listed in Annex II.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00022"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00022",
+        "02011L0065-20260701:00023",
+        "02011L0065-20260701:00034",
+        "02011L0065-20260701:00038",
+        "02011L0065-20260701:00037",
+        "02011L0065-20260701:00036"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00022",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "4",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 8,
+          "page_end": 8,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00023",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "4",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 8,
+          "page_end": 8,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5861221342754158,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-article-4-concentration",
+      "question": "What does RoHS Article 4(2) say may be tolerated for the substances specified in Annex II?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 4(2) says that no more than the maximum concentration value by weight in homogeneous materials as specified in Annex II shall be tolerated.",
+      "actual_answer": null,
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00023"
+      ],
+      "retrieved_chunk_ids": [],
+      "missing_expected_chunk_ids": [
+        "02011L0065-20260701:00023"
+      ],
+      "actual_citations": [],
+      "guardrail_status": "insufficient_evidence",
+      "final_status": "insufficient_evidence",
+      "failure_reason": "No chunks were retrieved for RoHS Article 4.",
+      "abstention_reason": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "metric_error": null,
+      "scored": false
+    },
+    {
+      "id": "rohs-article-6-review",
+      "question": "By which date does RoHS Article 6 say the Commission shall consider a review of the restricted substances in Annex II?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 6 says a review, based on a thorough assessment, and amendment of the list of restricted substances in Annex II shall be considered by the Commission before 22 July 2014, and periodically thereafter.",
+      "actual_answer": null,
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00056"
+      ],
+      "retrieved_chunk_ids": [],
+      "missing_expected_chunk_ids": [
+        "02011L0065-20260701:00056"
+      ],
+      "actual_citations": [],
+      "guardrail_status": "insufficient_evidence",
+      "final_status": "insufficient_evidence",
+      "failure_reason": "No chunks were retrieved for RoHS Article 6.",
+      "abstention_reason": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "metric_error": null,
+      "scored": false
+    },
+    {
+      "id": "rohs-article-7-manufacturers",
+      "question": "What does RoHS Article 7(a) require manufacturers to ensure when placing EEE on the market?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 7(a) requires that, when placing EEE on the market, manufacturers ensure that it has been designed and manufactured in accordance with the requirements set out in Article 4.",
+      "actual_answer": "Manufacturers must ensure that the EEE has been designed and manufactured in accordance with the requirements set out in Article 4.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00070"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00070",
+        "02011L0065-20260701:00071",
+        "02011L0065-20260701:00074",
+        "02011L0065-20260701:00079",
+        "02011L0065-20260701:00075",
+        "02011L0065-20260701:00076"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00070",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "7",
+          "paragraph": null,
+          "subparagraph": "(a)",
+          "annex": null,
+          "page_start": 12,
+          "page_end": 12,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00071",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "7",
+          "paragraph": null,
+          "subparagraph": "(b)",
+          "annex": null,
+          "page_start": 12,
+          "page_end": 12,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7743594130870144,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-article-9-importers",
+      "question": "What does RoHS Article 9(a) require importers to place on the Union market?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 9(a) requires that importers place only EEE that complies with this Directive on the Union market.",
+      "actual_answer": "Importers must place only electrical and electronic equipment (EEE) that complies with this Directive on the Union market.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00082"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00082",
+        "02011L0065-20260701:00083",
+        "02011L0065-20260701:00085",
+        "02011L0065-20260701:00084",
+        "02011L0065-20260701:00086"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00082",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "9",
+          "paragraph": null,
+          "subparagraph": "(a)",
+          "annex": null,
+          "page_start": 14,
+          "page_end": 14,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00083",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "9",
+          "paragraph": null,
+          "subparagraph": "(b)",
+          "annex": null,
+          "page_start": 14,
+          "page_end": 14,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.5801457348642934,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-article-10-distributors",
+      "question": "What must distributors verify under RoHS Article 10(a) about the CE marking?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 10(a) requires distributors, when making an EEE available on the market, to act with due care in particular by verifying that the EEE bears the CE marking, that it is accompanied by the required documents, and that the manufacturer and the importer have complied with the requirements set out in points (g) and (h) of Article 7 and in point (d) of Article 9.",
+      "actual_answer": "Distributors must verify that the EEE bears the CE marking.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00090"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00090",
+        "02011L0065-20260701:00091",
+        "02011L0065-20260701:00093",
+        "02011L0065-20260701:00092"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00090",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "10",
+          "paragraph": null,
+          "subparagraph": "(a)",
+          "annex": null,
+          "page_start": 15,
+          "page_end": 15,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00091",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "10",
+          "paragraph": null,
+          "subparagraph": "(b)",
+          "annex": null,
+          "page_start": 15,
+          "page_end": 15,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.592255268569466,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-article-11-manufacturer",
+      "question": "When does RoHS Article 11 treat an importer or distributor as a manufacturer?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 11 says an importer or distributor is considered a manufacturer and is subject to the obligations of the manufacturer under Article 7 where he places EEE on the market under his name or trademark or modifies EEE already placed on the market in such a way that compliance with the applicable requirements may be affected.",
+      "actual_answer": "When an importer or distributor places electrical and electronic equipment (EEE) on the market under their own name or trademark, or modifies EEE already placed on the market in a way that may affect compliance with the applicable requirements, Article 11 treats them as a manufacturer.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00094"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00094"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00094",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "11",
+          "paragraph": null,
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 15,
+          "page_end": 15,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8650297335572531,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-article-13-declaration",
+      "question": "What must the EU declaration of conformity state under RoHS Article 13(1)?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 13(1) says the EU declaration of conformity shall state that it has been demonstrated that the requirements specified in Article 4 have been met.",
+      "actual_answer": "The EU declaration of conformity must state that it has been demonstrated that the requirements specified in Article 4 have been met.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00098"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00098",
+        "02011L0065-20260701:00099",
+        "02011L0065-20260701:00100"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00098",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "13",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 16,
+          "page_end": 16,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7939110203344484,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-article-15-ce",
+      "question": "How does RoHS Article 15(1) require the CE marking to be affixed?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 15(1) says the CE marking shall be affixed visibly, legibly and indelibly to the finished EEE or to its data plate. Where that is not possible or not warranted on account of the nature of the EEE, it shall be affixed to the packaging and to the accompanying documents.",
+      "actual_answer": "The CE marking shall be affixed visibly, legibly and indelibly to the finished EEE or to its data plate. Where that is not possible or not warranted on account of the nature of the EEE, it shall be affixed to the packaging and to the accompanying documents.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00102"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00102",
+        "02011L0065-20260701:00103",
+        "02011L0065-20260701:00104"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00102",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "15",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 16,
+          "page_end": 16,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00103",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "15",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 16,
+          "page_end": 16,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6688145713164555,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-article-16-presumption",
+      "question": "What does RoHS Article 16(1) say Member States shall presume about EEE bearing the CE marking?",
+      "regulation": "RoHS",
+      "reference_answer": "In the absence of evidence to the contrary, RoHS Article 16(1) says Member States shall presume EEE bearing the CE marking to comply with this Directive.",
+      "actual_answer": "In the absence of evidence to the contrary, Member States shall presume EEE bearing the CE marking to comply with this Directive.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00105"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00105",
+        "02011L0065-20260701:00106"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00105",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "16",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 16,
+          "page_end": 16,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00106",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "16",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 17,
+          "page_end": 17,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.7687124636593461,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-article-23-penalties",
+      "question": "What must penalties be under RoHS Article 23, and by when must Member States notify those provisions to the Commission?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 23 says the penalties provided for must be effective, proportionate and dissuasive. The Member States shall notify those provisions to the Commission by 2 January 2013 and shall notify it without delay of any subsequent amendment affecting them.",
+      "actual_answer": null,
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00122"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00122"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [],
+      "guardrail_status": "approved",
+      "final_status": "abstained",
+      "failure_reason": "The answer alters a numerical value from the cited evidence: 2 January 2013.",
+      "abstention_reason": "The generated answer could not be validated against the supplied evidence.",
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "metric_error": null,
+      "scored": false
+    },
+    {
+      "id": "rohs-article-25-transposition",
+      "question": "By what date must Member States adopt and publish the laws necessary to comply with the RoHS Directive under Article 25(1)?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 25(1) says Member States shall adopt and publish, by 2 January 2013, the laws, regulations and administrative provisions necessary to comply with this Directive.",
+      "actual_answer": "By 2 January 2013.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00125"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00125",
+        "02011L0065-20260701:00126"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00125",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "25",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 19,
+          "page_end": 19,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00126",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "25",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 19,
+          "page_end": 19,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.22459904997829624,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-article-26-repeal",
+      "question": "From which date does RoHS Article 26 repeal Directive 2002/95/EC?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 26 says Directive 2002/95/EC is repealed with effect from 3 January 2013, without prejudice to the obligations of the Member States relating to the time limits for transposition into national law and application of the Directive set out in Annex VII, Part B.",
+      "actual_answer": "3 January 2013",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00127"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00127"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00127",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "26",
+          "paragraph": null,
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 19,
+          "page_end": 19,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3574157969645387,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-article-27-entry",
+      "question": "When does the RoHS Directive enter into force under Article 27?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 27 says this Directive shall enter into force on the 20th day following its publication in the Official Journal of the European Union.",
+      "actual_answer": "It enters into force on the 20th day following its publication in the Official Journal of the European Union.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00128"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00128"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00128",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "27",
+          "paragraph": null,
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 20,
+          "page_end": 20,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.36610770089941713,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-lead-limit",
+      "question": "What maximum concentration value by weight in homogeneous materials does RoHS Annex II tolerate for lead?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Annex II lists Lead (0,1 %).",
+      "actual_answer": null,
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00141"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00141"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [],
+      "guardrail_status": "approved",
+      "final_status": "abstained",
+      "failure_reason": "The answer presents a partial list as exhaustive. The cited evidence also contains: Lead (0,1 %).",
+      "abstention_reason": "The generated answer could not be validated against the supplied evidence.",
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "metric_error": null,
+      "scored": false
+    },
+    {
+      "id": "rohs-cadmium-limit",
+      "question": "What maximum concentration value by weight in homogeneous materials does RoHS Annex II tolerate for cadmium?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Annex II lists Cadmium (0,01 %).",
+      "actual_answer": null,
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00141"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00141"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [],
+      "guardrail_status": "approved",
+      "final_status": "abstained",
+      "failure_reason": "The answer presents a partial list as exhaustive. The cited evidence also contains: Cadmium (0,01 %).",
+      "abstention_reason": "The generated answer could not be validated against the supplied evidence.",
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "metric_error": null,
+      "scored": false
+    },
+    {
+      "id": "rohs-dehp-medical-date",
+      "question": "From which date does RoHS Annex II apply the restriction of DEHP, BBP, DBP and DIBP to medical devices?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Annex II says the restriction of DEHP, BBP, DBP and DIBP shall apply to medical devices, including in vitro medical devices, and monitoring and control instruments, including industrial monitoring and control instruments, from 22 July 2021.",
+      "actual_answer": null,
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00141"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00141"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [],
+      "guardrail_status": "approved",
+      "final_status": "abstained",
+      "failure_reason": "The answer alters a numerical value from the cited evidence: 22 July 2021.",
+      "abstention_reason": "The generated answer could not be validated against the supplied evidence.",
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "metric_error": null,
+      "scored": false
+    },
+    {
+      "id": "rohs-phthalate-toys",
+      "question": "What exception does RoHS Annex II state for toys already restricted through entry 51 of Annex XVII to REACH?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Annex II says the restriction of DEHP, BBP and DBP shall not apply to toys which are already subject to the restriction of DEHP, BBP and DBP through entry 51 of Annex XVII to Regulation (EC) No 1907/2006.",
+      "actual_answer": null,
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00141"
+      ],
+      "retrieved_chunk_ids": [],
+      "missing_expected_chunk_ids": [
+        "02011L0065-20260701:00141"
+      ],
+      "actual_citations": [],
+      "guardrail_status": "clarification_required",
+      "final_status": "clarification_required",
+      "failure_reason": "The question names both RoHS and REACH.",
+      "abstention_reason": "Your question mentions both RoHS and REACH. Which regulation should I answer from?",
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "metric_error": null,
+      "scored": false
+    },
+    {
+      "id": "rohs-annex-iv-detectors",
+      "question": "What does entry 1 of RoHS Annex IV exempt in detectors for ionising radiation?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Annex IV entry 1 exempts lead, cadmium and mercury in detectors for ionising radiation.",
+      "actual_answer": "Lead, cadmium and mercury in detectors for ionising radiation.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00216"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00216",
+        "02011L0065-20260701:00217",
+        "02011L0065-20260701:00221",
+        "02011L0065-20260701:00239",
+        "02011L0065-20260701:00220",
+        "02011L0065-20260701:00258"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00216",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": null,
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": "IV",
+          "page_start": 37,
+          "page_end": 37,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00217",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": null,
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": "IV",
+          "page_start": 37,
+          "page_end": 37,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.48089796619426084,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-annex-v-applicants",
+      "question": "Who may submit an application for granting, renewing or revoking an exemption under RoHS Annex V?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Annex V says applications for exemptions, renewal of exemptions or, mutatis mutandis, for revoking an exemption may be submitted by a manufacturer, the authorised representative of a manufacturer, or any economic operator in the supply chain.",
+      "actual_answer": "A manufacturer, the authorised representative of a manufacturer, or any economic operator in the supply chain may submit an application for granting, renewing or revoking an exemption under RoHS Annex V.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00264"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00264"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00264",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": null,
+          "paragraph": null,
+          "subparagraph": null,
+          "annex": "V",
+          "page_start": 43,
+          "page_end": 43,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9740544121193404,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-article-4-and-lead",
+      "question": "What does RoHS Article 4(1) require regarding Annex II, and what concentration of lead does Annex II tolerate?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 4(1) requires Member States to ensure that EEE placed on the market, including cables and spare parts for its repair, its reuse, updating of its functionalities or upgrading of its capacity, does not contain the substances listed in Annex II. Annex II lists Lead (0,1 %).",
+      "actual_answer": null,
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00022",
+        "02011L0065-20260701:00141"
+      ],
+      "retrieved_chunk_ids": [],
+      "missing_expected_chunk_ids": [
+        "02011L0065-20260701:00022",
+        "02011L0065-20260701:00141"
+      ],
+      "actual_citations": [],
+      "guardrail_status": "insufficient_evidence",
+      "final_status": "insufficient_evidence",
+      "failure_reason": "No chunks were retrieved for RoHS Article 4.",
+      "abstention_reason": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "metric_error": null,
+      "scored": false
+    },
+    {
+      "id": "reach-article-1-aim",
+      "question": "What purpose does REACH Article 1(1) state for the Regulation?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 1(1) says the purpose of this Regulation is to ensure a high level of protection of human health and the environment, including the promotion of alternative methods for assessment of hazards of substances, as well as the free circulation of substances on the internal market while enhancing competitiveness and innovation.",
+      "actual_answer": "The purpose of this Regulation is to ensure a high level of protection of human health and the environment, including the promotion of alternative methods for assessment of hazards of substances, as well as the free circulation of substances on the internal market while enhancing competitiveness and innovation.",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00007"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00007",
+        "02006R1907-20260622:00008",
+        "02006R1907-20260622:00009"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00007",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "1",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 7,
+          "page_end": 7,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        },
+        {
+          "chunk_id": "02006R1907-20260622:00008",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "1",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 7,
+          "page_end": 7,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6614385236897606,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-substance-definition",
+      "question": "How does REACH Article 3 define a substance?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 3 defines a substance as a chemical element and its compounds in the natural state or obtained by any manufacturing process, including any additive necessary to preserve its stability and any impurity deriving from the process used, but excluding any solvent which may be separated without affecting the stability of the substance or changing its composition.",
+      "actual_answer": "substance: means a chemical element and its compounds in the natural state or obtained by any manufacturing process, including any additive necessary to preserve its stability and any impurity deriving from the process used, but excluding any solvent which may be separated without affecting the stability of the substance or changing its composition.",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00051"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00051",
+        "02006R1907-20260622:00052",
+        "02006R1907-20260622:00054",
+        "02006R1907-20260622:00092",
+        "02006R1907-20260622:00079",
+        "02006R1907-20260622:00091",
+        "02006R1907-20260622:00093"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00051",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "3",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 10,
+          "page_end": 10,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        },
+        {
+          "chunk_id": "02006R1907-20260622:00052",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "3",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 10,
+          "page_end": 10,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.5764361172413669,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-5-no-data",
+      "question": "What does REACH Article 5 require before manufacture or placing on the market, and which articles qualify that rule?",
+      "regulation": "REACH",
+      "reference_answer": "Subject to Articles 6, 7, 21 and 23, REACH Article 5 says substances on their own, in mixtures or in articles shall not be manufactured in the Community or placed on the market unless they have been registered in accordance with the relevant provisions of this Title where this is required.",
+      "actual_answer": "Article 5 requires that substances on their own, in M3 mixtures or in articles shall not be manufactured in the Community or placed on the market unless they have been registered in accordance with the relevant provisions of this Title where this is required. The rule is subject to Articles 6, 7, 21 and 23.",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00103"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00103"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00103",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "5",
+          "paragraph": null,
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 15,
+          "page_end": 15,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6633395236350255,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-6-registration",
+      "question": "What quantity triggers registration under REACH Article 6(1), and what does Article 6(2) say about monomers used as isolated intermediates?",
+      "regulation": "REACH",
+      "reference_answer": "Save where this Regulation provides otherwise, REACH Article 6(1) says any manufacturer or importer of a substance, either on its own or in one or more mixtures, in quantities of one tonne or more per year shall submit a registration to the Agency. Article 6(2) says that for monomers used as on-site isolated intermediates or transported isolated intermediates, Articles 17 and 18 shall not apply.",
+      "actual_answer": "Article 6(1) requires registration when a manufacturer or importer produces or imports a substance, on its own or in one or more M3 mixtures, in quantities of one tonne or more per year. Article 6(2) states that for monomers that are used as on‑site isolated intermediates or transported isolated intermediates, Articles 17 and 18 do not apply.",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00104",
+        "02006R1907-20260622:00105"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00105",
+        "02006R1907-20260622:00106",
+        "02006R1907-20260622:00104",
+        "02006R1907-20260622:00107",
+        "02006R1907-20260622:00108",
+        "02006R1907-20260622:00109"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00105",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "6",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 15,
+          "page_end": 15,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7069178632006644,
+      "context_precision": 0.6666666666333333,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-7-articles",
+      "question": "What quantity does REACH Article 7(1)(a) set for a substance present in articles before a producer or importer must consider registration?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 7(1) says any producer or importer of articles shall submit a registration to the Agency for any substance contained in those articles if both stated conditions are met. Condition (a) in the indexed text is that the substance is present in those articles in quantities totalling over one tonne per producer or importer per year.",
+      "actual_answer": "over one tonne per producer or importer per year",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00111",
+        "02006R1907-20260622:00112"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00112",
+        "02006R1907-20260622:00111",
+        "02006R1907-20260622:00115",
+        "02006R1907-20260622:00128",
+        "02006R1907-20260622:00113",
+        "02006R1907-20260622:00116"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00112",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "7",
+          "paragraph": "1",
+          "subparagraph": "(a)",
+          "annex": null,
+          "page_start": 16,
+          "page_end": 16,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4173439587757217,
+      "context_precision": 0.8099999999838,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-8-representative",
+      "question": "Whom may a non-Community manufacturer appoint under REACH Article 8(1)?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 8(1) says a natural or legal person established outside the Community who manufactures a substance, formulates a mixture or produces an article that is imported into the Community may by mutual agreement appoint a natural or legal person established in the Community to fulfil, as his only representative, the obligations on importers under this Title.",
+      "actual_answer": "A natural or legal person established in the Community.",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00136"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00136",
+        "02006R1907-20260622:00137",
+        "02006R1907-20260622:00138"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00136",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "8",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 17,
+          "page_end": 17,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2867765458467136,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-9-ppord",
+      "question": "For how long does REACH Article 9(1) disapply Articles 5, 6, 7, 17, 18 and 21 for product and process orientated research and development?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 9(1) says Articles 5, 6, 7, 17, 18 and 21 shall not apply for a period of five years to a substance manufactured in the Community or imported for the purposes of product and process orientated research and development, in a quantity limited to that purpose.",
+      "actual_answer": "REACH Article 9(1) states that Articles 5, 6, 7, 17, 18 and 21 shall not apply for a period of five years to a substance used for product and process orientated research and development.",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00139"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00139",
+        "02006R1907-20260622:00140",
+        "02006R1907-20260622:00890",
+        "02006R1907-20260622:00151",
+        "02006R1907-20260622:00150",
+        "02006R1907-20260622:00080",
+        "02006R1907-20260622:00081"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00139",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "9",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 18,
+          "page_end": 18,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        },
+        {
+          "chunk_id": "02006R1907-20260622:00140",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "9",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 18,
+          "page_end": 18,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7875546473338132,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-14-csr",
+      "question": "At what quantity per year does REACH Article 14(1) require a chemical safety assessment and a chemical safety report?",
+      "regulation": "REACH",
+      "reference_answer": "Without prejudice to Article 4 of Directive 98/24/EC, REACH Article 14(1) says a chemical safety assessment shall be performed and a chemical safety report completed for all substances subject to registration in accordance with this Chapter in quantities of 10 tonnes or more per year per registrant.",
+      "actual_answer": "10 tonnes or more per year per registrant.",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00190"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00190",
+        "02006R1907-20260622:00191",
+        "02006R1907-20260622:00213",
+        "02006R1907-20260622:00195",
+        "02006R1907-20260622:00209"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00190",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "14",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 23,
+          "page_end": 23,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        },
+        {
+          "chunk_id": "02006R1907-20260622:00191",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "14",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 23,
+          "page_end": 23,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.43628251539943,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-17-intermediate",
+      "question": "What registration duty does REACH Article 17(1) place on a manufacturer of an on-site isolated intermediate?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 17(1) says any manufacturer of an on-site isolated intermediate in quantities of one tonne or more per year shall submit a registration to the Agency for the on-site isolated intermediate.",
+      "actual_answer": "Any manufacturer of an on‑site isolated intermediate in quantities of one tonne or more per year shall submit a registration to the Agency for the on‑site isolated intermediate.",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00222"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00223",
+        "02006R1907-20260622:00224",
+        "02006R1907-20260622:00222",
+        "02006R1907-20260622:00230",
+        "02006R1907-20260622:00225"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00223",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "17",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 26,
+          "page_end": 26,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        },
+        {
+          "chunk_id": "02006R1907-20260622:00222",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "17",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 26,
+          "page_end": 26,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5319327874296165,
+      "context_precision": 0.8333333332916666,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-23-phase-in",
+      "question": "Until which date does REACH Article 23(1) disapply Articles 5, 6, 7(1), 17, 18 and 21 for the phase-in substances it lists?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 23(1) says Article 5, Article 6, Article 7(1), Article 17, Article 18 and Article 21 shall not apply until 1 December 2010 to the following substances.",
+      "actual_answer": "1 December 2010",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00283"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00283",
+        "02006R1907-20260622:00284",
+        "02006R1907-20260622:00288",
+        "02006R1907-20260622:00287",
+        "02006R1907-20260622:00329",
+        "02006R1907-20260622:00289"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00283",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "23",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 33,
+          "page_end": 33,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.49169367191458774,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-25-animals",
+      "question": "What does REACH Article 25(1) say about testing on vertebrate animals?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 25(1) says that, in order to avoid animal testing, testing on vertebrate animals for the purposes of this Regulation shall be undertaken only as a last resort.",
+      "actual_answer": "Article 25(1) states that, in order to avoid animal testing, testing on vertebrate animals for the purposes of this Regulation shall be undertaken only as a last resort, and that measures limiting duplication of other tests are necessary.",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00295"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00295",
+        "02006R1907-20260622:00296"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00295",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "25",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 34,
+          "page_end": 34,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        },
+        {
+          "chunk_id": "02006R1907-20260622:00296",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "25",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 34,
+          "page_end": 34,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9367533782165355,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-31-sds",
+      "question": "In accordance with which annex must a safety data sheet be compiled under REACH Article 31(1)?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 31(1) says the supplier of a substance or a mixture shall provide the recipient with a safety data sheet compiled in accordance with Annex II.",
+      "actual_answer": "Annex II",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00343"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00343",
+        "02006R1907-20260622:00344",
+        "02006R1907-20260622:00372",
+        "02006R1907-20260622:00373",
+        "02006R1907-20260622:00349",
+        "02006R1907-20260622:00350"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00343",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "31",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 39,
+          "page_end": 39,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        },
+        {
+          "chunk_id": "02006R1907-20260622:00344",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "31",
+          "paragraph": "1",
+          "subparagraph": "(a)",
+          "annex": null,
+          "page_start": 40,
+          "page_end": 40,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4982326553301096,
+      "context_precision": 0.81666666664625,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-33-concentration",
+      "question": "Above what concentration does REACH Article 33(1) require information on a substance in an article that meets the Article 57 criteria and is identified under Article 59(1)?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 33(1) applies to an article containing such a substance in a concentration above 0,1 % weight by weight (w/w). The supplier shall provide the recipient with sufficient information, available to the supplier, to allow safe use of the article including, as a minimum, the name of that substance.",
+      "actual_answer": "Above 0,1 % weight by weight (w/w).",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00389"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00389",
+        "02006R1907-20260622:00390",
+        "02006R1907-20260622:00562",
+        "02006R1907-20260622:00563",
+        "02006R1907-20260622:00578",
+        "02006R1907-20260622:00115",
+        "02006R1907-20260622:00114",
+        "02006R1907-20260622:01131"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00389",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "33",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 43,
+          "page_end": 43,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        },
+        {
+          "chunk_id": "02006R1907-20260622:00390",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "33",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 43,
+          "page_end": 43,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6277968487846897,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-55-authorisation",
+      "question": "What aim does REACH Article 55 state for the authorisation title?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 55 says the aim of this Title is to ensure the good functioning of the internal market while assuring that the risks from substances of very high concern are properly controlled and that these substances are progressively replaced by suitable alternative substances or technologies where these are economically and technically viable.",
+      "actual_answer": "The aim of this Title is to ensure the good functioning of the internal market while assuring that the risks from substances of very high concern are properly controlled and that these substances are progressively replaced by suitable alternative substances or technologies where these are economically and technically viable.",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00517"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00517"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00517",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "55",
+          "paragraph": null,
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 56,
+          "page_end": 56,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.303388966485621,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-56-annex-xiv",
+      "question": "What prohibition does REACH Article 56(1) state for a substance included in Annex XIV?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 56(1) says a manufacturer, importer or downstream user shall not place a substance on the market for a use or use it himself if that substance is included in Annex XIV, unless:",
+      "actual_answer": null,
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00518"
+      ],
+      "retrieved_chunk_ids": [],
+      "missing_expected_chunk_ids": [
+        "02006R1907-20260622:00518"
+      ],
+      "actual_citations": [],
+      "guardrail_status": "insufficient_evidence",
+      "final_status": "insufficient_evidence",
+      "failure_reason": "No chunks were retrieved for REACH Article 56.",
+      "abstention_reason": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "metric_error": null,
+      "scored": false
+    },
+    {
+      "id": "reach-article-57-carcinogen",
+      "question": "Which carcinogenicity classification does REACH Article 57(a) identify as a ground for inclusion in Annex XIV?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 57(a) identifies substances meeting the criteria for classification in the hazard class carcinogenicity category 1A or 1B in accordance with section 3.6 of Annex I to Regulation (EC) No 1272/2008.",
+      "actual_answer": null,
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00537"
+      ],
+      "retrieved_chunk_ids": [],
+      "missing_expected_chunk_ids": [
+        "02006R1907-20260622:00537"
+      ],
+      "actual_citations": [],
+      "guardrail_status": "insufficient_evidence",
+      "final_status": "insufficient_evidence",
+      "failure_reason": "No chunks were retrieved for REACH Article 57.",
+      "abstention_reason": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "metric_error": null,
+      "scored": false
+    },
+    {
+      "id": "reach-article-60-commission",
+      "question": "Who does REACH Article 60(1) make responsible for decisions on applications for authorisations?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 60(1) says the Commission shall be responsible for taking decisions on applications for authorisations in accordance with this Title.",
+      "actual_answer": "The Commission.",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00573"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00573",
+        "02006R1907-20260622:00589",
+        "02006R1907-20260622:00574",
+        "02006R1907-20260622:00588",
+        "02006R1907-20260622:00582",
+        "02006R1907-20260622:00590",
+        "02006R1907-20260622:00583"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00573",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "60",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 61,
+          "page_end": 61,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        },
+        {
+          "chunk_id": "02006R1907-20260622:00574",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "60",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 61,
+          "page_end": 61,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3075691051842078,
+      "context_precision": 0.8333333332916666,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-62-application",
+      "question": "To whom must an application for an authorisation be made under REACH Article 62(1)?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 62(1) says an application for an authorisation shall be made to the Agency.",
+      "actual_answer": "to the Agency",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00606"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00606",
+        "02006R1907-20260622:00607",
+        "02006R1907-20260622:00608",
+        "02006R1907-20260622:00611",
+        "02006R1907-20260622:00610",
+        "02006R1907-20260622:00613"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00606",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "62",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 64,
+          "page_end": 64,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-66-notification",
+      "question": "Within what period must a downstream user notify the Agency under REACH Article 66(1)?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 66(1) says downstream users using a substance in accordance with Article 56(2) shall notify the Agency within three months of the first supply of the substance.",
+      "actual_answer": "within three months of the first supply of the substance.",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00643"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00643",
+        "02006R1907-20260622:00644"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00643",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "66",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 67,
+          "page_end": 67,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        },
+        {
+          "chunk_id": "02006R1907-20260622:00644",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "66",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 67,
+          "page_end": 67,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.20011286818129898,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-67-restriction",
+      "question": "What does REACH Article 67(1) require where Annex XVII contains a restriction, and which research use does that paragraph except?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 67(1) says a substance on its own, in a mixture or in an article, for which Annex XVII contains a restriction shall not be manufactured, placed on the market or used unless it complies with the conditions of that restriction. This shall not apply to the manufacture, placing on the market or use of a substance in scientific research and development.",
+      "actual_answer": null,
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00647"
+      ],
+      "retrieved_chunk_ids": [],
+      "missing_expected_chunk_ids": [
+        "02006R1907-20260622:00647"
+      ],
+      "actual_citations": [],
+      "guardrail_status": "insufficient_evidence",
+      "final_status": "insufficient_evidence",
+      "failure_reason": "No chunks were retrieved for REACH Article 67.",
+      "abstention_reason": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "metric_error": null,
+      "scored": false
+    },
+    {
+      "id": "reach-article-75-agency",
+      "question": "What body does REACH Article 75(1) establish?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 75(1) says a European Chemicals Agency is established for the purposes of managing and in some cases carrying out the technical, scientific and administrative aspects of this Regulation and to ensure consistency at Community level in relation to these aspects.",
+      "actual_answer": "A European Chemicals Agency.",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00677"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00677",
+        "02006R1907-20260622:00678"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00677",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "75",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 73,
+          "page_end": 73,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        },
+        {
+          "chunk_id": "02006R1907-20260622:00678",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "75",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 73,
+          "page_end": 73,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.10737250717695106,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-126-penalties",
+      "question": "What must penalties be under REACH Article 126, and by when must Member States notify those provisions to the Commission?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 126 says the penalties provided for must be effective, proportionate and dissuasive. The Member States shall notify those provisions to the Commission no later than 1 December 2008.",
+      "actual_answer": null,
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00901"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00901"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [],
+      "guardrail_status": "approved",
+      "final_status": "abstained",
+      "failure_reason": "The answer alters a numerical value from the cited evidence: 1 December 2008.",
+      "abstention_reason": "The generated answer could not be validated against the supplied evidence.",
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "metric_error": null,
+      "scored": false
+    },
+    {
+      "id": "reach-article-141-entry",
+      "question": "On what date does REACH Article 141(1) say the Regulation enters into force?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 141(1) says this Regulation shall enter into force on 1 June 2007.",
+      "actual_answer": "1 June 2007",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00953"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00953",
+        "02006R1907-20260622:00954",
+        "02006R1907-20260622:00955",
+        "02006R1907-20260622:00956"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00953",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "141",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 100,
+          "page_end": 100,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        },
+        {
+          "chunk_id": "02006R1907-20260622:00954",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "141",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 100,
+          "page_end": 100,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4521479417028768,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-annex-iv-water",
+      "question": "Does REACH Annex IV list distilled water among the exemptions from the obligation to register in accordance with Article 2(7)(a)?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Annex IV is headed exemptions from the obligation to register in accordance with Article 2(7)(a) and lists Water, distilled, conductivity or of similar purity with CAS No 7732-18-5.",
+      "actual_answer": null,
+      "expected_chunk_ids": [
+        "02006R1907-20260622:01013"
+      ],
+      "retrieved_chunk_ids": [],
+      "missing_expected_chunk_ids": [
+        "02006R1907-20260622:01013"
+      ],
+      "actual_citations": [],
+      "guardrail_status": "insufficient_evidence",
+      "final_status": "insufficient_evidence",
+      "failure_reason": "No chunks were retrieved for REACH Article 2.",
+      "abstention_reason": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "metric_error": null,
+      "scored": false
+    },
+    {
+      "id": "reach-annex-xvii-export",
+      "question": "For REACH Annex XVII restrictions that come from Directive 76/769/EEC entries 1 to 58, which handling for export is outside the restriction?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Annex XVII says that for substances incorporated as a consequence of restrictions adopted under Directive 76/769/EEC (Entries 1 to 58), the restrictions shall not apply to storage, keeping, treatment, filling into containers, or transfer from one container to another of these substances for export, unless the manufacture of the substances is prohibited.",
+      "actual_answer": null,
+      "expected_chunk_ids": [
+        "02006R1907-20260622:01134"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:01134",
+        "02006R1907-20260622:01135",
+        "02006R1907-20260622:01321",
+        "02006R1907-20260622:01196",
+        "02006R1907-20260622:01395",
+        "02006R1907-20260622:01734"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [],
+      "guardrail_status": "approved",
+      "final_status": "abstained",
+      "failure_reason": "The answer omits an application condition or exception present in the cited evidence: shall not apply.",
+      "abstention_reason": "The generated answer could not be validated against the supplied evidence.",
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null,
+      "metric_error": null,
+      "scored": false
+    }
+  ],
+  "lowest_scoring": [
+    {
+      "id": "rohs-article-25-transposition",
+      "question": "By what date must Member States adopt and publish the laws necessary to comply with the RoHS Directive under Article 25(1)?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 25(1) says Member States shall adopt and publish, by 2 January 2013, the laws, regulations and administrative provisions necessary to comply with this Directive.",
+      "actual_answer": "By 2 January 2013.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00125"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00125",
+        "02011L0065-20260701:00126"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00125",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "25",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 19,
+          "page_end": 19,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00126",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "25",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 19,
+          "page_end": 19,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.22459904997829624,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-article-27-entry",
+      "question": "When does the RoHS Directive enter into force under Article 27?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 27 says this Directive shall enter into force on the 20th day following its publication in the Official Journal of the European Union.",
+      "actual_answer": "It enters into force on the 20th day following its publication in the Official Journal of the European Union.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00128"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00128"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00128",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "27",
+          "paragraph": null,
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 20,
+          "page_end": 20,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.36610770089941713,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-article-9-importers",
+      "question": "What does RoHS Article 9(a) require importers to place on the Union market?",
+      "regulation": "RoHS",
+      "reference_answer": "RoHS Article 9(a) requires that importers place only EEE that complies with this Directive on the Union market.",
+      "actual_answer": "Importers must place only electrical and electronic equipment (EEE) that complies with this Directive on the Union market.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00082"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00082",
+        "02011L0065-20260701:00083",
+        "02011L0065-20260701:00085",
+        "02011L0065-20260701:00084",
+        "02011L0065-20260701:00086"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00082",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "9",
+          "paragraph": null,
+          "subparagraph": "(a)",
+          "annex": null,
+          "page_start": 14,
+          "page_end": 14,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00083",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "9",
+          "paragraph": null,
+          "subparagraph": "(b)",
+          "annex": null,
+          "page_start": 14,
+          "page_end": 14,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.5801457348642934,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "rohs-article-16-presumption",
+      "question": "What does RoHS Article 16(1) say Member States shall presume about EEE bearing the CE marking?",
+      "regulation": "RoHS",
+      "reference_answer": "In the absence of evidence to the contrary, RoHS Article 16(1) says Member States shall presume EEE bearing the CE marking to comply with this Directive.",
+      "actual_answer": "In the absence of evidence to the contrary, Member States shall presume EEE bearing the CE marking to comply with this Directive.",
+      "expected_chunk_ids": [
+        "02011L0065-20260701:00105"
+      ],
+      "retrieved_chunk_ids": [
+        "02011L0065-20260701:00105",
+        "02011L0065-20260701:00106"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02011L0065-20260701:00105",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "16",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 16,
+          "page_end": 16,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00106",
+          "document_id": "02011L0065-20260701",
+          "regulation": "RoHS",
+          "regulation_number": "2011/65/EU",
+          "article": "16",
+          "paragraph": "2",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 17,
+          "page_end": 17,
+          "source_filename": "CL2011L0065EN0230010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.7687124636593461,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    },
+    {
+      "id": "reach-article-62-application",
+      "question": "To whom must an application for an authorisation be made under REACH Article 62(1)?",
+      "regulation": "REACH",
+      "reference_answer": "REACH Article 62(1) says an application for an authorisation shall be made to the Agency.",
+      "actual_answer": "to the Agency",
+      "expected_chunk_ids": [
+        "02006R1907-20260622:00606"
+      ],
+      "retrieved_chunk_ids": [
+        "02006R1907-20260622:00606",
+        "02006R1907-20260622:00607",
+        "02006R1907-20260622:00608",
+        "02006R1907-20260622:00611",
+        "02006R1907-20260622:00610",
+        "02006R1907-20260622:00613"
+      ],
+      "missing_expected_chunk_ids": [],
+      "actual_citations": [
+        {
+          "chunk_id": "02006R1907-20260622:00606",
+          "document_id": "02006R1907-20260622",
+          "regulation": "REACH",
+          "regulation_number": "(EC) No 1907/2006",
+          "article": "62",
+          "paragraph": "1",
+          "subparagraph": null,
+          "annex": null,
+          "page_start": 64,
+          "page_end": 64,
+          "source_filename": "CL2006R1907EN0690010.0001.pdf"
+        }
+      ],
+      "guardrail_status": "approved",
+      "final_status": "answered",
+      "failure_reason": null,
+      "abstention_reason": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "metric_error": null,
+      "scored": true
+    }
+  ],
+  "failure_examples": [
+    {
+      "id": "rohs-eee-definition",
+      "kind": "abstained",
+      "detail": "The answer omits an application condition or exception present in the cited evidence: shall apply."
+    },
+    {
+      "id": "rohs-article-4-concentration",
+      "kind": "insufficient_evidence",
+      "detail": "No chunks were retrieved for RoHS Article 4."
+    },
+    {
+      "id": "rohs-article-6-review",
+      "kind": "insufficient_evidence",
+      "detail": "No chunks were retrieved for RoHS Article 6."
+    },
+    {
+      "id": "rohs-article-23-penalties",
+      "kind": "abstained",
+      "detail": "The answer alters a numerical value from the cited evidence: 2 January 2013."
+    },
+    {
+      "id": "rohs-lead-limit",
+      "kind": "abstained",
+      "detail": "The answer presents a partial list as exhaustive. The cited evidence also contains: Lead (0,1 %)."
+    },
+    {
+      "id": "rohs-cadmium-limit",
+      "kind": "abstained",
+      "detail": "The answer presents a partial list as exhaustive. The cited evidence also contains: Cadmium (0,01 %)."
+    },
+    {
+      "id": "rohs-dehp-medical-date",
+      "kind": "abstained",
+      "detail": "The answer alters a numerical value from the cited evidence: 22 July 2021."
+    },
+    {
+      "id": "rohs-phthalate-toys",
+      "kind": "clarification_required",
+      "detail": "The question names both RoHS and REACH."
+    },
+    {
+      "id": "rohs-article-4-and-lead",
+      "kind": "insufficient_evidence",
+      "detail": "No chunks were retrieved for RoHS Article 4."
+    },
+    {
+      "id": "reach-article-56-annex-xiv",
+      "kind": "insufficient_evidence",
+      "detail": "No chunks were retrieved for REACH Article 56."
+    },
+    {
+      "id": "reach-article-57-carcinogen",
+      "kind": "insufficient_evidence",
+      "detail": "No chunks were retrieved for REACH Article 57."
+    },
+    {
+      "id": "reach-article-67-restriction",
+      "kind": "insufficient_evidence",
+      "detail": "No chunks were retrieved for REACH Article 67."
+    },
+    {
+      "id": "reach-article-126-penalties",
+      "kind": "abstained",
+      "detail": "The answer alters a numerical value from the cited evidence: 1 December 2008."
+    },
+    {
+      "id": "reach-annex-iv-water",
+      "kind": "insufficient_evidence",
+      "detail": "No chunks were retrieved for REACH Article 2."
+    },
+    {
+      "id": "reach-annex-xvii-export",
+      "kind": "abstained",
+      "detail": "The answer omits an application condition or exception present in the cited evidence: shall not apply."
+    }
+  ],
+  "scoring_policy": "Every curated question stays in the dataset. RAGAS is called only when the pipeline returned a non-empty answer and at least one retrieved context. Abstentions, guardrail rejections, validation failures, and provider failures are counted separately and receive null metric scores. Each mean is the arithmetic mean of the non-null scores for that metric. Nulls are not replaced with zero. A transient provider error is retried; a validation rejection is not.",
+  "curation_notes": [
+    "A question asking which substances are listed in REACH Annex XIV was not used. Chunk 02006R1907-20260622:01070 contains the annex title and column headings, not substance rows. The authorisation question uses Article 56(1), which states the prohibition for a substance included in Annex XIV and stops at 'unless:'.",
+    "REACH Article 7(1)(b) is not in the indexed chunks 00111 or 00112. The Article 7 question states condition (a) only and does not invent condition (b)."
+  ],
+  "baseline_comparison": {
+    "phase5_dense_file": "evaluation/baseline_dense.json",
+    "phase5_dense": {
+      "recall_at_5": 0.4,
+      "precision_at_5": 0.18,
+      "mean_reciprocal_rank": 0.2533,
+      "off_topic_rejection_rate": 0.5,
+      "question_file": "evaluation/retrieval_questions.json"
+    },
+    "phase5_1_file": "evaluation/phase5_1_report.json",
+    "phase5_1_bm25": {
+      "recall_at_5": 0.4,
+      "precision_at_5": 0.2,
+      "mean_reciprocal_rank": 0.3333
+    },
+    "phase5_1_hybrid": {
+      "recall_at_5": 0.4,
+      "precision_at_5": 0.22,
+      "mean_reciprocal_rank": 0.275
+    },
+    "note": "RAGAS context precision and context recall judge retrieved text against reference answers on the 50-question file. Phase 5 Recall@5, Precision@5, and MRR rank expected chunk ids on a different 16-question file. The two sets of numbers are not the same metric and this evaluation does not claim that one improved on the other."
+  },
+  "guardrail_evaluation": {
+    "questions": 50,
+    "supported_questions": 20,
+    "ambiguous_questions": 15,
+    "unsupported_questions": 15,
+    "supported_acceptance_rate": 1.0,
+    "supported_classification_rate": 1.0,
+    "ambiguous_clarification_rate": 1.0,
+    "unsupported_rejection_rate": 1.0,
+    "false_acceptance_rate": 0.0,
+    "false_rejection_rate": 0.0,
+    "insufficient_evidence_on_supported": 0,
+    "evidence_failures": [],
+    "confusion_matrix": {
+      "supported": {
+        "supported": 20,
+        "ambiguous": 0,
+        "unsupported": 0,
+        "invalid": 0
+      },
+      "ambiguous": {
+        "supported": 0,
+        "ambiguous": 15,
+        "unsupported": 0,
+        "invalid": 0
+      },
+      "unsupported": {
+        "supported": 0,
+        "ambiguous": 0,
+        "unsupported": 15,
+        "invalid": 0
+      },
+      "invalid": {
+        "supported": 0,
+        "ambiguous": 0,
+        "unsupported": 0,
+        "invalid": 0
+      }
+    },
+    "failures": []
+  },
+  "ragas_version": "0.4.4",
+  "evaluator_model": "qwen/qwen3.8-27b",
+  "evaluator_temperature": 0.0,
+  "evaluator_max_tokens": 2048,
+  "answer_relevancy_strictness": 2,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "generation_model": "openai/gpt-oss-20b",
+  "generation_temperature": 0.0,
+  "live_qdrant": true,
+  "live_bm25": true,
+  "live_groq": true,
+  "generated_at": "2026-11-16T04:46:58.822388+00:00"
+}

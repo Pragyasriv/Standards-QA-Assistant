@@ -1,0 +1,41 @@
+{
+  "questions": 50,
+  "supported_questions": 20,
+  "ambiguous_questions": 15,
+  "unsupported_questions": 15,
+  "supported_acceptance_rate": 1.0,
+  "supported_classification_rate": 1.0,
+  "ambiguous_clarification_rate": 1.0,
+  "unsupported_rejection_rate": 1.0,
+  "false_acceptance_rate": 0.0,
+  "false_rejection_rate": 0.0,
+  "insufficient_evidence_on_supported": 0,
+  "evidence_failures": [],
+  "confusion_matrix": {
+    "supported": {
+      "supported": 20,
+      "ambiguous": 0,
+      "unsupported": 0,
+      "invalid": 0
+    },
+    "ambiguous": {
+      "supported": 0,
+      "ambiguous": 15,
+      "unsupported": 0,
+      "invalid": 0
+    },
+    "unsupported": {
+      "supported": 0,
+      "ambiguous": 0,
+      "unsupported": 15,
+      "invalid": 0
+    },
+    "invalid": {
+      "supported": 0,
+      "ambiguous": 0,
+      "unsupported": 0,
+      "invalid": 0
+    }
+  },
+  "failures": []
+}

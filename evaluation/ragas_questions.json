@@ -1,0 +1,916 @@
+[
+  {
+    "id": "rohs-article-1-subject",
+    "question": "What is the subject matter of Article 1 of the RoHS Directive?",
+    "regulation": "RoHS",
+    "reference_answer": "Article 1 of the RoHS Directive lays down rules on the restriction of the use of hazardous substances in electrical and electronic equipment (EEE) with a view to contributing to the protection of human health and the environment, including the environmentally sound recovery and disposal of waste EEE.",
+    "reference_contexts": [
+      "Article 1\nSubject matter\nThis Directive lays down rules on the restriction of the use of hazardous substances in electrical and electronic equipment (EEE) with a view to contributing to the protection of human health and the environment, including the environmentally sound recovery and disposal of waste EEE."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00005"
+    ],
+    "article": "1",
+    "annex": null,
+    "paragraph": null,
+    "verified_phrases": [
+      "restriction of the use of hazardous substances in electrical and electronic equipment (EEE)"
+    ]
+  },
+  {
+    "id": "rohs-article-2-scope",
+    "question": "Under RoHS Article 2(1), to which equipment does the Directive apply?",
+    "regulation": "RoHS",
+    "reference_answer": "Subject to paragraph 2, RoHS Article 2(1) says this Directive shall apply to EEE falling within the categories set out in Annex I.",
+    "reference_contexts": [
+      "Article 2\nScope\n1. This Directive shall, subject to paragraph 2, apply to EEE falling within the categories set out in Annex I. __________"
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00006"
+    ],
+    "article": "2",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "apply to EEE falling within the categories set out in Annex I"
+    ]
+  },
+  {
+    "id": "rohs-eee-definition",
+    "question": "How does RoHS Article 3 define electrical and electronic equipment, including the voltage rating?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Article 3 defines electrical and electronic equipment or EEE as equipment which is dependent on electric currents or electromagnetic fields in order to work properly and equipment for the generation, transfer and measurement of such currents and fields and designed for use with a voltage rating not exceeding 1 000 volts for alternating current and 1 500 volts for direct current.",
+    "reference_contexts": [
+      "Article 3\nDefinitions\nFor the purposes of this Directive, the following definitions shall apply: (1) ‘electrical and electronic equipment’ or ‘EEE’ means equipment which is dependent on electric currents or electromagnetic fields in order to work properly and equipment for the generation, transfer and measurement of such currents and fields and designed for use with a voltage rating not exceeding 1 000 volts for alternating current and 1 500 volts for direct current; (2) for the purposes of point 1, ‘dependent ’ means, with regard to EEE, needing electric currents or electromagnetic fields to fulfil at least one intended function; (3) ‘large-scale stationary industrial tools’ means a large-scale assembly of machines, equipment, and/or components, functioning together for a specific application, permanently installed and de-installed by professionals at a given place, and used and maintained by professionals in an industrial manufacturing facility or research and development facility; (4) ‘large-scale fixed installation’ means a large-scale combination of several types of apparatus and, where applicable, other devices, which are assembled and installed by professionals, intended to be used permanently in a pre-defined and dedicated location, and de-installed by professionals; (5) ‘cables’ means all cables with a rated voltage of less than 250 volts that serve as a connection or an extension to connect EEE to the electrical outlet or to connect two or more EEE to each other; (6) ‘manufacturer’ means any natural or legal person who manufactures an EEE or who has an EEE designed or manufactured and markets it under his name or trademark; (7) ‘authorised representative’ means any natural or legal person established within the Union who has received a written mandate from a manufacturer to act on his behalf in relation to specified tasks; (8) ‘distributor’ means any natural or legal person in the supply chain, other than the manufacturer or the importer, who makes an EEE available on the market; (9) ‘importer’ means any natural or legal person established within the Union, who places an EEE from a third country on the Union market; (10) ‘economic operators’ means the manufacturer, the authorised representative, the importer and the distributor; (11) ‘making available on the market’ means any supply of an EEE for distribution, consumption or use on the Union market in the course of a commercial activity, whether in return for payment or free of charge; (12) ‘placing on the market’ means making available an EEE on the Union market for the first time; (13) ‘harmonised standard’ means a standard adopted by one of the European standardisation bodies listed in Annex I to Directive 98/34/EC of the European Parliament and of the Council of 22 June 1998 laying down a procedure for the provision of information in the field of technical standards and regulations and of rules on Information Society services ( 1 ) on the basis of a request made by the Commission in accordance with Article 6 of Directive 98/34/EC; (14) ‘technical specification’ means a document that prescribes technical requirements to be fulfilled by a product, process or service; (15) ‘CE marking’ means a marking by which the manufacturer indicates that the product is in conformity with the applicable requirements set out in Union harmonisation legislation providing for its affixing; (16) ‘conformity assessment’ means the process demonstrating whether the requirements of this Directive relating to an EEE, are met; (17) ‘market surveillance’ means the activities carried out and measures taken by public authorities to ensure that EEE complies with the requirements set out in this Directive and does not endanger health, safety or other issues of public interest protection; (18) ‘recall’ means any measure aimed at achieving the return of a product that has already been made available to the end user; (19) ‘withdrawal’ means any measure aimed at preventing a product in the supply chain from being made available on the market; (20) ‘homogeneous material’ means one material of uniform composition throughout or a material, consisting of a combination of materials, that cannot be disjointed or separated into different materials by mechanical actions such as unscrewing, cutting, crushing, grinding and abrasive processes; (21) ‘medical device’ means a medical device within the meaning of point (a) of Article 1(2) of Directive 93/42/EEC and which is also EEE; (22) ‘in vitro diagnostic medical device’ means an in vitro diagnostic medical device within the meaning of point (b) of Article 1(2) of Directive 98/79/EC; (23) ‘active implantable medical device’ means any active implantable medical device within the meaning of point (c) of Article 1(2) of Council Directive 90/385/EEC of 20 June 1990 on the approximation of the laws of the Member States relating to active implantable medical devices ( 2 ); ( 1 ) OJ L 204, 21.7.1998, p. 37. ( 2 ) OJ L 189, 20.7.1990, p. 17. (24) ‘industrial monitoring and control instruments’ means monitoring and control instruments designed for exclusively industrial or professional use; (25) ‘availability of a substitute’ means the ability of a substitute to be manufactured and delivered within a reasonable period of time as compared with the time required for manufacturing and delivering the substances listed in Annex II; (26) ‘reliability of a substitute’ means the probability that an EEE using a substitute will perform a required function without failure under stated conditions for a stated period of time; (27) ‘spare part’ means a separate part of an EEE that can replace a part of an EEE. The EEE cannot function as intended without that part of the EEE. The functionality of EEE is restored or is upgraded when the part is replaced by a spare part;"
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00020"
+    ],
+    "article": "3",
+    "annex": null,
+    "paragraph": null,
+    "verified_phrases": [
+      "voltage rating not exceeding 1 000 volts for alternating current and 1 500 volts for direct current"
+    ]
+  },
+  {
+    "id": "rohs-homogeneous-material",
+    "question": "What does RoHS Article 3 mean by a homogeneous material?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Article 3 defines a homogeneous material as one material of uniform composition throughout or a material, consisting of a combination of materials, that cannot be disjointed or separated into different materials by mechanical actions such as unscrewing, cutting, crushing, grinding and abrasive processes.",
+    "reference_contexts": [
+      "Article 3\nDefinitions\nFor the purposes of this Directive, the following definitions shall apply: (1) ‘electrical and electronic equipment’ or ‘EEE’ means equipment which is dependent on electric currents or electromagnetic fields in order to work properly and equipment for the generation, transfer and measurement of such currents and fields and designed for use with a voltage rating not exceeding 1 000 volts for alternating current and 1 500 volts for direct current; (2) for the purposes of point 1, ‘dependent ’ means, with regard to EEE, needing electric currents or electromagnetic fields to fulfil at least one intended function; (3) ‘large-scale stationary industrial tools’ means a large-scale assembly of machines, equipment, and/or components, functioning together for a specific application, permanently installed and de-installed by professionals at a given place, and used and maintained by professionals in an industrial manufacturing facility or research and development facility; (4) ‘large-scale fixed installation’ means a large-scale combination of several types of apparatus and, where applicable, other devices, which are assembled and installed by professionals, intended to be used permanently in a pre-defined and dedicated location, and de-installed by professionals; (5) ‘cables’ means all cables with a rated voltage of less than 250 volts that serve as a connection or an extension to connect EEE to the electrical outlet or to connect two or more EEE to each other; (6) ‘manufacturer’ means any natural or legal person who manufactures an EEE or who has an EEE designed or manufactured and markets it under his name or trademark; (7) ‘authorised representative’ means any natural or legal person established within the Union who has received a written mandate from a manufacturer to act on his behalf in relation to specified tasks; (8) ‘distributor’ means any natural or legal person in the supply chain, other than the manufacturer or the importer, who makes an EEE available on the market; (9) ‘importer’ means any natural or legal person established within the Union, who places an EEE from a third country on the Union market; (10) ‘economic operators’ means the manufacturer, the authorised representative, the importer and the distributor; (11) ‘making available on the market’ means any supply of an EEE for distribution, consumption or use on the Union market in the course of a commercial activity, whether in return for payment or free of charge; (12) ‘placing on the market’ means making available an EEE on the Union market for the first time; (13) ‘harmonised standard’ means a standard adopted by one of the European standardisation bodies listed in Annex I to Directive 98/34/EC of the European Parliament and of the Council of 22 June 1998 laying down a procedure for the provision of information in the field of technical standards and regulations and of rules on Information Society services ( 1 ) on the basis of a request made by the Commission in accordance with Article 6 of Directive 98/34/EC; (14) ‘technical specification’ means a document that prescribes technical requirements to be fulfilled by a product, process or service; (15) ‘CE marking’ means a marking by which the manufacturer indicates that the product is in conformity with the applicable requirements set out in Union harmonisation legislation providing for its affixing; (16) ‘conformity assessment’ means the process demonstrating whether the requirements of this Directive relating to an EEE, are met; (17) ‘market surveillance’ means the activities carried out and measures taken by public authorities to ensure that EEE complies with the requirements set out in this Directive and does not endanger health, safety or other issues of public interest protection; (18) ‘recall’ means any measure aimed at achieving the return of a product that has already been made available to the end user; (19) ‘withdrawal’ means any measure aimed at preventing a product in the supply chain from being made available on the market; (20) ‘homogeneous material’ means one material of uniform composition throughout or a material, consisting of a combination of materials, that cannot be disjointed or separated into different materials by mechanical actions such as unscrewing, cutting, crushing, grinding and abrasive processes; (21) ‘medical device’ means a medical device within the meaning of point (a) of Article 1(2) of Directive 93/42/EEC and which is also EEE; (22) ‘in vitro diagnostic medical device’ means an in vitro diagnostic medical device within the meaning of point (b) of Article 1(2) of Directive 98/79/EC; (23) ‘active implantable medical device’ means any active implantable medical device within the meaning of point (c) of Article 1(2) of Council Directive 90/385/EEC of 20 June 1990 on the approximation of the laws of the Member States relating to active implantable medical devices ( 2 ); ( 1 ) OJ L 204, 21.7.1998, p. 37. ( 2 ) OJ L 189, 20.7.1990, p. 17. (24) ‘industrial monitoring and control instruments’ means monitoring and control instruments designed for exclusively industrial or professional use; (25) ‘availability of a substitute’ means the ability of a substitute to be manufactured and delivered within a reasonable period of time as compared with the time required for manufacturing and delivering the substances listed in Annex II; (26) ‘reliability of a substitute’ means the probability that an EEE using a substitute will perform a required function without failure under stated conditions for a stated period of time; (27) ‘spare part’ means a separate part of an EEE that can replace a part of an EEE. The EEE cannot function as intended without that part of the EEE. The functionality of EEE is restored or is upgraded when the part is replaced by a spare part;"
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00020"
+    ],
+    "article": "3",
+    "annex": null,
+    "paragraph": null,
+    "verified_phrases": [
+      "cannot be disjointed or separated into different materials by mechanical actions"
+    ]
+  },
+  {
+    "id": "rohs-article-4-prevention",
+    "question": "What does RoHS Article 4(1) require Member States to ensure about EEE placed on the market?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Article 4(1) requires Member States to ensure that EEE placed on the market, including cables and spare parts for its repair, its reuse, updating of its functionalities or upgrading of its capacity, does not contain the substances listed in Annex II.",
+    "reference_contexts": [
+      "Article 4\nPrevention\n1. Member States shall ensure that EEE placed on the market, including cables and spare parts for its repair, its reuse, updating of its functionalities or upgrading of its capacity, does not contain the substances listed in Annex II."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00022"
+    ],
+    "article": "4",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "does not contain the substances listed in Annex II"
+    ]
+  },
+  {
+    "id": "rohs-article-4-concentration",
+    "question": "What does RoHS Article 4(2) say may be tolerated for the substances specified in Annex II?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Article 4(2) says that no more than the maximum concentration value by weight in homogeneous materials as specified in Annex II shall be tolerated.",
+    "reference_contexts": [
+      "Article 4\nPrevention\n1. Member States shall ensure that EEE placed on the market, including cables and spare parts for its repair, its reuse, updating of its functionalities or upgrading of its capacity, does not contain the substances listed in Annex II.\n\n2. For the purposes of this Directive, no more than the maximum concentration value by weight in homogeneous materials as specified in Annex II shall be tolerated. The Commission shall adopt, by means of delegated acts in accordance with Article 20 and subject to the conditions laid down in Articles 21 and 22, detailed rules for complying with these maximum concentration values taking into account, inter alia, surface coatings."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00023"
+    ],
+    "article": "4",
+    "annex": null,
+    "paragraph": "2",
+    "verified_phrases": [
+      "no more than the maximum concentration value by weight in homogeneous materials"
+    ]
+  },
+  {
+    "id": "rohs-article-6-review",
+    "question": "By which date does RoHS Article 6 say the Commission shall consider a review of the restricted substances in Annex II?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Article 6 says a review, based on a thorough assessment, and amendment of the list of restricted substances in Annex II shall be considered by the Commission before 22 July 2014, and periodically thereafter.",
+    "reference_contexts": [
+      "Article 6\nReview and amendment of list of restricted substances in Annex II\n1. With a view to achieving the objectives set out in Article 1 and taking account of the precautionary principle, a review, based on a thorough assessment, and amendment of the list of restricted substances in Annex II shall be considered by the Commission before 22 July 2014, and periodically thereafter on its own initiative or following the submission of a proposal by a Member State containing the information referred to in paragraph 2.\nThe review and amendment of the list of restricted substances in Annex II shall be coherent with other legislation related to chemicals, in particular Regulation (EC) No 1907/2006, and shall take into account, inter alia, Annexes XIV and XVII to that Regulation. The review shall use publicly available knowledge obtained from the application of such legislation.\nIn order to review and amend Annex II, the Commission shall take special account of whether a substance, including substances of very small size or with a very small internal or surface structure, or a group of similar substances:"
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00056"
+    ],
+    "article": "6",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "before 22 July 2014"
+    ]
+  },
+  {
+    "id": "rohs-article-7-manufacturers",
+    "question": "What does RoHS Article 7(a) require manufacturers to ensure when placing EEE on the market?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Article 7(a) requires that, when placing EEE on the market, manufacturers ensure that it has been designed and manufactured in accordance with the requirements set out in Article 4.",
+    "reference_contexts": [
+      "Article 7\nObligations of manufacturers\nMember States shall ensure that:\n(a) when placing EEE on the market, manufacturers ensure that it has been designed and manufactured in accordance with the requirements set out in Article 4;"
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00070"
+    ],
+    "article": "7",
+    "annex": null,
+    "paragraph": null,
+    "verified_phrases": [
+      "designed and manufactured in accordance with the requirements set out in Article 4"
+    ]
+  },
+  {
+    "id": "rohs-article-9-importers",
+    "question": "What does RoHS Article 9(a) require importers to place on the Union market?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Article 9(a) requires that importers place only EEE that complies with this Directive on the Union market.",
+    "reference_contexts": [
+      "Article 9\nObligations of importers\nMember States shall ensure that:\n(a) importers place only EEE that complies with this Directive on the Union market;"
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00082"
+    ],
+    "article": "9",
+    "annex": null,
+    "paragraph": null,
+    "verified_phrases": [
+      "importers place only EEE that complies with this Directive on the Union market"
+    ]
+  },
+  {
+    "id": "rohs-article-10-distributors",
+    "question": "What must distributors verify under RoHS Article 10(a) about the CE marking?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Article 10(a) requires distributors, when making an EEE available on the market, to act with due care in particular by verifying that the EEE bears the CE marking, that it is accompanied by the required documents, and that the manufacturer and the importer have complied with the requirements set out in points (g) and (h) of Article 7 and in point (d) of Article 9.",
+    "reference_contexts": [
+      "Article 10\nObligations of distributors\nMember States shall ensure that:\n(a) when making an EEE available on the market, distributors act with due care in relation to the requirements applicable in particular by verifying that the EEE bears the CE marking, that it is accompanied by the required documents in a language which can be easily understood by consumers and other end-users in the Member State in which the EEE is to be made available on the market, and that the manufacturer and the importer have complied with the requirements set out in points (g) and (h) of Article 7 and in point (d) of Article 9;"
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00090"
+    ],
+    "article": "10",
+    "annex": null,
+    "paragraph": null,
+    "verified_phrases": [
+      "verifying that the EEE bears the CE marking"
+    ]
+  },
+  {
+    "id": "rohs-article-11-manufacturer",
+    "question": "When does RoHS Article 11 treat an importer or distributor as a manufacturer?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Article 11 says an importer or distributor is considered a manufacturer and is subject to the obligations of the manufacturer under Article 7 where he places EEE on the market under his name or trademark or modifies EEE already placed on the market in such a way that compliance with the applicable requirements may be affected.",
+    "reference_contexts": [
+      "Article 11\nCases in which obligations of manufacturers apply to importers and\ndistributors\nMember States shall ensure that an importer or distributor is considered a manufacturer for the purposes of this Directive and that he is subject to the obligations of the manufacturer under Article 7, where he places EEE on the market under his name or trademark or modifies EEE already placed on the market in such a way that compliance with the applicable requirements may be affected."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00094"
+    ],
+    "article": "11",
+    "annex": null,
+    "paragraph": null,
+    "verified_phrases": [
+      "places EEE on the market under his name or trademark"
+    ]
+  },
+  {
+    "id": "rohs-article-13-declaration",
+    "question": "What must the EU declaration of conformity state under RoHS Article 13(1)?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Article 13(1) says the EU declaration of conformity shall state that it has been demonstrated that the requirements specified in Article 4 have been met.",
+    "reference_contexts": [
+      "Article 13\nEU declaration of conformity\n1. The EU declaration of conformity shall state that it has been demonstrated that the requirements specified in Article 4 have been met."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00098"
+    ],
+    "article": "13",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "requirements specified in Article 4 have been met"
+    ]
+  },
+  {
+    "id": "rohs-article-15-ce",
+    "question": "How does RoHS Article 15(1) require the CE marking to be affixed?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Article 15(1) says the CE marking shall be affixed visibly, legibly and indelibly to the finished EEE or to its data plate. Where that is not possible or not warranted on account of the nature of the EEE, it shall be affixed to the packaging and to the accompanying documents.",
+    "reference_contexts": [
+      "Article 15\nRules and conditions for affixing the CE marking\n1. The CE marking shall be affixed visibly, legibly and indelibly to the finished EEE or to its data plate. Where that is not possible or not warranted on account of the nature of the EEE, it shall be affixed to the packaging and to the accompanying documents."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00102"
+    ],
+    "article": "15",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "affixed visibly, legibly and indelibly"
+    ]
+  },
+  {
+    "id": "rohs-article-16-presumption",
+    "question": "What does RoHS Article 16(1) say Member States shall presume about EEE bearing the CE marking?",
+    "regulation": "RoHS",
+    "reference_answer": "In the absence of evidence to the contrary, RoHS Article 16(1) says Member States shall presume EEE bearing the CE marking to comply with this Directive.",
+    "reference_contexts": [
+      "Article 16\nPresumption of conformity\n1. In the absence of evidence to the contrary, Member States shall presume EEE bearing the CE marking to comply with this Directive."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00105"
+    ],
+    "article": "16",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "presume EEE bearing the CE marking to comply with this Directive"
+    ]
+  },
+  {
+    "id": "rohs-article-23-penalties",
+    "question": "What must penalties be under RoHS Article 23, and by when must Member States notify those provisions to the Commission?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Article 23 says the penalties provided for must be effective, proportionate and dissuasive. The Member States shall notify those provisions to the Commission by 2 January 2013 and shall notify it without delay of any subsequent amendment affecting them.",
+    "reference_contexts": [
+      "Article 23\nPenalties\nThe Member States shall lay down the rules on penalties applicable to infringements of the national provisions adopted pursuant to this Directive and shall take all measures necessary to ensure that they are implemented. The penalties provided for must be effective, proportionate and dissuasive. The Member States shall notify those provisions to the Commission by 2 January 2013 and shall notify it without delay of any subsequent amendment affecting them."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00122"
+    ],
+    "article": "23",
+    "annex": null,
+    "paragraph": null,
+    "verified_phrases": [
+      "effective, proportionate and dissuasive",
+      "by 2 January 2013"
+    ]
+  },
+  {
+    "id": "rohs-article-25-transposition",
+    "question": "By what date must Member States adopt and publish the laws necessary to comply with the RoHS Directive under Article 25(1)?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Article 25(1) says Member States shall adopt and publish, by 2 January 2013, the laws, regulations and administrative provisions necessary to comply with this Directive.",
+    "reference_contexts": [
+      "Article 25\nTransposition\n1. Member States shall adopt and publish, by 2 January 2013, the laws, regulations and administrative provisions necessary to comply with this Directive. They shall forthwith communicate to the Commission the text of those provisions.\nWhen Member States adopt those provisions, they shall contain a reference to this Directive or be accompanied by such a reference on the occasion of their official publication. Member States shall determine how such reference is to be made."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00125"
+    ],
+    "article": "25",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "by 2 January 2013, the laws, regulations and administrative provisions"
+    ]
+  },
+  {
+    "id": "rohs-article-26-repeal",
+    "question": "From which date does RoHS Article 26 repeal Directive 2002/95/EC?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Article 26 says Directive 2002/95/EC is repealed with effect from 3 January 2013, without prejudice to the obligations of the Member States relating to the time limits for transposition into national law and application of the Directive set out in Annex VII, Part B.",
+    "reference_contexts": [
+      "Article 26\nRepeal\nDirective 2002/95/EC as amended by the acts listed in Annex VII, Part\nA is repealed with effect from 3 January 2013 without prejudice to the obligations of the Member States relating to the time limits for transposition into national law and application of the Directive set out in Annex VII, Part B.\nReferences to the repealed acts shall be construed as references to this\nDirective and shall be read in accordance with the correlation table in\nAnnex VIII."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00127"
+    ],
+    "article": "26",
+    "annex": null,
+    "paragraph": null,
+    "verified_phrases": [
+      "repealed with effect from 3 January 2013"
+    ]
+  },
+  {
+    "id": "rohs-article-27-entry",
+    "question": "When does the RoHS Directive enter into force under Article 27?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Article 27 says this Directive shall enter into force on the 20th day following its publication in the Official Journal of the European Union.",
+    "reference_contexts": [
+      "Article 27\nEntry into force\nThis Directive shall enter into force on the 20th day following its publication in the Official Journal of the European Union."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00128"
+    ],
+    "article": "27",
+    "annex": null,
+    "paragraph": null,
+    "verified_phrases": [
+      "20th day following its publication in the Official Journal"
+    ]
+  },
+  {
+    "id": "rohs-lead-limit",
+    "question": "What maximum concentration value by weight in homogeneous materials does RoHS Annex II tolerate for lead?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Annex II lists Lead (0,1 %).",
+    "reference_contexts": [
+      "ANNEX II\nRestricted substances referred to in Article 4(1) and maximum concentration\nvalues tolerated by weight in homogeneous materials\nLead (0,1 %)\nMercury (0,1 %)\nCadmium (0,01 %)\nHexavalent chromium (0,1 %)\nPolybrominated biphenyls (PBB) (0,1 %)\nPolybrominated diphenyl ethers (PBDE) (0,1 %)\nBis(2-ethylhexyl) phthalate (DEHP) (0,1 %)\nButyl benzyl phthalate (BBP) (0,1 %)\nDibutyl phthalate (DBP) (0,1 %)\nDiisobutyl phthalate (DIBP) (0,1 %)\nThe restriction of DEHP, BBP, DBP and DIBP shall apply to medical devices, including in vitro medical devices, and monitoring and control instruments, including industrial monitoring and control instruments, from 22 July 2021.\nThe restriction of DEHP, BBP, DBP and DIBP shall not apply to cables or spare parts for the repair, the reuse, the updating of functionalities or upgrading of capacity of EEE placed on the market before 22 July 2019, and of medical devices, including in vitro medical devices, and monitoring and control instruments, including industrial monitoring and control instruments, placed on the market before 22 July 2021.\nThe restriction of DEHP, BBP and DBP shall not apply to toys which are already subject to the restriction of DEHP, BBP and DBP through entry 51 of Annex XVII to Regulation (EC) No 1907/2006."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00141"
+    ],
+    "article": null,
+    "annex": "II",
+    "paragraph": null,
+    "verified_phrases": [
+      "Lead (0,1 %)"
+    ]
+  },
+  {
+    "id": "rohs-cadmium-limit",
+    "question": "What maximum concentration value by weight in homogeneous materials does RoHS Annex II tolerate for cadmium?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Annex II lists Cadmium (0,01 %).",
+    "reference_contexts": [
+      "ANNEX II\nRestricted substances referred to in Article 4(1) and maximum concentration\nvalues tolerated by weight in homogeneous materials\nLead (0,1 %)\nMercury (0,1 %)\nCadmium (0,01 %)\nHexavalent chromium (0,1 %)\nPolybrominated biphenyls (PBB) (0,1 %)\nPolybrominated diphenyl ethers (PBDE) (0,1 %)\nBis(2-ethylhexyl) phthalate (DEHP) (0,1 %)\nButyl benzyl phthalate (BBP) (0,1 %)\nDibutyl phthalate (DBP) (0,1 %)\nDiisobutyl phthalate (DIBP) (0,1 %)\nThe restriction of DEHP, BBP, DBP and DIBP shall apply to medical devices, including in vitro medical devices, and monitoring and control instruments, including industrial monitoring and control instruments, from 22 July 2021.\nThe restriction of DEHP, BBP, DBP and DIBP shall not apply to cables or spare parts for the repair, the reuse, the updating of functionalities or upgrading of capacity of EEE placed on the market before 22 July 2019, and of medical devices, including in vitro medical devices, and monitoring and control instruments, including industrial monitoring and control instruments, placed on the market before 22 July 2021.\nThe restriction of DEHP, BBP and DBP shall not apply to toys which are already subject to the restriction of DEHP, BBP and DBP through entry 51 of Annex XVII to Regulation (EC) No 1907/2006."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00141"
+    ],
+    "article": null,
+    "annex": "II",
+    "paragraph": null,
+    "verified_phrases": [
+      "Cadmium (0,01 %)"
+    ]
+  },
+  {
+    "id": "rohs-dehp-medical-date",
+    "question": "From which date does RoHS Annex II apply the restriction of DEHP, BBP, DBP and DIBP to medical devices?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Annex II says the restriction of DEHP, BBP, DBP and DIBP shall apply to medical devices, including in vitro medical devices, and monitoring and control instruments, including industrial monitoring and control instruments, from 22 July 2021.",
+    "reference_contexts": [
+      "ANNEX II\nRestricted substances referred to in Article 4(1) and maximum concentration\nvalues tolerated by weight in homogeneous materials\nLead (0,1 %)\nMercury (0,1 %)\nCadmium (0,01 %)\nHexavalent chromium (0,1 %)\nPolybrominated biphenyls (PBB) (0,1 %)\nPolybrominated diphenyl ethers (PBDE) (0,1 %)\nBis(2-ethylhexyl) phthalate (DEHP) (0,1 %)\nButyl benzyl phthalate (BBP) (0,1 %)\nDibutyl phthalate (DBP) (0,1 %)\nDiisobutyl phthalate (DIBP) (0,1 %)\nThe restriction of DEHP, BBP, DBP and DIBP shall apply to medical devices, including in vitro medical devices, and monitoring and control instruments, including industrial monitoring and control instruments, from 22 July 2021.\nThe restriction of DEHP, BBP, DBP and DIBP shall not apply to cables or spare parts for the repair, the reuse, the updating of functionalities or upgrading of capacity of EEE placed on the market before 22 July 2019, and of medical devices, including in vitro medical devices, and monitoring and control instruments, including industrial monitoring and control instruments, placed on the market before 22 July 2021.\nThe restriction of DEHP, BBP and DBP shall not apply to toys which are already subject to the restriction of DEHP, BBP and DBP through entry 51 of Annex XVII to Regulation (EC) No 1907/2006."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00141"
+    ],
+    "article": null,
+    "annex": "II",
+    "paragraph": null,
+    "verified_phrases": [
+      "from 22 July 2021"
+    ]
+  },
+  {
+    "id": "rohs-phthalate-toys",
+    "question": "What exception does RoHS Annex II state for toys already restricted through entry 51 of Annex XVII to REACH?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Annex II says the restriction of DEHP, BBP and DBP shall not apply to toys which are already subject to the restriction of DEHP, BBP and DBP through entry 51 of Annex XVII to Regulation (EC) No 1907/2006.",
+    "reference_contexts": [
+      "ANNEX II\nRestricted substances referred to in Article 4(1) and maximum concentration\nvalues tolerated by weight in homogeneous materials\nLead (0,1 %)\nMercury (0,1 %)\nCadmium (0,01 %)\nHexavalent chromium (0,1 %)\nPolybrominated biphenyls (PBB) (0,1 %)\nPolybrominated diphenyl ethers (PBDE) (0,1 %)\nBis(2-ethylhexyl) phthalate (DEHP) (0,1 %)\nButyl benzyl phthalate (BBP) (0,1 %)\nDibutyl phthalate (DBP) (0,1 %)\nDiisobutyl phthalate (DIBP) (0,1 %)\nThe restriction of DEHP, BBP, DBP and DIBP shall apply to medical devices, including in vitro medical devices, and monitoring and control instruments, including industrial monitoring and control instruments, from 22 July 2021.\nThe restriction of DEHP, BBP, DBP and DIBP shall not apply to cables or spare parts for the repair, the reuse, the updating of functionalities or upgrading of capacity of EEE placed on the market before 22 July 2019, and of medical devices, including in vitro medical devices, and monitoring and control instruments, including industrial monitoring and control instruments, placed on the market before 22 July 2021.\nThe restriction of DEHP, BBP and DBP shall not apply to toys which are already subject to the restriction of DEHP, BBP and DBP through entry 51 of Annex XVII to Regulation (EC) No 1907/2006."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00141"
+    ],
+    "article": null,
+    "annex": "II",
+    "paragraph": null,
+    "verified_phrases": [
+      "entry 51 of Annex XVII"
+    ]
+  },
+  {
+    "id": "rohs-annex-iv-detectors",
+    "question": "What does entry 1 of RoHS Annex IV exempt in detectors for ionising radiation?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Annex IV entry 1 exempts lead, cadmium and mercury in detectors for ionising radiation.",
+    "reference_contexts": [
+      "ANNEX IV\nApplications exempted from the restriction in Article 4(1) specific to medical\ndevices and monitoring and control instruments\nEquipment utilising or detecting ionising radiation\n1. Lead, cadmium and mercury in detectors for ionising radiation."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00216"
+    ],
+    "article": null,
+    "annex": "IV",
+    "paragraph": null,
+    "verified_phrases": [
+      "Lead, cadmium and mercury in detectors for ionising radiation."
+    ]
+  },
+  {
+    "id": "rohs-annex-v-applicants",
+    "question": "Who may submit an application for granting, renewing or revoking an exemption under RoHS Annex V?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Annex V says applications for exemptions, renewal of exemptions or, mutatis mutandis, for revoking an exemption may be submitted by a manufacturer, the authorised representative of a manufacturer, or any economic operator in the supply chain.",
+    "reference_contexts": [
+      "ANNEX V\nApplications for granting, renewing and revoking exemptions as referred to\nin Article 5\nApplications for exemptions, renewal of exemptions or, mutatis mutandis, for\nrevoking an exemption may be submitted by a manufacturer, the authorised\nrepresentative of a manufacturer, or any economic operator in the supply chain\nand shall include at least the following:\n(a) the name, address and contact details of the applicant;\n(b) information on the material or component and the specific uses of the substance in the material and component for which an exemption, or its revocation, is requested and its particular characteristics;\n(c) verifiable and referenced justification for an exemption, or its revocation, in line with the conditions established in Article 5;\n(d) an analysis of possible alternative substances, materials or designs on a lifecycle basis, including, when available, information about independent research, peer-review studies and development activities by the applicant and an analysis of the availability of such alternatives;\n(e) information on the possible preparation for reuse or recycling of materials from waste EEE, and on the provisions relating to the appropriate treatment of waste according to Annex II to Directive 2002/96/EC;\n(f) other relevant information;\n(g) the proposed actions to develop, request the development and/or to apply possible alternatives including a timetable for such actions by the applicant;\n(h) where appropriate, an indication of the information which should be regarded as proprietary accompanied by verifiable justification;\n(i) when applying for an exemption, proposal for a precise and clear wording for the exemption;\n(j) a summary of the application."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00264"
+    ],
+    "article": null,
+    "annex": "V",
+    "paragraph": null,
+    "verified_phrases": [
+      "any economic operator in the supply chain"
+    ]
+  },
+  {
+    "id": "rohs-article-4-and-lead",
+    "question": "What does RoHS Article 4(1) require regarding Annex II, and what concentration of lead does Annex II tolerate?",
+    "regulation": "RoHS",
+    "reference_answer": "RoHS Article 4(1) requires Member States to ensure that EEE placed on the market, including cables and spare parts for its repair, its reuse, updating of its functionalities or upgrading of its capacity, does not contain the substances listed in Annex II. Annex II lists Lead (0,1 %).",
+    "reference_contexts": [
+      "Article 4\nPrevention\n1. Member States shall ensure that EEE placed on the market, including cables and spare parts for its repair, its reuse, updating of its functionalities or upgrading of its capacity, does not contain the substances listed in Annex II.",
+      "ANNEX II\nRestricted substances referred to in Article 4(1) and maximum concentration\nvalues tolerated by weight in homogeneous materials\nLead (0,1 %)\nMercury (0,1 %)\nCadmium (0,01 %)\nHexavalent chromium (0,1 %)\nPolybrominated biphenyls (PBB) (0,1 %)\nPolybrominated diphenyl ethers (PBDE) (0,1 %)\nBis(2-ethylhexyl) phthalate (DEHP) (0,1 %)\nButyl benzyl phthalate (BBP) (0,1 %)\nDibutyl phthalate (DBP) (0,1 %)\nDiisobutyl phthalate (DIBP) (0,1 %)\nThe restriction of DEHP, BBP, DBP and DIBP shall apply to medical devices, including in vitro medical devices, and monitoring and control instruments, including industrial monitoring and control instruments, from 22 July 2021.\nThe restriction of DEHP, BBP, DBP and DIBP shall not apply to cables or spare parts for the repair, the reuse, the updating of functionalities or upgrading of capacity of EEE placed on the market before 22 July 2019, and of medical devices, including in vitro medical devices, and monitoring and control instruments, including industrial monitoring and control instruments, placed on the market before 22 July 2021.\nThe restriction of DEHP, BBP and DBP shall not apply to toys which are already subject to the restriction of DEHP, BBP and DBP through entry 51 of Annex XVII to Regulation (EC) No 1907/2006."
+    ],
+    "expected_chunk_ids": [
+      "02011L0065-20260701:00022",
+      "02011L0065-20260701:00141"
+    ],
+    "article": "4",
+    "annex": "II",
+    "paragraph": null,
+    "verified_phrases": [
+      "does not contain the substances listed in Annex II",
+      "Lead (0,1 %)"
+    ],
+    "notes": "This question needs both the Article 4 prevention chunk and the Annex II list."
+  },
+  {
+    "id": "reach-article-1-aim",
+    "question": "What purpose does REACH Article 1(1) state for the Regulation?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 1(1) says the purpose of this Regulation is to ensure a high level of protection of human health and the environment, including the promotion of alternative methods for assessment of hazards of substances, as well as the free circulation of substances on the internal market while enhancing competitiveness and innovation.",
+    "reference_contexts": [
+      "Article 1\nAim and scope\n1. The purpose of this Regulation is to ensure a high level of protection of human health and the environment, including the promotion of alternative methods for assessment of hazards of substances, as well as the free circulation of substances on the internal market while enhancing competitiveness and innovation."
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00007"
+    ],
+    "article": "1",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "high level of protection of human health and the environment"
+    ]
+  },
+  {
+    "id": "reach-substance-definition",
+    "question": "How does REACH Article 3 define a substance?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 3 defines a substance as a chemical element and its compounds in the natural state or obtained by any manufacturing process, including any additive necessary to preserve its stability and any impurity deriving from the process used, but excluding any solvent which may be separated without affecting the stability of the substance or changing its composition.",
+    "reference_contexts": [
+      "Article 3\nDefinitions\nFor the purposes of this Regulation:\n1. substance: means a chemical element and its compounds in the natural state or obtained by any manufacturing process, including any additive necessary to preserve its stability and any impurity deriving from the process used, but excluding any solvent which may be separated without affecting the stability of the substance or changing its composition;"
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00051"
+    ],
+    "article": "3",
+    "annex": null,
+    "paragraph": null,
+    "verified_phrases": [
+      "excluding any solvent which may be separated without affecting the stability"
+    ]
+  },
+  {
+    "id": "reach-article-5-no-data",
+    "question": "What does REACH Article 5 require before manufacture or placing on the market, and which articles qualify that rule?",
+    "regulation": "REACH",
+    "reference_answer": "Subject to Articles 6, 7, 21 and 23, REACH Article 5 says substances on their own, in mixtures or in articles shall not be manufactured in the Community or placed on the market unless they have been registered in accordance with the relevant provisions of this Title where this is required.",
+    "reference_contexts": [
+      "Article 5\nNo data, no market Subject to Articles 6, 7, 21 and 23, substances on their own, in ►M3 mixtures ◄ or in articles shall not be manufactured in the Community or placed on the market unless they have been registered in accordance with the relevant provisions of this Title where this is required."
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00103"
+    ],
+    "article": "5",
+    "annex": null,
+    "paragraph": null,
+    "verified_phrases": [
+      "Subject to Articles 6, 7, 21 and 23"
+    ]
+  },
+  {
+    "id": "reach-article-6-registration",
+    "question": "What quantity triggers registration under REACH Article 6(1), and what does Article 6(2) say about monomers used as isolated intermediates?",
+    "regulation": "REACH",
+    "reference_answer": "Save where this Regulation provides otherwise, REACH Article 6(1) says any manufacturer or importer of a substance, either on its own or in one or more mixtures, in quantities of one tonne or more per year shall submit a registration to the Agency. Article 6(2) says that for monomers used as on-site isolated intermediates or transported isolated intermediates, Articles 17 and 18 shall not apply.",
+    "reference_contexts": [
+      "Article 6\nGeneral obligation to register substances on their own or in\n►M3 mixtures ◄\n1. Save where this Regulation provides otherwise, any manufacturer or importer of a substance, either on its own or in one or more ►M3 mixture ◄ (s), in quantities of one tonne or more per year shall submit a registration to the Agency.",
+      "Article 6\nGeneral obligation to register substances on their own or in\n►M3 mixtures ◄\n1. Save where this Regulation provides otherwise, any manufacturer or importer of a substance, either on its own or in one or more ►M3 mixture ◄ (s), in quantities of one tonne or more per year shall submit a registration to the Agency.\n\n2. For monomers that are used as on-site isolated intermediates or transported isolated intermediates, Articles 17 and 18 shall not apply."
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00104",
+      "02006R1907-20260622:00105"
+    ],
+    "article": "6",
+    "annex": null,
+    "paragraph": null,
+    "verified_phrases": [
+      "one tonne or more per year",
+      "Articles 17 and 18 shall not apply."
+    ],
+    "notes": "Paragraph 1 and paragraph 2 are in consecutive chunks."
+  },
+  {
+    "id": "reach-article-7-articles",
+    "question": "What quantity does REACH Article 7(1)(a) set for a substance present in articles before a producer or importer must consider registration?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 7(1) says any producer or importer of articles shall submit a registration to the Agency for any substance contained in those articles if both stated conditions are met. Condition (a) in the indexed text is that the substance is present in those articles in quantities totalling over one tonne per producer or importer per year.",
+    "reference_contexts": [
+      "Article 7\nRegistration and notification of substances in articles\n1. Any producer or importer of articles shall submit a registration to the Agency for any substance contained in those articles, if both the following conditions are met:",
+      "Article 7\nRegistration and notification of substances in articles\n1. Any producer or importer of articles shall submit a registration to the Agency for any substance contained in those articles, if both the following conditions are met:\n\n(a) the substance is present in those articles in quantities totalling over one tonne per producer or importer per year;"
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00111",
+      "02006R1907-20260622:00112"
+    ],
+    "article": "7",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "quantities totalling over one tonne per producer or importer per year"
+    ],
+    "notes": "Condition (b) is not present in these two chunks, so the reference answer does not state it."
+  },
+  {
+    "id": "reach-article-8-representative",
+    "question": "Whom may a non-Community manufacturer appoint under REACH Article 8(1)?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 8(1) says a natural or legal person established outside the Community who manufactures a substance, formulates a mixture or produces an article that is imported into the Community may by mutual agreement appoint a natural or legal person established in the Community to fulfil, as his only representative, the obligations on importers under this Title.",
+    "reference_contexts": [
+      "Article 8\nOnly representative of a non-Community manufacturer\n1. A natural or legal person established outside the Community who manufactures a substance on its own, in ►M3 mixtures ◄ or in articles, formulates a ►M3 mixture ◄ or produces an article that is imported into the Community may by mutual agreement appoint a natural or legal person established in the Community to fulfil, as his only representative, the obligations on importers under this Title."
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00136"
+    ],
+    "article": "8",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "only representative"
+    ]
+  },
+  {
+    "id": "reach-article-9-ppord",
+    "question": "For how long does REACH Article 9(1) disapply Articles 5, 6, 7, 17, 18 and 21 for product and process orientated research and development?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 9(1) says Articles 5, 6, 7, 17, 18 and 21 shall not apply for a period of five years to a substance manufactured in the Community or imported for the purposes of product and process orientated research and development, in a quantity limited to that purpose.",
+    "reference_contexts": [
+      "Article 9\nExemption from the general obligation to register for product and\nprocess orientated research and development (PPORD)\n1. Articles 5, 6, 7, 17, 18 and 21 shall not apply for a period of five years to a substance manufactured in the Community or imported for the purposes of product and process orientated research and development by a manufacturer or importer or producer of articles, by himself or in cooperation with listed customers and in a quantity which is limited to the purpose of product and process orientated research and development."
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00139"
+    ],
+    "article": "9",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "shall not apply for a period of five years"
+    ]
+  },
+  {
+    "id": "reach-article-14-csr",
+    "question": "At what quantity per year does REACH Article 14(1) require a chemical safety assessment and a chemical safety report?",
+    "regulation": "REACH",
+    "reference_answer": "Without prejudice to Article 4 of Directive 98/24/EC, REACH Article 14(1) says a chemical safety assessment shall be performed and a chemical safety report completed for all substances subject to registration in accordance with this Chapter in quantities of 10 tonnes or more per year per registrant.",
+    "reference_contexts": [
+      "Article 14\nChemical safety report and duty to apply and recommend risk\nreduction measures\n1. Without prejudice to Article 4 of Directive 98/24/EC, a chemical safety assessment shall be performed and a chemical safety report completed for all substances subject to registration in accordance with this Chapter in quantities of 10 tonnes or more per year per registrant.\nThe chemical safety report shall document the chemical safety assessment which shall be conducted in accordance with paragraphs 2 to 7 and with Annex I for either each substance on its own or in a ►M3 mixture ◄ or in an article or a group of substances."
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00190"
+    ],
+    "article": "14",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "10 tonnes or more per year per registrant"
+    ]
+  },
+  {
+    "id": "reach-article-17-intermediate",
+    "question": "What registration duty does REACH Article 17(1) place on a manufacturer of an on-site isolated intermediate?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 17(1) says any manufacturer of an on-site isolated intermediate in quantities of one tonne or more per year shall submit a registration to the Agency for the on-site isolated intermediate.",
+    "reference_contexts": [
+      "Article 17\nRegistration of on-site isolated intermediates\n1. Any manufacturer of an on-site isolated intermediate in quantities of one tonne or more per year shall submit a registration to the Agency for the on-site isolated intermediate."
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00222"
+    ],
+    "article": "17",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "on-site isolated intermediate in quantities of one tonne or more per year"
+    ]
+  },
+  {
+    "id": "reach-article-23-phase-in",
+    "question": "Until which date does REACH Article 23(1) disapply Articles 5, 6, 7(1), 17, 18 and 21 for the phase-in substances it lists?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 23(1) says Article 5, Article 6, Article 7(1), Article 17, Article 18 and Article 21 shall not apply until 1 December 2010 to the following substances.",
+    "reference_contexts": [
+      "Article 23\nSpecific provisions for phase-in substances\n1. Article 5, Article 6, Article 7(1), Article 17, Article 18 and Article 21 shall not apply until 1 December 2010 to the following substances:"
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00283"
+    ],
+    "article": "23",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "shall not apply until 1 December 2010"
+    ]
+  },
+  {
+    "id": "reach-article-25-animals",
+    "question": "What does REACH Article 25(1) say about testing on vertebrate animals?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 25(1) says that, in order to avoid animal testing, testing on vertebrate animals for the purposes of this Regulation shall be undertaken only as a last resort.",
+    "reference_contexts": [
+      "Article 25\nObjectives and general rules\n1. In order to avoid animal testing, testing on vertebrate animals for the purposes of this Regulation shall be undertaken only as a last resort.\nIt is also necessary to take measures limiting duplication of other tests."
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00295"
+    ],
+    "article": "25",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "only as a last resort"
+    ]
+  },
+  {
+    "id": "reach-article-31-sds",
+    "question": "In accordance with which annex must a safety data sheet be compiled under REACH Article 31(1)?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 31(1) says the supplier of a substance or a mixture shall provide the recipient with a safety data sheet compiled in accordance with Annex II.",
+    "reference_contexts": [
+      "Article 31\nRequirements for safety data sheets\n1. The supplier of a substance or a ►M3 mixture ◄ shall provide the recipient of the substance or ►M3 mixture ◄ with a safety data sheet compiled in accordance with Annex II:"
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00343"
+    ],
+    "article": "31",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "compiled in accordance with Annex II"
+    ]
+  },
+  {
+    "id": "reach-article-33-concentration",
+    "question": "Above what concentration does REACH Article 33(1) require information on a substance in an article that meets the Article 57 criteria and is identified under Article 59(1)?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 33(1) applies to an article containing such a substance in a concentration above 0,1 % weight by weight (w/w). The supplier shall provide the recipient with sufficient information, available to the supplier, to allow safe use of the article including, as a minimum, the name of that substance.",
+    "reference_contexts": [
+      "Article 33\nDuty to communicate information on substances in articles\n1. Any supplier of an article containing a substance meeting the criteria in Article 57 and identified in accordance with Article 59(1) in a concentration above 0,1 % weight by weight (w/w) shall provide the recipient of the article with sufficient information, available to the supplier, to allow safe use of the article including, as a minimum, the name of that substance."
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00389"
+    ],
+    "article": "33",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "0,1 % weight by weight (w/w)"
+    ]
+  },
+  {
+    "id": "reach-article-55-authorisation",
+    "question": "What aim does REACH Article 55 state for the authorisation title?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 55 says the aim of this Title is to ensure the good functioning of the internal market while assuring that the risks from substances of very high concern are properly controlled and that these substances are progressively replaced by suitable alternative substances or technologies where these are economically and technically viable.",
+    "reference_contexts": [
+      "Article 55\nAim of authorisation and considerations for substitution\nThe aim of this Title is to ensure the good functioning of the internal market while assuring that the risks from substances of very high concern are properly controlled and that these substances are progressively replaced by suitable alternative substances or technologies where these are economically and technically viable. To this end all manufacturers, importers and downstream users applying for authorisations shall analyse the availability of alternatives and consider their risks, and the technical and economic feasibility of substitution."
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00517"
+    ],
+    "article": "55",
+    "annex": null,
+    "paragraph": null,
+    "verified_phrases": [
+      "substances of very high concern are properly controlled"
+    ]
+  },
+  {
+    "id": "reach-article-56-annex-xiv",
+    "question": "What prohibition does REACH Article 56(1) state for a substance included in Annex XIV?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 56(1) says a manufacturer, importer or downstream user shall not place a substance on the market for a use or use it himself if that substance is included in Annex XIV, unless:",
+    "reference_contexts": [
+      "Article 56\nGeneral provisions\n1. A manufacturer, importer or downstream user shall not place a substance on the market for a use or use it himself if that substance is included in Annex XIV, unless:"
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00518"
+    ],
+    "article": "56",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "included in Annex XIV, unless:"
+    ],
+    "notes": "The indexed chunk ends at 'unless:'. The following exceptions are not in this chunk and are not stated here."
+  },
+  {
+    "id": "reach-article-57-carcinogen",
+    "question": "Which carcinogenicity classification does REACH Article 57(a) identify as a ground for inclusion in Annex XIV?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 57(a) identifies substances meeting the criteria for classification in the hazard class carcinogenicity category 1A or 1B in accordance with section 3.6 of Annex I to Regulation (EC) No 1272/2008.",
+    "reference_contexts": [
+      "Article 57\nSubstances to be included in Annex XIV\nThe following substances may be included in Annex XIV in accordance with the procedure laid down in Article 58:\n(a) substances meeting the criteria for classification in the hazard class carcinogenicity category 1A or 1B in accordance with section 3.6 of Annex I to Regulation (EC) No 1272/2008;"
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00537"
+    ],
+    "article": "57",
+    "annex": null,
+    "paragraph": null,
+    "verified_phrases": [
+      "carcinogenicity category 1A or 1B"
+    ]
+  },
+  {
+    "id": "reach-article-60-commission",
+    "question": "Who does REACH Article 60(1) make responsible for decisions on applications for authorisations?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 60(1) says the Commission shall be responsible for taking decisions on applications for authorisations in accordance with this Title.",
+    "reference_contexts": [
+      "Article 60\nGranting of authorisations\n1. The Commission shall be responsible for taking decisions on applications for authorisations in accordance with this Title."
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00573"
+    ],
+    "article": "60",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "The Commission shall be responsible for taking decisions on applications for authorisations"
+    ]
+  },
+  {
+    "id": "reach-article-62-application",
+    "question": "To whom must an application for an authorisation be made under REACH Article 62(1)?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 62(1) says an application for an authorisation shall be made to the Agency.",
+    "reference_contexts": [
+      "Article 62\nApplications for authorisations\n1. An application for an authorisation shall be made to the Agency."
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00606"
+    ],
+    "article": "62",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "An application for an authorisation shall be made to the Agency."
+    ]
+  },
+  {
+    "id": "reach-article-66-notification",
+    "question": "Within what period must a downstream user notify the Agency under REACH Article 66(1)?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 66(1) says downstream users using a substance in accordance with Article 56(2) shall notify the Agency within three months of the first supply of the substance.",
+    "reference_contexts": [
+      "Article 66\nDownstream users\n1. Downstream users using a substance in accordance with Article 56(2) shall notify the Agency within three months of the first supply of the substance."
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00643"
+    ],
+    "article": "66",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "within three months of the first supply of the substance"
+    ]
+  },
+  {
+    "id": "reach-article-67-restriction",
+    "question": "What does REACH Article 67(1) require where Annex XVII contains a restriction, and which research use does that paragraph except?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 67(1) says a substance on its own, in a mixture or in an article, for which Annex XVII contains a restriction shall not be manufactured, placed on the market or used unless it complies with the conditions of that restriction. This shall not apply to the manufacture, placing on the market or use of a substance in scientific research and development.",
+    "reference_contexts": [
+      "Article 67\nGeneral provisions\n1. A substance on its own, in a ►M3 mixture ◄ or in an article, for which Annex XVII contains a restriction shall not be manufactured, placed on the market or used unless it complies with the conditions of that restriction. This shall not apply to the manufacture, placing on the market or use of a substance in scientific research and development.\nAnnex XVII shall specify if the restriction shall not apply to product\nand process orientated research and development, as well as the\nmaximum quantity exempted."
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00647"
+    ],
+    "article": "67",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "scientific research and development"
+    ]
+  },
+  {
+    "id": "reach-article-75-agency",
+    "question": "What body does REACH Article 75(1) establish?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 75(1) says a European Chemicals Agency is established for the purposes of managing and in some cases carrying out the technical, scientific and administrative aspects of this Regulation and to ensure consistency at Community level in relation to these aspects.",
+    "reference_contexts": [
+      "Article 75\nEstablishment and review\n1. A European Chemicals Agency is established for the purposes of managing and in some cases carrying out the technical, scientific and administrative aspects of this Regulation and to ensure consistency at Community level in relation to these aspects."
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00677"
+    ],
+    "article": "75",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "A European Chemicals Agency is established"
+    ]
+  },
+  {
+    "id": "reach-article-126-penalties",
+    "question": "What must penalties be under REACH Article 126, and by when must Member States notify those provisions to the Commission?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 126 says the penalties provided for must be effective, proportionate and dissuasive. The Member States shall notify those provisions to the Commission no later than 1 December 2008.",
+    "reference_contexts": [
+      "Article 126\nPenalties for non-compliance\nMember States shall lay down the provisions on penalties applicable for infringement of the provisions of this Regulation and shall take all measures necessary to ensure that they are implemented. The penalties provided for must be effective, proportionate and dissuasive. The Member States shall notify those provisions to the Commission no later than 1 December 2008 and shall notify it without delay of any subsequent amendment affecting them."
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00901"
+    ],
+    "article": "126",
+    "annex": null,
+    "paragraph": null,
+    "verified_phrases": [
+      "no later than 1 December 2008"
+    ]
+  },
+  {
+    "id": "reach-article-141-entry",
+    "question": "On what date does REACH Article 141(1) say the Regulation enters into force?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Article 141(1) says this Regulation shall enter into force on 1 June 2007.",
+    "reference_contexts": [
+      "Article 141\nEntry into force and application\n1. This Regulation shall enter into force on 1 June 2007."
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:00953"
+    ],
+    "article": "141",
+    "annex": null,
+    "paragraph": "1",
+    "verified_phrases": [
+      "enter into force on 1 June 2007"
+    ]
+  },
+  {
+    "id": "reach-annex-iv-water",
+    "question": "Does REACH Annex IV list distilled water among the exemptions from the obligation to register in accordance with Article 2(7)(a)?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Annex IV is headed exemptions from the obligation to register in accordance with Article 2(7)(a) and lists Water, distilled, conductivity or of similar purity with CAS No 7732-18-5.",
+    "reference_contexts": [
+      "ANNEX IV\nEXEMPTIONS FROM THE OBLIGATION TO REGISTER IN ACCORDANCE WITH\nARTICLE 2(7)(a)\nEinecs No | Name/Group | CAS No\n200-061-5 D-glucitol C H O | 50-70-4\n6 14 6\n200-066-2 Ascorbic acid C H O | 50-81-7\n6 8 6\n200-075-1 Glucose C H O | 50-99-7\n6 12 6\n200-233-3 Fructose C H O | 57-48-7\n6 12 6\n200-294-2 L-lysine C H N O | 56-87-1\n6 14 2 2\n200-334-9 Sucrose, pure C H O | 57-50-1\n12 22 11\n200-405-4 α-tocopheryl acetate C H O | 58-95-7\n31 52 3\n200-416-4 Galactose C H O | 59-23-4\n6 12 6\n200-432-1 DL-methionine C H NO S | 59-51-8\n5 11 2\n200-559-2 Lactose C H O | 63-42-3\n12 22 11\n200-711-8 D-mannitol C H O | 69-65-8\n6 14 6\n201-771-8 L-sorbose C H O | 87-79-6\n6 12 6\n204-664-4 Glycerol stearate, pure C H O | 123-94-4\n21 42 4\n204-696-9 Carbon dioxide CO | 124-38-9\n2\n205-278-9 Calcium pantothenate, D-form C H NO Ca | 137-08-6\n9 17 5.1/2\n205-756-7 DL-phenylalanine C H NO | 150-30-1\n9 11 2\n208-407-7 Sodium gluconate C H O .Na | 527-07-1\n6 12 7\n215-665-4 Sorbitan oleate C H O | 1338-43-8\n24 44 6\n231-098-5 Krypton Kr | 7439-90-9\n231-110-9 Neon Ne | 7440-01-9\n231-147-0 Argon Ar | 7440-37-1\n231-168-5 Helium He | 7440-59-7\n231-172-7 Xenon Xe | 7440-63-3\n231-783-9 Nitrogen N | 7727-37-9\n2\n231-791-2 Water, distilled, conductivity or of similar purity H O | 7732-18-5\n2\n232-307-2 Lecithins | 8002-43-5\nThe complex combination of diglycerides of fatty acids linked to the choline ester of phosphoric acid 232-436-4 Syrups, hydrolyzed starch | 8029-43-4 A complex combination obtained by the hydrolysis of cornstarch by the action of acids or enzymes. It consists primarily of d-glucose, maltose and maltodextrins Einecs No | Name/Group | CAS No 232-442-7 Tallow, hydrogenated | 8030-12-4 232-675-4 Dextrin | 9004-53-9 232-679-6 Starch | 9005-25-8 High-polymeric carbohydrate material usually derived from cereal grains such as corn, wheat and sorghum, and from roots and tubers such as potatoes and tapioca.\nIncludes starch which has been pregelatinised by heating\nin the presence of water\n232-940-4 Maltodextrin | 9050-36-6\n238-976-7 Sodium D-gluconate C H O .xNa | 14906-97-9\n6 12 7\n248-027-9 D-glucitol monostearate C H O | 26836-47-5\n24 48 7\n262-988-1 Fatty acids, coco, Me esters | 61788-59-8\n265-995-8 Cellulose pulp | 65996-61-4\n266-948-4 Glycerides, C and C -unsaturated. | 67701-30-8\n16-18 | 18\nThis substance is identified by SDA Substance Name:\nC -C and C unsaturated trialkyl glyceride and SDA\n16 18 | 18\nReporting Number: 11-001-00\n268-616-4 Syrups, corn, dehydrated | 68131-37-3\n269-658-6 Glycerides, tallow mono-, di- and tri-, hydrogenated | 68308-54-3\n270-312-1 Glycerides, C and C -unsaturated, mono- and di- | 68424-61-3\n16-18 | 18\nThis substance is identified by SDA Substance Name:\nC -C and C unsaturated alkyl and C -C and C\n16 18 | 18 | 16 18 | 18\nunsaturated dialkyl glyceride and SDA Reporting Number:\n11-002-00\n288-123-8 Glycerides, C | 85665-33-4\n10-18"
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:01013"
+    ],
+    "article": null,
+    "annex": "IV",
+    "paragraph": null,
+    "verified_phrases": [
+      "Water, distilled, conductivity or of similar purity",
+      "7732-18-5"
+    ]
+  },
+  {
+    "id": "reach-annex-xvii-export",
+    "question": "For REACH Annex XVII restrictions that come from Directive 76/769/EEC entries 1 to 58, which handling for export is outside the restriction?",
+    "regulation": "REACH",
+    "reference_answer": "REACH Annex XVII says that for substances incorporated as a consequence of restrictions adopted under Directive 76/769/EEC (Entries 1 to 58), the restrictions shall not apply to storage, keeping, treatment, filling into containers, or transfer from one container to another of these substances for export, unless the manufacture of the substances is prohibited.",
+    "reference_contexts": [
+      "ANNEX XVII\nRESTRICTIONS ON THE MANUFACTURE, PLACING ON THE\nMARKET AND USE OF CERTAIN DANGEROUS SUBSTANCES, MIXTURES AND ARTICLES\nFor substances which have been incorporated in this Annex as a consequence of restrictions adopted in the framework of Directive 76/769/EEC (Entries 1 to 58), the restrictions shall not apply to storage, keeping, treatment, filling into containers, or transfer from one container to another of these substances for export, unless the manufacture of the substances is prohibited.\nColumn 1\nColumn 2\nDesignation of the substance, of the group of substances or of the\nConditions of restriction\nmixture"
+    ],
+    "expected_chunk_ids": [
+      "02006R1907-20260622:01134"
+    ],
+    "article": null,
+    "annex": "XVII",
+    "paragraph": null,
+    "verified_phrases": [
+      "Entries 1 to 58"
+    ]
+  }
+]

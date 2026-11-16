@@ -1,0 +1,12 @@
+# Evaluation-only dependencies. Production requirements.txt does not include RAGAS.
+-r requirements-dev.txt
+
+# RAGAS 0.4.4 keeps langchain-core==1.8.0. Its collections metrics need
+# instructor 1.x (Provider.GROQ and llm_factory). instructor 1.11.3 accepts
+# tenacity 9 and openai 1.x, and requires rich<15, so rich is pinned here.
+ragas==0.4.4
+instructor==1.11.3
+rich==14.3.4
+jiter==0.10.0
+typer==0.29.1
+openai==1.109.1

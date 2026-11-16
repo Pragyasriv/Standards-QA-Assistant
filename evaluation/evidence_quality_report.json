@@ -1,0 +1,242 @@
+{
+  "passed": 7,
+  "failed": 0,
+  "total": 7,
+  "results": [
+    {
+      "id": "list-not-procedure",
+      "case": "top result can be related without containing the list",
+      "question": "What are the restricted substances under RoHS?",
+      "status": "approved",
+      "regulation": "RoHS",
+      "reason": "Retrieved chunks match RoHS and contain the requested list.",
+      "chunk_ids": [
+        "02011L0065-20260701:00141"
+      ],
+      "articles": [
+        null
+      ],
+      "annexes": [
+        "II"
+      ],
+      "scores": [
+        {
+          "chunk_id": "02011L0065-20260701:00141",
+          "dense_score": null,
+          "bm25_score": 4.78867608085534,
+          "rrf_score": null
+        }
+      ],
+      "passed": true,
+      "problems": []
+    },
+    {
+      "id": "named-annex-list",
+      "case": "question asks for a specific annex",
+      "question": "What concentration limits does RoHS Annex II set?",
+      "status": "approved",
+      "regulation": "RoHS",
+      "reason": "Retrieved chunks match RoHS and contain the requested list.",
+      "chunk_ids": [
+        "02011L0065-20260701:00141"
+      ],
+      "articles": [
+        null
+      ],
+      "annexes": [
+        "II"
+      ],
+      "scores": [
+        {
+          "chunk_id": "02011L0065-20260701:00141",
+          "dense_score": 0.33432921868191656,
+          "bm25_score": 6.428562284415109,
+          "rrf_score": 0.03278688524590164
+        }
+      ],
+      "passed": true,
+      "problems": []
+    },
+    {
+      "id": "named-annex-exemptions",
+      "case": "question asks for a specific annex",
+      "question": "What are the exemptions under RoHS Annex III?",
+      "status": "approved",
+      "regulation": "RoHS",
+      "reason": "Retrieved chunks match RoHS and contain the requested list.",
+      "chunk_ids": [
+        "02011L0065-20260701:00142",
+        "02011L0065-20260701:00143",
+        "02011L0065-20260701:00161",
+        "02011L0065-20260701:00158",
+        "02011L0065-20260701:00159",
+        "02011L0065-20260701:00170",
+        "02011L0065-20260701:00178"
+      ],
+      "articles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "annexes": [
+        "III",
+        "III",
+        "III",
+        "III",
+        "III",
+        "III",
+        "III"
+      ],
+      "scores": [
+        {
+          "chunk_id": "02011L0065-20260701:00142",
+          "dense_score": 0.46798796977024687,
+          "bm25_score": 7.5210979241186715,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00143",
+          "dense_score": 0.3826362333337438,
+          "bm25_score": 6.963461201123736,
+          "rrf_score": 0.03225806451612903
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00161",
+          "dense_score": 0.17076016894275114,
+          "bm25_score": 5.696413691841112,
+          "rrf_score": 0.029206349206349208
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00158",
+          "dense_score": 0.17844990890854925,
+          "bm25_score": 4.1508734663369635,
+          "rrf_score": 0.028577260665441927
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00159",
+          "dense_score": 0.19060429351711786,
+          "bm25_score": 3.961484111328066,
+          "rrf_score": 0.028577260665441927
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00170",
+          "dense_score": null,
+          "bm25_score": 5.526354133193843,
+          "rrf_score": null
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00178",
+          "dense_score": null,
+          "bm25_score": 4.475023741744865,
+          "rrf_score": null
+        }
+      ],
+      "passed": true,
+      "problems": []
+    },
+    {
+      "id": "missing-article",
+      "case": "explicit article that is not in the document",
+      "question": "What does RoHS Article 112 require?",
+      "status": "insufficient_evidence",
+      "regulation": "RoHS",
+      "reason": "No chunks were retrieved for RoHS Article 112.",
+      "chunk_ids": [],
+      "articles": [],
+      "annexes": [],
+      "scores": [],
+      "passed": true,
+      "problems": []
+    },
+    {
+      "id": "named-procedure",
+      "case": "the same article is sufficient when the question names it",
+      "question": "What does RoHS Article 6 require?",
+      "status": "approved",
+      "regulation": "RoHS",
+      "reason": "Retrieved chunks match RoHS and the requested provision.",
+      "chunk_ids": [
+        "02011L0065-20260701:00056",
+        "02011L0065-20260701:00069"
+      ],
+      "articles": [
+        "6",
+        "6"
+      ],
+      "annexes": [
+        null,
+        null
+      ],
+      "scores": [
+        {
+          "chunk_id": "02011L0065-20260701:00056",
+          "dense_score": 0.3148203985900883,
+          "bm25_score": 2.5982407831011916,
+          "rrf_score": 0.032018442622950824
+        },
+        {
+          "chunk_id": "02011L0065-20260701:00069",
+          "dense_score": 0.3288651986198448,
+          "bm25_score": 2.002210376675327,
+          "rrf_score": 0.03200204813108039
+        }
+      ],
+      "passed": true,
+      "problems": []
+    },
+    {
+      "id": "reach-article",
+      "case": "regulation filter keeps REACH evidence on a REACH question",
+      "question": "What does REACH Article 6 require?",
+      "status": "approved",
+      "regulation": "REACH",
+      "reason": "Retrieved chunks match REACH and the requested provision.",
+      "chunk_ids": [
+        "02006R1907-20260622:00104",
+        "02006R1907-20260622:00105"
+      ],
+      "articles": [
+        "6",
+        "6"
+      ],
+      "annexes": [
+        null,
+        null
+      ],
+      "scores": [
+        {
+          "chunk_id": "02006R1907-20260622:00104",
+          "dense_score": 0.2613297481638816,
+          "bm25_score": 3.1815017201413944,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "chunk_id": "02006R1907-20260622:00105",
+          "dense_score": 0.20741140769486321,
+          "bm25_score": 2.929643238589624,
+          "rrf_score": 0.03200204813108039
+        }
+      ],
+      "passed": true,
+      "problems": []
+    },
+    {
+      "id": "missing-reach-article",
+      "case": "explicit article that is not in the document",
+      "question": "What does REACH Article 200 require?",
+      "status": "insufficient_evidence",
+      "regulation": "REACH",
+      "reason": "No chunks were retrieved for REACH Article 200.",
+      "chunk_ids": [],
+      "articles": [],
+      "annexes": [],
+      "scores": [],
+      "passed": true,
+      "problems": []
+    }
+  ]
+}

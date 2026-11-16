@@ -1,0 +1,119 @@
+[
+  {
+    "id": "rohs-concentration-list",
+    "question": "Which metals and flame retardants are limited in electrical products, and at what concentration?",
+    "category": "rohs-annex",
+    "expected": [
+      {"regulation": "RoHS", "annex": "II"}
+    ]
+  },
+  {
+    "id": "rohs-market-prevention",
+    "question": "What must Member States prevent from being sold when the product contains the substances named for that rule?",
+    "category": "rohs-article",
+    "expected": [
+      {"regulation": "RoHS", "article": "4"},
+      {"chunk_id": "02011L0065-20260701:00022"}
+    ]
+  },
+  {
+    "id": "rohs-product-groups",
+    "question": "What kinds of household and consumer equipment fall inside the hazardous-substance rules for electronics?",
+    "category": "rohs-annex",
+    "expected": [
+      {"regulation": "RoHS", "annex": "I"}
+    ]
+  },
+  {
+    "id": "rohs-lamp-exceptions",
+    "question": "Where are the time-limited exceptions for mercury in lamps written down?",
+    "category": "rohs-annex",
+    "expected": [
+      {"regulation": "RoHS", "annex": "III"}
+    ]
+  },
+  {
+    "id": "reach-health-purpose",
+    "question": "What outcome is REACH meant to achieve for people, the environment, and the movement of chemicals?",
+    "category": "reach-article",
+    "expected": [
+      {"regulation": "REACH", "article": "1"}
+    ]
+  },
+  {
+    "id": "reach-unregistered-sale",
+    "question": "Is a chemical allowed onto the market when nobody has submitted the required registration information?",
+    "category": "reach-article",
+    "expected": [
+      {"regulation": "REACH", "article": "5"}
+    ]
+  },
+  {
+    "id": "reach-who-registers",
+    "question": "Which businesses must register a substance they make or import on its own?",
+    "category": "reach-article",
+    "expected": [
+      {"regulation": "REACH", "article": "6"}
+    ]
+  },
+  {
+    "id": "reach-prior-approval",
+    "question": "Which chemicals cannot be used unless a prior authorisation has been granted?",
+    "category": "reach-annex",
+    "expected": [
+      {"regulation": "REACH", "annex": "XIV"}
+    ]
+  },
+  {
+    "id": "reach-supply-conditions",
+    "question": "Where does REACH write down bans and conditions on supplying dangerous chemicals?",
+    "category": "reach-annex",
+    "expected": [
+      {"regulation": "REACH", "annex": "XVII"}
+    ]
+  },
+  {
+    "id": "rohs-article-4-wording",
+    "question": "Which provision says Member States shall ensure that EEE placed on the market does not contain the listed substances?",
+    "category": "rohs-article",
+    "expected": [
+      {"chunk_id": "02011L0065-20260701:00022"}
+    ]
+  },
+  {
+    "id": "unrelated-weather",
+    "question": "What will the weather be in Lisbon tomorrow?",
+    "category": "unrelated",
+    "expected": []
+  },
+  {
+    "id": "unrelated-sport",
+    "question": "Who won the 2018 football World Cup?",
+    "category": "unrelated",
+    "expected": []
+  },
+  {
+    "id": "unrelated-baking",
+    "question": "How long should sourdough dough rest before baking?",
+    "category": "unrelated",
+    "expected": []
+  },
+  {
+    "id": "outside-weee",
+    "question": "What collection targets does the WEEE Directive set for waste equipment?",
+    "category": "insufficient",
+    "expected": []
+  },
+  {
+    "id": "outside-lvd",
+    "question": "How does the Low Voltage Directive require CE marking to be applied?",
+    "category": "insufficient",
+    "expected": []
+  },
+  {
+    "id": "outside-gdpr",
+    "question": "How long may personal data be kept under the GDPR?",
+    "category": "insufficient",
+    "expected": []
+  }
+]
