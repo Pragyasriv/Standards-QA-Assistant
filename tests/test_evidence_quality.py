@@ -4,6 +4,8 @@ The scripted retriever supplies the chunks. These tests do not read Qdrant and
 do not change the original evaluation files.
 """
 
+import pytest
+
 from app.guardrails.models import ScopeDecision
 from app.guardrails.service import GuardrailService
 from app.retrieval.filters import SearchFilters
@@ -99,7 +101,16 @@ def test_related_article_is_not_enough_for_a_list_question() -> None:
     assert "do not contain the requested list" in response.reason
 
 
-def test_follow_up_reads_the_annex_named_by_the_article() -> None:
+@pytest.mark.parametrize(
+    "question",
+    [
+        "What are the restricted substances under RoHS?",
+        "What substances are restricted under the RoHS Directive?",
+        "Which substances are restricted by RoHS?",
+        "List all restricted substances under RoHS.",
+    ],
+)
+def test_follow_up_reads_the_annex_named_by_the_article(question: str) -> None:
     article = _chunk(chunk_id="article-6", article="6", text=ARTICLE_6, bm25_score=9.6, rrf_score=0.032)
     listing = _chunk(
         chunk_id="annex-ii",
@@ -110,7 +121,7 @@ def test_follow_up_reads_the_annex_named_by_the_article() -> None:
         dense_score=0.51,
         rrf_score=0.01,
     )
-    response, retriever = _review("What are the restricted substances under RoHS?", [article], [listing])
+    response, retriever = _review(question, [article], [listing])
     assert response.status == "approved"
     assert [chunk.chunk_id for chunk in response.retrieved_chunks] == ["annex-ii"]
     assert response.retrieved_chunks[0].bm25_score == 4.0

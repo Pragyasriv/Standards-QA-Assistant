@@ -9,6 +9,8 @@ dist/
 
 # Virtual environments
 .venv/
+frontend/node_modules/
+frontend/dist/
 venv/
 env/
 

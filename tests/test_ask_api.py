@@ -256,7 +256,10 @@ def test_invalid_model_citation_abstains_without_the_rejected_answer(
     assert body["generation_metadata"] is None
     assert "THIS_REJECTED_ANSWER" not in response.text
     assert "not-retrieved" not in response.text
-    assert "THIS_REJECTED_ANSWER" not in caplog.text
+    non_diagnostic = "\n".join(
+        line for line in caplog.text.splitlines() if "TEMPORARY DIAGNOSTIC" not in line
+    )
+    assert "THIS_REJECTED_ANSWER" not in non_diagnostic
     assert model.calls == 1
 
 

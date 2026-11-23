@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    @apply bg-slate-50 font-sans text-slate-900 text-[15px] leading-relaxed;
+  }
+}
+
+@layer components {
+  .text-label {
+    @apply text-xs font-semibold uppercase tracking-wider text-slate-500;
+  }
+
+  .text-heading-md {
+    @apply text-xl font-semibold tracking-tight text-slate-900 sm:text-[1.25rem];
+  }
+
+  .text-heading-lg {
+    @apply text-2xl font-semibold tracking-tight text-slate-900 sm:text-[1.625rem];
+  }
+
+  .max-w-read {
+    @apply w-full max-w-[42rem];
+  }
+
+  .panel-elevated {
+    @apply rounded-xl border border-slate-200 bg-white shadow-sm;
+  }
+
+  /* Full workspace width beside sidebar; inner prose uses max-w-read */
+  .workspace-shell {
+    @apply w-full min-w-0 px-4 py-4 sm:px-8 sm:py-6 lg:px-10;
+  }
+}

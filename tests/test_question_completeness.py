@@ -10,6 +10,7 @@ from app.retrieval.models import RetrievedChunk
 from tests.test_answer_fidelity import CONDITIONS, ENTRIES, _review
 
 QUESTION = "What are the restricted substances under RoHS?"
+ALT_LIST_QUESTION = "What substances are restricted under the RoHS Directive?"
 
 
 def test_complete_list_with_every_entry_and_condition_is_accepted() -> None:
@@ -41,6 +42,13 @@ def test_complete_list_missing_a_substance_is_rejected() -> None:
     service, _client, guardrail = _review(answer)
     with pytest.raises(GenerationValidationError, match="Cadmium"):
         service.generate(QUESTION, guardrail)
+
+
+def test_alternate_list_wording_requires_every_entry() -> None:
+    answer = "\n".join(line for line in ENTRIES if not line.startswith("Cadmium")) + "\n" + CONDITIONS
+    service, _client, guardrail = _review(answer)
+    with pytest.raises(GenerationValidationError, match="Cadmium"):
+        service.generate(ALT_LIST_QUESTION, guardrail)
 
 
 def test_complete_list_missing_a_qualification_is_rejected() -> None:

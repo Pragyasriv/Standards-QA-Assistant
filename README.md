@@ -61,6 +61,7 @@ Full clone and environment steps: [Setup and installation](#setup-and-installati
 | **Citations** | Backend copies metadata from retrieved chunks; invalid IDs reject the answer |
 | **Validation** | Fidelity checks (numbers, lists, conditions); validation failure → `abstained`, no leaked rejected text |
 | **API** | FastAPI: `GET /`, `GET /health`, `GET /ready`, `POST /ask` |
+| **Web UI** | React + Vite app in `frontend/` (proxied to the API in dev) |
 | **Evaluation** | RAGAS 0.4.4 end-to-end metrics; separate guardrail and retrieval benchmarks |
 
 ---
@@ -212,6 +213,39 @@ python scripts/build_bm25_index.py
 Outputs include `data/processed/{rohs,reach}/chunks.jsonl` and reports under `data/processed/*/extraction_report.json`. Re-indexing updates existing points when chunk IDs are unchanged; embedding cache avoids re-encoding identical text.
 
 Measured chunk counts from the consolidated PDFs used in development: **273** RoHS and **1,745** REACH chunks (**2,018** vectors total).
+
+---
+
+## Web frontend
+
+The `frontend/` directory is a **React + TypeScript + Vite** UI that talks to the same FastAPI endpoints. It uses **Tailwind CSS** and **lucide-react** icons. Development traffic is proxied to the API so CORS is not required.
+
+**Install (once):**
+
+```powershell
+cd frontend
+npm install
+```
+
+**Run locally (two terminals):**
+
+```powershell
+# Terminal 1 — API (from repo root, venv active)
+uvicorn app.main:app --host 127.0.0.1 --port 8000
+```
+
+```powershell
+# Terminal 2 — UI
+cd frontend
+npm run dev
+```
+
+- **Frontend URL:** [http://127.0.0.1:5173](http://127.0.0.1:5173)
+- **Proxied API paths:** `POST /ask`, `GET /health`, `GET /ready` → `http://127.0.0.1:8000`
+- **Production build:** `cd frontend && npm run build` (output in `frontend/dist/`)
+- **Frontend tests:** `cd frontend && npm test`
+
+The UI displays only fields returned by `AskResponse` and `ReadinessResponse` (answers, statuses, citations, clarification prompts, and generation metadata when present).
 
 ---
 

@@ -5,6 +5,7 @@ from __future__ import annotations
 import logging
 import time
 
+from app.core.config import get_settings
 from app.generation.citations import validate_draft
 from app.generation.client import GenerationClient, GroqGenerationClient
 from app.generation.errors import (
@@ -14,13 +15,71 @@ from app.generation.errors import (
     GenerationValidationError,
     public_error_text,
 )
-from app.generation.models import GenerationMetadata, GenerationResponse
-from app.generation.parse import parse_model_output
+from app.generation.models import GenerationMetadata, GenerationResponse, ResolvedCitation
+from app.generation.parse import assistant_text_candidates, message_content_shape, parse_model_output
 from app.generation.prompt import build_messages
+from app.generation.retry import is_complete_list_fidelity_retry_eligible
 from app.generation.settings import GenerationSettings
 from app.guardrails.models import GuardrailResponse
 
 logger = logging.getLogger(__name__)
+
+_RESPONSE_PREVIEW_LIMIT = 1500
+
+
+def _log_model_response_diagnostic(
+    raw: object,
+    settings: GenerationSettings,
+    *,
+    attempt: int = 1,
+) -> None:
+    """TEMPORARY: log response shape in non-production for local debugging. Remove before release."""
+    if get_settings().app_env == "production":
+        return
+    content_type, block_types = message_content_shape(raw)
+    candidates = assistant_text_candidates(raw)
+    candidate_lengths = [len(item) for item in candidates]
+    preview = candidates[0] if candidates else ""
+    if len(preview) > _RESPONSE_PREVIEW_LIMIT:
+        preview = preview[:_RESPONSE_PREVIEW_LIMIT] + "…"
+    metadata = getattr(raw, "response_metadata", None)
+    finish_reason: str | None = None
+    token_usage: object = None
+    if isinstance(metadata, dict):
+        finish_reason = metadata.get("finish_reason") or metadata.get("stop_reason")
+        if not isinstance(finish_reason, str):
+            finish_reason = None
+        token_usage = metadata.get("token_usage") or metadata.get("usage")
+    logger.info(
+        "TEMPORARY DIAGNOSTIC model_response type=%s attempt=%s content_type=%s "
+        "block_types=%s candidate_lengths=%s finish_reason=%s token_usage=%s preview=%s",
+        type(raw).__name__,
+        attempt,
+        content_type,
+        block_types,
+        candidate_lengths,
+        finish_reason,
+        token_usage,
+        public_error_text(RuntimeError(preview), settings.configured_key()),
+    )
+
+
+def _log_validation_draft_diagnostic(draft: object, safe_reason: str) -> None:
+    """TEMPORARY: log rejected drafts in non-production for local debugging. Remove before release."""
+    if get_settings().app_env == "production":
+        return
+    from app.generation.models import ModelDraft
+
+    if not isinstance(draft, ModelDraft):
+        return
+    logger.info(
+        "TEMPORARY DIAGNOSTIC validation_draft abstained=%s cited_chunk_ids=%s "
+        "validation_reason=%s answer=%s",
+        draft.abstained,
+        draft.cited_chunk_ids,
+        safe_reason,
+        draft.answer,
+    )
 
 
 class GenerationService:
@@ -41,29 +100,87 @@ class GenerationService:
         client = self._resolve_client()
         messages = build_messages(question, chunks)
         started = time.perf_counter()
-        try:
-            raw = client.invoke(messages)
-        except GenerationError:
-            raise
-        except Exception as exc:
-            self._log_failure(len(chunks), exc)
-            raise GenerationInvocationError(
-                f"The configured model {self.settings.configured_model() or '(unset)'} "
-                "could not generate an answer. "
-                + public_error_text(exc, self.settings.configured_key())
-            ) from exc
-        latency_ms = (time.perf_counter() - started) * 1000
-        self._reject_model_switch(raw)
-        draft = parse_model_output(raw)
-        try:
-            status, reason, citations = validate_draft(draft, chunks, question)
-        except GenerationValidationError:
-            logger.info(
-                "Generation output rejected model=%s evidence_chunks=%s",
-                self.settings.configured_model() or "(unset)",
-                len(chunks),
+        attempt = 1
+        retry_triggered = False
+        draft = None
+        status: str | None = None
+        reason: str | None = None
+        citations: list[ResolvedCitation] = []
+
+        while attempt <= 2:
+            draft = None
+            try:
+                raw = client.invoke(messages)
+            except GenerationError:
+                raise
+            except Exception as exc:
+                self._log_failure(len(chunks), exc, attempt=attempt)
+                raise GenerationInvocationError(
+                    f"The configured model {self.settings.configured_model() or '(unset)'} "
+                    "could not generate an answer. "
+                    + public_error_text(exc, self.settings.configured_key())
+                ) from exc
+            self._reject_model_switch(raw)
+            _log_model_response_diagnostic(raw, self.settings, attempt=attempt)
+            try:
+                draft = parse_model_output(raw)
+                status, reason, citations = validate_draft(draft, chunks, question)
+                logger.info(
+                    "Generation attempt outcome model=%s evidence_chunks=%s attempt=%s "
+                    "retry_triggered=%s outcome=succeeded",
+                    self.settings.configured_model() or "(unset)",
+                    len(chunks),
+                    attempt,
+                    retry_triggered,
+                )
+                break
+            except GenerationValidationError as exc:
+                safe_reason = public_error_text(exc, self.settings.configured_key())
+                phase = "validation" if draft is not None else "parse"
+                logger.info(
+                    "Generation output rejected model=%s evidence_chunks=%s attempt=%s "
+                    "retry_triggered=%s phase=%s validation_reason=%s",
+                    self.settings.configured_model() or "(unset)",
+                    len(chunks),
+                    attempt,
+                    retry_triggered,
+                    phase,
+                    safe_reason,
+                )
+                if draft is not None:
+                    _log_validation_draft_diagnostic(draft, safe_reason)
+                if (
+                    attempt == 1
+                    and draft is not None
+                    and is_complete_list_fidelity_retry_eligible(exc, question)
+                ):
+                    retry_triggered = True
+                    logger.info(
+                        "Generation retry triggered model=%s evidence_chunks=%s attempt=1",
+                        self.settings.configured_model() or "(unset)",
+                        len(chunks),
+                    )
+                    messages = build_messages(
+                        question, chunks, validation_feedback=safe_reason
+                    )
+                    attempt = 2
+                    continue
+                logger.info(
+                    "Generation attempt outcome model=%s evidence_chunks=%s attempt=%s "
+                    "retry_triggered=%s outcome=rejected",
+                    self.settings.configured_model() or "(unset)",
+                    len(chunks),
+                    attempt,
+                    retry_triggered,
+                )
+                raise
+
+        if draft is None or status is None:
+            raise GenerationValidationError(
+                "The model did not return valid structured output."
             )
-            raise
+
+        latency_ms = (time.perf_counter() - started) * 1000
         response = GenerationResponse(
             question=question,
             answer=draft.answer.strip() or (reason or ""),
@@ -117,10 +234,11 @@ class GenerationService:
                 f"which is not the configured model {configured}."
             )
 
-    def _log_failure(self, evidence_chunks: int, exc: Exception) -> None:
+    def _log_failure(self, evidence_chunks: int, exc: Exception, *, attempt: int = 1) -> None:
         logger.info(
-            "Generation failed model=%s evidence_chunks=%s error=%s",
+            "Generation failed model=%s evidence_chunks=%s attempt=%s error=%s",
             self.settings.configured_model() or "(unset)",
             evidence_chunks,
+            attempt,
             public_error_text(exc, self.settings.configured_key()),
         )

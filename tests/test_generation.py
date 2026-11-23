@@ -192,6 +192,62 @@ def test_abstention_that_states_a_requirement_is_rejected() -> None:
         service.generate("What are the restricted substances under RoHS?", _approved([_chunk()]))
 
 
+def test_validation_rejection_logs_safe_reason(caplog: pytest.LogCaptureFixture) -> None:
+    caplog.set_level(logging.INFO, logger="app.generation.service")
+    payload = _draft(cited_chunk_ids=["not-in-evidence"])
+    service, _client = _service(payload)
+    with pytest.raises(GenerationValidationError, match="not-in-evidence"):
+        service.generate(
+            "What substances are restricted under the RoHS Directive?",
+            _approved([_chunk()]),
+        )
+    joined = caplog.text
+    assert "Generation output rejected" in joined
+    assert "phase=validation" in joined
+    assert "validation_reason=" in joined
+    assert "not-in-evidence" in joined
+    assert "gsk_" not in joined
+    assert "TEMPORARY DIAGNOSTIC validation_draft" in joined
+    assert f"abstained={payload['abstained']}" in joined
+    assert "cited_chunk_ids=" in joined
+    assert str(payload["answer"]) in joined
+
+
+def test_parse_rejection_logs_phase_parse_without_draft_diagnostic(
+    caplog: pytest.LogCaptureFixture,
+) -> None:
+    caplog.set_level(logging.INFO, logger="app.generation.service")
+    service, _client = _service("this is not json")
+    with pytest.raises(GenerationValidationError):
+        service.generate("What are the restricted substances under RoHS?", _approved([_chunk()]))
+    joined = caplog.text
+    assert "Generation output rejected" in joined
+    assert "phase=parse" in joined
+    assert "validation_reason=" in joined
+    assert "TEMPORARY DIAGNOSTIC validation_draft" not in joined
+    assert "gsk_" not in joined
+
+
+def test_validation_draft_diagnostic_skipped_in_production(
+    caplog: pytest.LogCaptureFixture, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    caplog.set_level(logging.INFO, logger="app.generation.service")
+    monkeypatch.setenv("APP_ENV", "production")
+    from app.core.config import get_settings
+
+    get_settings.cache_clear()
+    service, _client = _service(_draft(cited_chunk_ids=["not-in-evidence"]))
+    try:
+        with pytest.raises(GenerationValidationError):
+            service.generate(
+                "What substances are restricted under the RoHS Directive?",
+                _approved([_chunk()]),
+            )
+    finally:
+        get_settings.cache_clear()
+    assert "TEMPORARY DIAGNOSTIC validation_draft" not in caplog.text
+
+
 @pytest.mark.parametrize(
     "status",
     ["invalid", "out_of_scope", "clarification_required", "insufficient_evidence"],

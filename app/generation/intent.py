@@ -10,6 +10,9 @@ import re
 
 _COMPLETE_LIST = re.compile(
     r"\bwhat are the\b.{0,80}\b(?:restricted substances|substances|exemptions|exceptions|categories)\b"
+    r"|\bwhat substances\b.{0,80}\brestricted\b"
+    r"|\bwhich substances\b.{0,80}\brestricted\b"
+    r"|\bsubstances\b.{0,40}\bare restricted\b"
     r"|\blist all\b.{0,80}\b(?:substances|exemptions|exceptions|categories)\b"
     r"|\bcomplete list\b"
     r"|\bgive me the (?:complete )?list\b"

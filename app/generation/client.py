@@ -47,6 +47,8 @@ def build_chat_model(settings: GenerationSettings) -> object:
         model=model,
         temperature=settings.groq_temperature,
         timeout=120,
+        # Keep chain-of-thought out of message.content so JSON parsing sees the answer.
+        reasoning_format="parsed",
     )
 
 

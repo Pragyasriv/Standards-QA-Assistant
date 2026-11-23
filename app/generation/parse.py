@@ -10,8 +10,38 @@ from pydantic import ValidationError
 from app.generation.errors import GenerationValidationError
 from app.generation.models import ModelDraft
 
-_THINK = re.compile(r"<think>.*?</think>", re.DOTALL | re.IGNORECASE)
+_THINK = re.compile(r".*?</think>", re.DOTALL | re.IGNORECASE)
 _FENCE = re.compile(r"^```(?:json)?\s*|\s*```$", re.IGNORECASE)
+
+
+def message_content_shape(value: object) -> tuple[str, list[str]]:
+    """Describe message.content and content block types for logging."""
+    content = getattr(value, "content", None)
+    content_type = type(content).__name__
+    block_types: list[str] = []
+    blocks = _read_content_blocks(value)
+    for item in blocks:
+        if isinstance(item, dict) and item.get("type") is not None:
+            block_types.append(str(item.get("type")))
+    return content_type, block_types
+
+
+def assistant_text_candidates(value: object) -> list[str]:
+    """Ordered, deduped text sources from content then content_blocks.
+
+    Sources are not merged across content and content_blocks. When both carry
+    text, each distinct candidate is returned for independent JSON parsing.
+    """
+    if isinstance(value, str):
+        stripped = value.strip()
+        return [stripped] if stripped else []
+
+    candidates: list[str] = []
+    seen: set[str] = set()
+    content = getattr(value, "content", None)
+    _extend_candidates(candidates, seen, _text_parts_from_blocks(content))
+    _extend_candidates(candidates, seen, _text_parts_from_blocks(_read_content_blocks(value)))
+    return candidates
 
 
 def parse_model_output(value: object) -> ModelDraft:
@@ -25,10 +55,22 @@ def parse_model_output(value: object) -> ModelDraft:
         return parsed
     if isinstance(parsed, dict):
         return _validate(parsed)
-    text = _message_text(value)
-    text = _THINK.sub("", text)
-    text = _FENCE.sub("", text.strip())
-    return _validate(_json_object(text))
+
+    candidates = assistant_text_candidates(value)
+    if not candidates:
+        raise GenerationValidationError(
+            "The model did not return valid structured output (no assistant text content)."
+        )
+
+    errors: list[GenerationValidationError] = []
+    for candidate in candidates:
+        try:
+            text = _THINK.sub("", candidate)
+            text = _FENCE.sub("", text.strip())
+            return _validate(_json_object(text))
+        except GenerationValidationError as exc:
+            errors.append(exc)
+    raise errors[-1]
 
 
 def _validate(payload: object) -> ModelDraft:
@@ -42,34 +84,83 @@ def _validate(payload: object) -> ModelDraft:
 
 def _json_object(text: str) -> object:
     candidate = text.strip()
+    if not candidate:
+        raise GenerationValidationError(
+            "The model did not return valid structured output (empty message content)."
+        )
     try:
         return json.loads(candidate)
     except json.JSONDecodeError:
         start = candidate.find("{")
         end = candidate.rfind("}")
         if start == -1 or end <= start:
-            raise GenerationValidationError("The model did not return valid structured output.")
+            raise GenerationValidationError(
+                "The model did not return valid structured output (no JSON object found)."
+            )
+        fragment = candidate[start : end + 1]
         try:
-            return json.loads(candidate[start : end + 1])
+            return json.loads(fragment)
         except json.JSONDecodeError as exc:
             raise GenerationValidationError(
-                "The model did not return valid structured output."
+                "The model did not return valid structured output "
+                f"(JSON decode error: {exc.msg} at position {exc.pos})."
             ) from exc
 
 
-def _message_text(value: object) -> str:
-    if isinstance(value, str):
-        return value
-    content = getattr(value, "content", None)
+def _extend_candidates(
+    candidates: list[str],
+    seen: set[str],
+    parts: list[str],
+) -> None:
+    if not parts:
+        return
+    joined = "\n".join(parts)
+    _append_candidate(candidates, seen, joined)
+    for part in parts:
+        _append_candidate(candidates, seen, part)
+
+
+def _append_candidate(candidates: list[str], seen: set[str], text: str) -> None:
+    normalized = text.strip()
+    if not normalized or normalized in seen:
+        return
+    seen.add(normalized)
+    candidates.append(normalized)
+
+
+def _read_content_blocks(value: object) -> list[object]:
+    blocks = getattr(value, "content_blocks", None)
+    if blocks is None:
+        return []
+    if callable(blocks):
+        blocks = blocks()
+    if isinstance(blocks, list):
+        return blocks
+    return []
+
+
+def _text_parts_from_blocks(content: object) -> list[str]:
+    """Collect final assistant text blocks, not chain-of-thought reasoning."""
     if isinstance(content, str):
-        return content
-    if isinstance(content, list):
-        parts: list[str] = []
-        for block in content:
-            if isinstance(block, str):
-                parts.append(block)
-            elif isinstance(block, dict) and isinstance(block.get("text"), str):
-                parts.append(block["text"])
-        if parts:
-            return "\n".join(parts)
-    raise GenerationValidationError("The model did not return valid structured output.")
+        return [content] if content.strip() else []
+    if not isinstance(content, list):
+        return []
+    parts: list[str] = []
+    for block in content:
+        if isinstance(block, str) and block.strip():
+            parts.append(block)
+            continue
+        if not isinstance(block, dict):
+            continue
+        block_type = block.get("type")
+        if block_type == "reasoning":
+            continue
+        if block_type == "text":
+            text = block.get("text")
+            if isinstance(text, str) and text.strip():
+                parts.append(text)
+            continue
+        text = block.get("text")
+        if isinstance(text, str) and text.strip():
+            parts.append(text)
+    return parts

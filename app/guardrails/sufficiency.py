@@ -19,6 +19,10 @@ from app.retrieval.tokenize import tokenize
 
 _INVENTORY = re.compile(
     r"\brestricted substances\b"
+    r"|\bwhat substances\b.{0,80}\brestricted\b"
+    r"|\bwhich substances\b.{0,80}\brestricted\b"
+    r"|\bsubstances\b.{0,40}\bare restricted\b"
+    r"|\blist all\b.{0,60}\bsubstances\b"
     r"|\bconcentration limits\b"
     r"|\bwhat are the exemptions\b"
     r"|\bwhich .+ exemptions\b"
