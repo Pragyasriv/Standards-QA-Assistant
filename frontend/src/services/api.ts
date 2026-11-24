@@ -1,3 +1,4 @@
+
 import type {
   AskRequest,
   AskResponse,
@@ -5,6 +6,11 @@ import type {
   HealthResponse,
   ReadinessResponse,
 } from "../types/api";
+
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL ?? "").replace(
+  /\/+$/,
+  "",
+);
 
 export class ApiError extends Error {
   readonly status: number;
@@ -41,11 +47,11 @@ async function parseError(response: Response): Promise<ApiError> {
 async function requestJson<T>(path: string, init?: RequestInit): Promise<T> {
   let response: Response;
   try {
-    response = await fetch(path, init);
+    response = await fetch(`${API_BASE_URL}${path}`, init);
   } catch {
     throw new ApiError(
       0,
-      "Unable to reach the API. Ensure the FastAPI server is running on port 8000.",
+      "Unable to reach the API. Please check the backend service.",
     );
   }
   if (!response.ok) {
