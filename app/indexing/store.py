@@ -32,35 +32,66 @@ class QdrantStore:
         self.vector_store: QdrantVectorStore | None = None
 
     def open(self) -> QdrantVectorStore:
-        """Create the local database when needed and return the LangChain store."""
-        self.settings.qdrant_path.mkdir(parents=True, exist_ok=True)
-        self.client = QdrantClient(path=str(self.settings.qdrant_path))
-        self._ensure_collection()
-        return self._attach_vector_store()
+        if not self.settings.qdrant_url and not self.settings.qdrant_api_key:
+            self.settings.qdrant_path.mkdir(parents=True, exist_ok=True)
 
-    def open_existing(self) -> QdrantVectorStore:
-        """Open a collection that already exists. Do not create or change it."""
-        if not self.settings.qdrant_path.exists():
-            raise CollectionCompatibilityError(
-                f"Qdrant storage was not found at {self.settings.qdrant_path}. "
-                "The collection was not created."
-            )
-        self.client = QdrantClient(path=str(self.settings.qdrant_path))
+        self._connect()
         try:
-            name = self.settings.qdrant_collection
-            if not self.client.collection_exists(name):
-                raise CollectionCompatibilityError(
-                    f"Qdrant collection {name!r} does not exist at {self.settings.qdrant_path}. "
-                    "It was not created."
-                )
-            self._validate_vectors()
+            self._ensure_collection()
+            return self._attach_vector_store()
         except Exception:
             self.close()
             raise
-        return self._attach_vector_store()
+
+    def open_existing(self) -> QdrantVectorStore:
+        """Open an existing collection without creating or changing it."""
+
+        # For local Qdrant, verify the storage directory exists first.
+        # QdrantClient(path=...) may create a missing directory.
+        if not self.settings.qdrant_url and not self.settings.qdrant_api_key:
+            if not self.settings.qdrant_path.exists():
+                raise CollectionCompatibilityError(
+                    f"Qdrant storage path {self.settings.qdrant_path} not found. "
+                    "The storage directory was not created."
+                )
+
+        self._connect()
+
+        try:
+            name = self.settings.qdrant_collection
+
+            if not self.client.collection_exists(name):
+                raise CollectionCompatibilityError(
+                    f"Qdrant collection {name!r} not found. "
+                    "The collection was not created."
+                )
+
+            self._validate_vectors()
+            return self._attach_vector_store()
+
+        except Exception:
+            self.close()
+            raise
+
+    def _connect(self) -> None:
+        url = self.settings.qdrant_url
+        api_key = self.settings.qdrant_api_key
+
+        if bool(url) != bool(api_key):
+            raise CollectionCompatibilityError(
+                "Both QDRANT_URL and QDRANT_API_KEY must be configured together."
+            )
+
+        if url and api_key:
+            self.client = QdrantClient(url=url, api_key=api_key)
+            logger.info("Connected to Qdrant Cloud.")
+        else:
+            self.client = QdrantClient(path=str(self.settings.qdrant_path))
+            logger.info("Connected to local Qdrant at %s", self.settings.qdrant_path)
+
 
     def close(self) -> None:
-        """Release the local storage lock."""
+        """Release the Qdrant connection."""
         if self.client is not None:
             self.client.close()
             self.client = None

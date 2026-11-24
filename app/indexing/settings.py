@@ -23,8 +23,15 @@ class IndexingSettings(BaseSettings):
     embedding_dimensions: int = Field(default=384, ge=1)
     embedding_batch_size: int = Field(default=64, ge=1)
     embedding_device: EmbeddingDevice = "cpu"
+
     qdrant_path: Path = Path("storage/qdrant")
     qdrant_collection: str = "regulatory_documents"
+
+    # Optional Qdrant Cloud configuration.
+    # When both values are provided, the application uses Qdrant Cloud.
+    qdrant_url: str | None = None
+    qdrant_api_key: str | None = None
+
     rohs_chunks_path: Path = Path("data/processed/rohs/chunks.jsonl")
     reach_chunks_path: Path = Path("data/processed/reach/chunks.jsonl")
 
